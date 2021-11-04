@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+
+/**************** Custom Properties *******************/
+
+:root {
+    /*Palete Colors*/
+    /*Primary Color Variants*/
+    --PCV_700: #102240;
+    --PCV_500: #1B396A;
+    --PCV_200: #A4B0C3;
+    /*Secondary Color Variants*/
+    --SCV_700: #916F09;
+    --SCV_500: #F2B90F;
+    --SCV_200: #FAE39F;
+    /*Tertiary Color Variants*/
+    --TCV_700: #046531;
+    --TCV_500: #06A852;
+    --TCV_200: #9BDCBA;
+    /*Success Color Variants */
+    --SUCV_700: #106732;
+    --SUCV_500: #1AAC54;
+    --SUCV_200: #A3DEBB;
+    /*Warning Color Variants*/
+    --WCV_700: #685B04;
+    --WCV_500: #AD9706;
+    --WCV_200: #DED59B;
+    /*Error Color Variants*/
+    --ECV_700: #5C0B29;
+    --ECV_500: #991344;
+    --ECV_200: #D6A1B4;
+    /*Info Color Variants*/
+    --ICV_700: #0D3069;
+    --ICV_500: #1550AF;
+    --ICV_200: #A1B9DF;
+    /*Gray Color Variants*/
+    --GCV_900: #616569;
+    --GCV_700: #92979D;
+    --GCV_500: #C2C9D1;
+    --GCV_200: #E1E4E8;
+    /*Black Colors Variants*/
+    --BCV_700: #0C0F17;
+    --BCV_500: #141927;
+    --BCV_200: #A1A3A9;
+    /*White Color Variants*/
+    --WHCV_700: #959595;
+    --WHCV_500: #F9F9F9;
+    --WHCV_200: #FDFDFD;
+    --font_headlines: 'Open Sans', sans-serif;
+    --font_body: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 1000px;
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    border: 1px dashed blue;
+}
+
+.colum-12 {
+    width: 100%-1px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    padding: 0px 20px 0px 20px;
+    /* border: 1px dashed red; */
+}
+
+.item-result {
+    grid-column: 3/11;
+    height: 512px;
+    margin-top: 48px;
+    filter: drop-shadow(4px 8px 8px rgba(27, 57, 106, 0.5));
+    border-radius: 16px;
+    background-color: var(--WHCV_200);
+    /*  */
+    display: flex;
+    justify-content: start;
+}
+
+.preview {
+    width: 335px;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+    -webkit-border-radius: 16px 0px 0px 16px;
+    -moz-border-radius: 16px 0px 0px 16px;
+    -ms-border-radius: 16px 0px 0px 16px;
+    -o-border-radius: 16px 0px 0px 16px;
+    /* border: 1px dashed black; */
+}
+
+.img-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 35px;
+    position: absolute;
+    width: 334px;
+    height: 350px;
+    left: 1px;
+    /**/
+    background-color: var(--PCV_200);
+    border-radius: 16px 0px 0px 0px;
+    -webkit-border-radius: 16px 0px 0px 0px;
+    -moz-border-radius: 16px 0px 0px 0px;
+    -ms-border-radius: 16px 0px 0px 0px;
+    -o-border-radius: 16px 0px 0px 0px;
+}
+
+.type-doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 259px;
+    height: 113px;
+    left: 38px;
+    top: 379px;
+    /* Primary-500 */
+    background: var(--PCV_500);
+    border-radius: 16px;
+}
+
+.type-doc h4 {
+    position: static;
+    width: 227px;
+    height: 46px;
+    left: 16px;
+    top: 33.5px;
+    /* H4 */
+    font-family: var(--font_headlines);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    /* WShades-500 */
+    color: var(--WHCV_500);
+}
+
+.informacion-item {
+    width: 591px;
+    height: 100%;
+    border-radius: 0px 16px 16px 0px;
+    -webkit-border-radius: 0px 16px 16px 0px;
+    -moz-border-radius: 0px 16px 16px 0px;
+    -ms-border-radius: 0px 16px 16px 0px;
+    -o-border-radius: 0px 16px 16px 0px;
+    /* border: 1px solid red; */
+}
+
+.result-group {
+    width: 551px;
+    height: 434px;
+    margin: 39px 20px;
+    /* border: 1px solid royalblue; */
+}
+
+.title-result {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px dashed black; */
+}
+
+.title-result h4 {
+    font-family: var(--font_headlines);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 46px;
+    /*  */
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.25px;
+    /* Primary-500 */
+    color: var(--PCV_500);
+}
+
+.date_autors {
+    margin-top: 40px;
+    width: 100%;
+    height: 74px;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.autors-item {
+    height: 100%;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px dashed #0C0F17; */
+}
+
+.autors-item h5,
+.date-item h5 {
+    /* H5 */
+    font-family: var(--font_headlines);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* BShades-500 */
+    color: var(--BCV_500);
+    /*  */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.date-item {
+    height: 100%;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px dashed #0C0F17; */
+}
+
+.description {
+    width: 100%;
+    height: 140px;
+    margin-top: 40px;
+    /* border: 1px dashed #0C0F17; */
+}
+
+.description {
+    /* Body 1 */
+    font-family: var(--font_body);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    /* BShades-500 */
+    color: var(--BCV_500);
+}

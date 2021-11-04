@@ -1,0 +1,134 @@
+main {
+    height: 100%;
+    border: 1px solid red;
+}
+
+.steps {
+    grid-column: 3/11;
+    height: 94px;
+    margin-top: 60px;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed darkblue;
+}
+
+.step {
+    width: auto;
+    height: 100%;
+    /* border: 1px solid red; */
+    background-color: var(--WHC_500);
+    /* margin-right: 39.5px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.step .item-step {
+    width: 4rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    /* Info-200 */
+    background-color: #A1B9DF;
+    /* BShades-500 */
+    border: 3px solid #141927;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step .item-select {
+    width: 4rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    /* Info-200 */
+    background-color: vra(--WHC_500);
+    /* BShades-500 */
+    border: 3px solid #1550AF;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step .item-step h4,
+.step .item-select h4 {
+    /* H4 */
+    font-family: var(--font_headlines);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    /* BShades-500 */
+    color: #141927;
+}
+
+.step p {
+    /* Subtitle 1 */
+    font-family: var(--font_headlines);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.15px;
+    /* BShades-500 */
+    color: #141927;
+}
+
+.step .des-s {
+    /* Subtitle 1 */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.15px;
+    /* Info-200 */
+    color: #A1B9DF;
+}
+
+.barra1 {
+    margin-top: 30px;
+    margin-left: 67px;
+    position: absolute;
+}
+
+.barra2 {
+    margin-top: 30px;
+    margin-left: 237px;
+    position: absolute;
+}
+
+.barra3 {
+    margin-top: 30px;
+    margin-left: 376px;
+    position: absolute;
+}
+
+.barra4 {
+    margin-top: 30px;
+    margin-left: 496px;
+    position: absolute;
+}
+
+.barra5 {
+    margin-top: 30px;
+    margin-left: 616px;
+    position: absolute;
+}
+
+.barra6 {
+    margin-top: 30px;
+    margin-left: 745px;
+    position: absolute;
+}

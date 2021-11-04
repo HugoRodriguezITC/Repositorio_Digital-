@@ -1,0 +1,31 @@
+-------GENERAL------------
+3. Comentar sobre la letras Monserat y sobre opacidad del doc preview
+4.Tamaño de los iconos del footer
+5.Que usar para el despliegue del menu flotante
+6. Que debe llevar en los iconos de contactenos
+7.Arregalr los chechbox con SPN y no con pseudo-elementos
+
+
+
+
+--------Vista perfil---------
+1. Preguntar sobre los checkbox
+2. Realizar los inputs de cambio de contraseña.
+3.Centrar los textos por defecto de los inputs
+
+
+--------Home-----------------
+1.Agregar el hover y crear el boton de "siguiente"
+
+
+-------footer--------
+1. Agregar punteros a los iconos 
+2.agregar enlaces
+
+
+
+=======================================
+                DARK MODE
+=======================================
+GENERAL 
+1. Checar los chechbox
