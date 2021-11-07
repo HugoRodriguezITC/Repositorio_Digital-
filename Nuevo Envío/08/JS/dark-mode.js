@@ -82,39 +82,52 @@ switchButton.addEventListener('click', () => {
         document.getElementById('label-descrip-2').classList.add('descrip-steps');
         document.getElementById('label-descrip-3').classList.add('descrip-steps');
         document.getElementById('label-descrip-4').classList.add('descrip-steps');
-        document.getElementById('label-descrip-5').classList.add('descrip-steps-w');
-        document.getElementById('label-descrip-6').classList.add('descrip-steps-w7');
-        document.getElementById('label-descrip-7').classList.add('descrip-steps-w7');
+        document.getElementById('label-descrip-5').classList.add('descrip-steps');
+        document.getElementById('label-descrip-6').classList.add('descrip-steps');
+        document.getElementById('label-descrip-7').classList.add('descrip-steps');
         // Cuadros
         document.getElementById('cuadro-descrip-1').classList.add('bg-steps');
         document.getElementById('cuadro-descrip-2').classList.add('bg-steps');
         document.getElementById('cuadro-descrip-3').classList.add('bg-steps');
         document.getElementById('cuadro-descrip-4').classList.add('bg-steps');
-        document.getElementById('cuadro-descrip-5').classList.add('bg-steps-w');
-        document.getElementById('cuadro-descrip-6').classList.add('bg-steps-ns');
-        document.getElementById('cuadro-descrip-7').classList.add('bg-steps-ns');
+        document.getElementById('cuadro-descrip-5').classList.add('bg-steps');
+        document.getElementById('cuadro-descrip-6').classList.add('bg-steps');
+        document.getElementById('cuadro-descrip-7').classList.add('bg-steps');
         // Numeros
         document.getElementById('num-cuadro-1').classList.add('color-num');
         document.getElementById('num-cuadro-2').classList.add('color-num');
         document.getElementById('num-cuadro-3').classList.add('color-num');
         document.getElementById('num-cuadro-4').classList.add('color-num');
-        document.getElementById('num-cuadro-5').classList.add('color-num-w');
+        document.getElementById('num-cuadro-5').classList.add('color-num');
+        document.getElementById('num-cuadro-6').classList.add('color-num');
+        document.getElementById('num-cuadro-7').classList.add('color-num');
+        // Lines
+        document.getElementById('line-1').classList.add('lines-select');
+        document.getElementById('line-2').classList.add('lines-select');
+        document.getElementById('line-3').classList.add('lines-select');
+        document.getElementById('line-4').classList.add('lines-select');
+        document.getElementById('line-5').classList.add('lines-select');
+        document.getElementById('line-6').classList.add('lines-select');
 
 
-        // Legend
-        document.getElementById('legend').classList.add('legend-drak');
+
         // Fieldset
-        document.getElementById('fieldset').classList.add('fieldset-drak');
-        // Labels
-        document.getElementById('labelw-1').classList.add('font-wh');
-        document.getElementById('labelw-2').classList.add('font-wh');
-        document.getElementById('labelw-3').classList.add('font-wh');
-        document.getElementById('labelw-4').classList.add('font-wh');
-        // Buttons
-        document.getElementById('button-bw-1').classList.add('border-w');
-        document.getElementById('button-bw-2').classList.add('border-w');
-        document.getElementById('button-bw-3').classList.add('border-w');
-        document.getElementById('button-bw-4').classList.add('border-w');
+        document.getElementById('legend').classList.add('legend-drak');
+        document.getElementById('fieldset-dark').classList.add('fieldset-drak');
+
+        // Descripcion
+        document.getElementById('descrip').classList.add('bg-ic2');
+        document.getElementById('font-descrip-1').classList.add('color-bc');
+        document.getElementById('font-descrip-2').classList.add('color-bc');
+        document.getElementById('font-descrip-3').classList.add('color-bc');
+        document.getElementById('font-descrip-4').classList.add('color-bc');
+
+        // Label and input
+        document.getElementById('label-font-1').classList.add('font-wh');
+        document.getElementById('label-font-2').classList.add('font-wh');
+
+
+
 
 
 
@@ -171,37 +184,57 @@ switchButton.addEventListener('click', () => {
         document.getElementById('head-dark').classList.remove('dark-headline');
         document.getElementById('font-dark').classList.remove('dark');
 
-
-
         // Steps 
         // Labes
         document.getElementById('label-descrip-1').classList.remove('descrip-steps');
         document.getElementById('label-descrip-2').classList.remove('descrip-steps');
         document.getElementById('label-descrip-3').classList.remove('descrip-steps');
         document.getElementById('label-descrip-4').classList.remove('descrip-steps');
-        document.getElementById('label-descrip-5').classList.remove('descrip-steps-w');
-        document.getElementById('label-descrip-6').classList.remove('descrip-steps-w7');
-        document.getElementById('label-descrip-7').classList.remove('descrip-steps-w7');
+        document.getElementById('label-descrip-5').classList.remove('descrip-steps');
+        document.getElementById('label-descrip-6').classList.remove('descrip-steps');
+        document.getElementById('label-descrip-7').classList.remove('descrip-steps');
         // Cuadros
         document.getElementById('cuadro-descrip-1').classList.remove('bg-steps');
         document.getElementById('cuadro-descrip-2').classList.remove('bg-steps');
         document.getElementById('cuadro-descrip-3').classList.remove('bg-steps');
         document.getElementById('cuadro-descrip-4').classList.remove('bg-steps');
-        document.getElementById('cuadro-descrip-5').classList.remove('bg-steps-w');
-        document.getElementById('cuadro-descrip-6').classList.remove('bg-steps-ns');
-        document.getElementById('cuadro-descrip-7').classList.remove('bg-steps-ns');
+        document.getElementById('cuadro-descrip-5').classList.remove('bg-steps');
+        document.getElementById('cuadro-descrip-6').classList.remove('bg-steps');
+        document.getElementById('cuadro-descrip-7').classList.remove('bg-steps');
         // Numeros
         document.getElementById('num-cuadro-1').classList.remove('color-num');
         document.getElementById('num-cuadro-2').classList.remove('color-num');
         document.getElementById('num-cuadro-3').classList.remove('color-num');
         document.getElementById('num-cuadro-4').classList.remove('color-num');
-        document.getElementById('num-cuadro-5').classList.remove('color-num-w');
+        document.getElementById('num-cuadro-5').classList.remove('color-num');
+        document.getElementById('num-cuadro-6').classList.remove('color-num');
+        document.getElementById('num-cuadro-7').classList.remove('color-num');
         // Lines
         document.getElementById('line-1').classList.remove('lines-select');
         document.getElementById('line-2').classList.remove('lines-select');
         document.getElementById('line-3').classList.remove('lines-select');
         document.getElementById('line-4').classList.remove('lines-select');
         document.getElementById('line-5').classList.remove('lines-select');
+        document.getElementById('line-6').classList.remove('lines-select');
+
+        // Fieldset
+        document.getElementById('legend').classList.remove('legend-drak');
+        document.getElementById('fieldset-dark').classList.remove('fieldset-drak');
+
+        // Descripcion
+        document.getElementById('descrip').classList.remove('bg-ic2');
+        document.getElementById('font-descrip-1').classList.remove('color-bc');
+        document.getElementById('font-descrip-2').classList.remove('color-bc');
+        document.getElementById('font-descrip-3').classList.remove('color-bc');
+        document.getElementById('font-descrip-4').classList.remove('color-bc');
+
+        // Label and input
+        document.getElementById('label-font-1').classList.remove('font-wh');
+        document.getElementById('label-font-2').classList.remove('font-wh');
+
+
+
+
 
 
         // buttons
@@ -211,18 +244,6 @@ switchButton.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.remove('button-next');
 
-
-
-
-        // Legend
-        document.getElementById('legend').classList.remove('legend-drak');
-        // Fieldset
-        document.getElementById('fieldset').classList.remove('fieldset-drak');
-        // Labels
-        document.getElementById('labelw-1').classList.remove('font-wh');
-        document.getElementById('labelw-2').classList.remove('font-wh');
-        document.getElementById('labelw-3').classList.remove('font-wh');
-        document.getElementById('labelw-4').classList.remove('font-wh');
 
 
         // Footer
@@ -299,46 +320,55 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('label-descrip-2').classList.add('descrip-steps');
         document.getElementById('label-descrip-3').classList.add('descrip-steps');
         document.getElementById('label-descrip-4').classList.add('descrip-steps');
-        document.getElementById('label-descrip-5').classList.add('descrip-steps-w');
-        document.getElementById('label-descrip-6').classList.add('descrip-steps-w7');
-        document.getElementById('label-descrip-7').classList.add('descrip-steps-w7');
+        document.getElementById('label-descrip-5').classList.add('descrip-steps');
+        document.getElementById('label-descrip-6').classList.add('descrip-steps');
+        document.getElementById('label-descrip-7').classList.add('descrip-steps');
         // Cuadros
         document.getElementById('cuadro-descrip-1').classList.add('bg-steps');
         document.getElementById('cuadro-descrip-2').classList.add('bg-steps');
         document.getElementById('cuadro-descrip-3').classList.add('bg-steps');
         document.getElementById('cuadro-descrip-4').classList.add('bg-steps');
-        document.getElementById('cuadro-descrip-5').classList.add('bg-steps-w');
-        document.getElementById('cuadro-descrip-6').classList.add('bg-steps-ns');
-        document.getElementById('cuadro-descrip-7').classList.add('bg-steps-ns');
+        document.getElementById('cuadro-descrip-5').classList.add('bg-steps');
+        document.getElementById('cuadro-descrip-6').classList.add('bg-steps');
+        document.getElementById('cuadro-descrip-7').classList.add('bg-steps');
         // Numeros
         document.getElementById('num-cuadro-1').classList.add('color-num');
         document.getElementById('num-cuadro-2').classList.add('color-num');
         document.getElementById('num-cuadro-3').classList.add('color-num');
         document.getElementById('num-cuadro-4').classList.add('color-num');
-        document.getElementById('num-cuadro-5').classList.add('color-num-w');
+        document.getElementById('num-cuadro-5').classList.add('color-num');
+        document.getElementById('num-cuadro-6').classList.add('color-num');
+        document.getElementById('num-cuadro-7').classList.add('color-num');
         // Lines
         document.getElementById('line-1').classList.add('lines-select');
         document.getElementById('line-2').classList.add('lines-select');
         document.getElementById('line-3').classList.add('lines-select');
         document.getElementById('line-4').classList.add('lines-select');
         document.getElementById('line-5').classList.add('lines-select');
+        document.getElementById('line-6').classList.add('lines-select');
 
 
 
-        // Legend
-        document.getElementById('legend').classList.add('legend-drak');
         // Fieldset
-        document.getElementById('fieldset').classList.add('fieldset-drak');
-        // Labels
-        document.getElementById('labelw-1').classList.add('font-wh');
-        document.getElementById('labelw-2').classList.add('font-wh');
-        document.getElementById('labelw-3').classList.add('font-wh');
-        document.getElementById('labelw-4').classList.add('font-wh');
-        // Buttons
-        document.getElementById('button-bw-1').classList.add('border-w');
-        document.getElementById('button-bw-2').classList.add('border-w');
-        document.getElementById('button-bw-3').classList.add('border-w');
-        document.getElementById('button-bw-4').classList.add('border-w');
+        document.getElementById('legend').classList.add('legend-drak');
+        document.getElementById('fieldset-dark').classList.add('fieldset-drak');
+
+        // Descripcion
+        document.getElementById('descrip').classList.add('bg-ic2');
+        document.getElementById('font-descrip-1').classList.add('color-bc');
+        document.getElementById('font-descrip-2').classList.add('color-bc');
+        document.getElementById('font-descrip-3').classList.add('color-bc');
+        document.getElementById('font-descrip-4').classList.add('color-bc');
+
+        // Label and input
+        document.getElementById('label-font-1').classList.add('font-wh');
+        document.getElementById('label-font-2').classList.add('font-wh');
+
+
+
+
+
+
 
 
 
@@ -397,50 +427,60 @@ switchButton2.addEventListener('click', () => {
         // Section
         document.getElementById('head-dark').classList.remove('dark-headline');
         document.getElementById('font-dark').classList.remove('dark');
-
-
-
         // Steps 
         // Labes
         document.getElementById('label-descrip-1').classList.remove('descrip-steps');
         document.getElementById('label-descrip-2').classList.remove('descrip-steps');
         document.getElementById('label-descrip-3').classList.remove('descrip-steps');
         document.getElementById('label-descrip-4').classList.remove('descrip-steps');
-        document.getElementById('label-descrip-5').classList.remove('descrip-steps-w');
-        document.getElementById('label-descrip-6').classList.remove('descrip-steps-w7');
-        document.getElementById('label-descrip-7').classList.remove('descrip-steps-w7');
+        document.getElementById('label-descrip-5').classList.remove('descrip-steps');
+        document.getElementById('label-descrip-6').classList.remove('descrip-steps');
+        document.getElementById('label-descrip-7').classList.remove('descrip-steps');
         // Cuadros
         document.getElementById('cuadro-descrip-1').classList.remove('bg-steps');
         document.getElementById('cuadro-descrip-2').classList.remove('bg-steps');
         document.getElementById('cuadro-descrip-3').classList.remove('bg-steps');
         document.getElementById('cuadro-descrip-4').classList.remove('bg-steps');
-        document.getElementById('cuadro-descrip-5').classList.remove('bg-steps-w');
-        document.getElementById('cuadro-descrip-6').classList.remove('bg-steps-ns');
-        document.getElementById('cuadro-descrip-7').classList.remove('bg-steps-ns');
+        document.getElementById('cuadro-descrip-5').classList.remove('bg-steps');
+        document.getElementById('cuadro-descrip-6').classList.remove('bg-steps');
+        document.getElementById('cuadro-descrip-7').classList.remove('bg-steps');
         // Numeros
         document.getElementById('num-cuadro-1').classList.remove('color-num');
         document.getElementById('num-cuadro-2').classList.remove('color-num');
         document.getElementById('num-cuadro-3').classList.remove('color-num');
         document.getElementById('num-cuadro-4').classList.remove('color-num');
-        document.getElementById('num-cuadro-5').classList.remove('color-num-w');
+        document.getElementById('num-cuadro-5').classList.remove('color-num');
+        document.getElementById('num-cuadro-6').classList.remove('color-num');
+        document.getElementById('num-cuadro-7').classList.remove('color-num');
         // Lines
         document.getElementById('line-1').classList.remove('lines-select');
         document.getElementById('line-2').classList.remove('lines-select');
         document.getElementById('line-3').classList.remove('lines-select');
         document.getElementById('line-4').classList.remove('lines-select');
         document.getElementById('line-5').classList.remove('lines-select');
+        document.getElementById('line-6').classList.remove('lines-select');
 
-
-
-        // Legend
-        document.getElementById('legend').classList.remove('legend-drak');
         // Fieldset
-        document.getElementById('fieldset').classList.remove('fieldset-drak');
-        // Labels
-        document.getElementById('labelw-1').classList.remove('font-wh');
-        document.getElementById('labelw-2').classList.remove('font-wh');
-        document.getElementById('labelw-3').classList.remove('font-wh');
-        document.getElementById('labelw-4').classList.remove('font-wh');
+        document.getElementById('legend').classList.remove('legend-drak');
+        document.getElementById('fieldset-dark').classList.remove('fieldset-drak');
+
+        // Descripcion
+        document.getElementById('descrip').classList.remove('bg-ic2');
+        document.getElementById('font-descrip-1').classList.remove('color-bc');
+        document.getElementById('font-descrip-2').classList.remove('color-bc');
+        document.getElementById('font-descrip-3').classList.remove('color-bc');
+        document.getElementById('font-descrip-4').classList.remove('color-bc');
+
+        // Label and input
+        document.getElementById('label-font-1').classList.remove('font-wh');
+        document.getElementById('label-font-2').classList.remove('font-wh');
+
+
+
+
+
+
+
 
 
         // buttons
@@ -520,45 +560,48 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('label-descrip-2').classList.add('descrip-steps');
     document.getElementById('label-descrip-3').classList.add('descrip-steps');
     document.getElementById('label-descrip-4').classList.add('descrip-steps');
-    document.getElementById('label-descrip-5').classList.add('descrip-steps-w');
-    document.getElementById('label-descrip-6').classList.add('descrip-steps-w7');
-    document.getElementById('label-descrip-7').classList.add('descrip-steps-w7');
+    document.getElementById('label-descrip-5').classList.add('descrip-steps');
+    document.getElementById('label-descrip-6').classList.add('descrip-steps');
+    document.getElementById('label-descrip-7').classList.add('descrip-steps');
     // Cuadros
     document.getElementById('cuadro-descrip-1').classList.add('bg-steps');
     document.getElementById('cuadro-descrip-2').classList.add('bg-steps');
     document.getElementById('cuadro-descrip-3').classList.add('bg-steps');
     document.getElementById('cuadro-descrip-4').classList.add('bg-steps');
-    document.getElementById('cuadro-descrip-5').classList.add('bg-steps-w');
-    document.getElementById('cuadro-descrip-6').classList.add('bg-steps-ns');
-    document.getElementById('cuadro-descrip-7').classList.add('bg-steps-ns');
+    document.getElementById('cuadro-descrip-5').classList.add('bg-steps');
+    document.getElementById('cuadro-descrip-6').classList.add('bg-steps');
+    document.getElementById('cuadro-descrip-7').classList.add('bg-steps');
     // Numeros
     document.getElementById('num-cuadro-1').classList.add('color-num');
     document.getElementById('num-cuadro-2').classList.add('color-num');
     document.getElementById('num-cuadro-3').classList.add('color-num');
     document.getElementById('num-cuadro-4').classList.add('color-num');
-    document.getElementById('num-cuadro-5').classList.add('color-num-w');
+    document.getElementById('num-cuadro-5').classList.add('color-num');
+    document.getElementById('num-cuadro-6').classList.add('color-num');
+    document.getElementById('num-cuadro-7').classList.add('color-num');
     // Lines
     document.getElementById('line-1').classList.add('lines-select');
     document.getElementById('line-2').classList.add('lines-select');
     document.getElementById('line-3').classList.add('lines-select');
     document.getElementById('line-4').classList.add('lines-select');
     document.getElementById('line-5').classList.add('lines-select');
+    document.getElementById('line-6').classList.add('lines-select');
 
-    // Legend
-    document.getElementById('legend').classList.add('legend-drak');
+
     // Fieldset
-    document.getElementById('fieldset').classList.add('fieldset-drak');
-    // Labels
-    document.getElementById('labelw-1').classList.add('font-wh');
-    document.getElementById('labelw-2').classList.add('font-wh');
-    document.getElementById('labelw-3').classList.add('font-wh');
-    document.getElementById('labelw-4').classList.add('font-wh');
-    // Buttons
-    document.getElementById('button-bw-1').classList.add('border-w');
-    document.getElementById('button-bw-2').classList.add('border-w');
-    document.getElementById('button-bw-3').classList.add('border-w');
-    document.getElementById('button-bw-4').classList.add('border-w');
+    document.getElementById('legend').classList.add('legend-drak');
+    document.getElementById('fieldset-dark').classList.add('fieldset-drak');
 
+    // Descripcion
+    document.getElementById('descrip').classList.add('bg-ic2');
+    document.getElementById('font-descrip-1').classList.add('color-bc');
+    document.getElementById('font-descrip-2').classList.add('color-bc');
+    document.getElementById('font-descrip-3').classList.add('color-bc');
+    document.getElementById('font-descrip-4').classList.add('color-bc');
+
+    // Label and input
+    document.getElementById('label-font-1').classList.add('font-wh');
+    document.getElementById('label-font-2').classList.add('font-wh');
 
 
 
@@ -626,44 +669,53 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('label-descrip-2').classList.remove('descrip-steps');
     document.getElementById('label-descrip-3').classList.remove('descrip-steps');
     document.getElementById('label-descrip-4').classList.remove('descrip-steps');
-    document.getElementById('label-descrip-5').classList.remove('descrip-steps-w');
-    document.getElementById('label-descrip-6').classList.remove('descrip-steps-w7');
-    document.getElementById('label-descrip-7').classList.remove('descrip-steps-w7');
+    document.getElementById('label-descrip-5').classList.remove('descrip-steps');
+    document.getElementById('label-descrip-6').classList.remove('descrip-steps');
+    document.getElementById('label-descrip-7').classList.remove('descrip-steps');
     // Cuadros
     document.getElementById('cuadro-descrip-1').classList.remove('bg-steps');
     document.getElementById('cuadro-descrip-2').classList.remove('bg-steps');
     document.getElementById('cuadro-descrip-3').classList.remove('bg-steps');
     document.getElementById('cuadro-descrip-4').classList.remove('bg-steps');
-    document.getElementById('cuadro-descrip-5').classList.remove('bg-steps-w');
-    document.getElementById('cuadro-descrip-6').classList.remove('bg-steps-ns');
-    document.getElementById('cuadro-descrip-7').classList.remove('bg-steps-ns');
+    document.getElementById('cuadro-descrip-5').classList.remove('bg-steps');
+    document.getElementById('cuadro-descrip-6').classList.remove('bg-steps');
+    document.getElementById('cuadro-descrip-7').classList.remove('bg-steps');
     // Numeros
     document.getElementById('num-cuadro-1').classList.remove('color-num');
     document.getElementById('num-cuadro-2').classList.remove('color-num');
     document.getElementById('num-cuadro-3').classList.remove('color-num');
     document.getElementById('num-cuadro-4').classList.remove('color-num');
-    document.getElementById('num-cuadro-5').classList.remove('color-num-w');
+    document.getElementById('num-cuadro-5').classList.remove('color-num');
+    document.getElementById('num-cuadro-6').classList.remove('color-num');
+    document.getElementById('num-cuadro-7').classList.remove('color-num');
     // Lines
     document.getElementById('line-1').classList.remove('lines-select');
     document.getElementById('line-2').classList.remove('lines-select');
     document.getElementById('line-3').classList.remove('lines-select');
     document.getElementById('line-4').classList.remove('lines-select');
     document.getElementById('line-5').classList.remove('lines-select');
+    document.getElementById('line-6').classList.remove('lines-select');
 
-    // Legend
-    document.getElementById('legend').classList.remove('legend-drak');
+
     // Fieldset
-    document.getElementById('fieldset').classList.remove('fieldset-drak');
-    // Labels
-    document.getElementById('labelw-1').classList.remove('font-wh');
-    document.getElementById('labelw-2').classList.remove('font-wh');
-    document.getElementById('labelw-3').classList.remove('font-wh');
-    document.getElementById('labelw-4').classList.remove('font-wh');
-    // Buttons
-    document.getElementById('button-bw-1').classList.remove('border-w');
-    document.getElementById('button-bw-2').classList.remove('border-w');
-    document.getElementById('button-bw-3').classList.remove('border-w');
-    document.getElementById('button-bw-4').classList.remove('border-w');
+    document.getElementById('legend').classList.remove('legend-drak');
+    document.getElementById('fieldset-dark').classList.remove('fieldset-drak');
+
+    // Descripcion
+    document.getElementById('descrip').classList.remove('bg-ic2');
+    document.getElementById('font-descrip-1').classList.remove('color-bc');
+    document.getElementById('font-descrip-2').classList.remove('color-bc');
+    document.getElementById('font-descrip-3').classList.remove('color-bc');
+    document.getElementById('font-descrip-4').classList.remove('color-bc');
+
+    // Label and input
+    document.getElementById('label-font-1').classList.remove('font-wh');
+    document.getElementById('label-font-2').classList.remove('font-wh');
+
+
+
+
+
 
 
     // buttons
