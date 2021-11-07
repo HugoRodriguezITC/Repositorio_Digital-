@@ -28,7 +28,6 @@ const SUCV_200 = '#A3DEBB';
 switchButton.addEventListener('click', () => {
 
 
-    alert('Aqui paso a dark mode');
 
     // Ocultar moon
     switchButton.style.display = 'none';
@@ -70,6 +69,26 @@ switchButton.addEventListener('click', () => {
 
         // organims-dark
         document.getElementById('organims-dark').style.backgroundColor = BCV_400;
+
+        // Labels  
+        document.getElementById('sub-label-1').classList.add('font-wh');
+        document.getElementById('sub-label-2').classList.add('font-wh');
+        document.getElementById('sub-label-3').classList.add('font-wh');
+        document.getElementById('sub-label-4').classList.add('font-wh');
+        document.getElementById('sub-label-5').classList.add('font-wh');
+        document.getElementById('sub-label-6').classList.add('font-wh');
+        document.getElementById('sub-label-7').classList.add('font-wh');
+        document.getElementById('sub-label-8').classList.add('font-wh');
+        document.getElementById('sub-label-9').classList.add('font-wh');
+        document.getElementById('sub-label-10').classList.add('font-wh');
+        document.getElementById('sub-label-11').classList.add('font-wh');
+        document.getElementById('sub-label-12').classList.add('font-wh');
+        document.getElementById('sub-label-13').classList.add('font-wh');
+        document.getElementById('sub-label-14').classList.add('font-wh');
+        document.getElementById('sub-label-15').classList.add('font-wh');
+        document.getElementById('sub-label-16').classList.add('font-wh');
+        // Boxshadow
+        document.getElementById('organims-dark').classList.add('bg-boxsaw');
 
         // Slider
         document.getElementById('slider-dark').style.backgroundColor = BCV_200;
@@ -125,19 +144,33 @@ switchButton.addEventListener('click', () => {
         // organims-dark
         document.getElementById('organims-dark').style.backgroundColor = WHCV_500;
 
+
+        // Labels  
+        document.getElementById('sub-label-1').classList.remove('font-wh');
+        document.getElementById('sub-label-2').classList.remove('font-wh');
+        document.getElementById('sub-label-3').classList.remove('font-wh');
+        document.getElementById('sub-label-4').classList.remove('font-wh');
+        document.getElementById('sub-label-5').classList.remove('font-wh');
+        document.getElementById('sub-label-6').classList.remove('font-wh');
+        document.getElementById('sub-label-7').classList.remove('font-wh');
+        document.getElementById('sub-label-8').classList.remove('font-wh');
+        document.getElementById('sub-label-9').classList.remove('font-wh');
+        document.getElementById('sub-label-10').classList.remove('font-wh');
+        document.getElementById('sub-label-11').classList.remove('font-wh');
+        document.getElementById('sub-label-12').classList.remove('font-wh');
+        document.getElementById('sub-label-13').classList.remove('font-wh');
+        document.getElementById('sub-label-14').classList.remove('font-wh');
+        document.getElementById('sub-label-15').classList.remove('font-wh');
+        document.getElementById('sub-label-16').classList.remove('font-wh');
+
+        // Boxshadow
+        document.getElementById('organims-dark').classList.remove('bg-boxsaw');
         // Slider
         document.getElementById('slider-dark').style.backgroundColor = BCV_500;
         // Cards
         document.getElementById('content-dark').style.backgroundColor = WHCV_500;
         document.getElementById('content1-dark').style.backgroundColor = WHCV_500;
         document.getElementById('content2-dark').style.backgroundColor = WHCV_500;
-
-
-
-
-
-
-
 
 
 
@@ -172,7 +205,6 @@ switchButton.addEventListener('click', () => {
 
 switchButton2.addEventListener('click', () => {
 
-    alert('Aqui quito dark mode');
 
     // Ocultar moon
     switchButton.style.display = 'block';
@@ -206,6 +238,26 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-FH2').classList.add('dark-font');
         // organims-dark
         document.getElementById('organims-dark').style.backgroundColor = BCV_400;
+
+        // Labels  
+        document.getElementById('sub-label-1').classList.add('font-wh');
+        document.getElementById('sub-label-2').classList.add('font-wh');
+        document.getElementById('sub-label-3').classList.add('font-wh');
+        document.getElementById('sub-label-4').classList.add('font-wh');
+        document.getElementById('sub-label-5').classList.add('font-wh');
+        document.getElementById('sub-label-6').classList.add('font-wh');
+        document.getElementById('sub-label-7').classList.add('font-wh');
+        document.getElementById('sub-label-8').classList.add('font-wh');
+        document.getElementById('sub-label-9').classList.add('font-wh');
+        document.getElementById('sub-label-10').classList.add('font-wh');
+        document.getElementById('sub-label-11').classList.add('font-wh');
+        document.getElementById('sub-label-12').classList.add('font-wh');
+        document.getElementById('sub-label-13').classList.add('font-wh');
+        document.getElementById('sub-label-14').classList.add('font-wh');
+        document.getElementById('sub-label-15').classList.add('font-wh');
+        document.getElementById('sub-label-16').classList.add('font-wh');
+        // Boxshadow
+        document.getElementById('organims-dark').classList.add('bg-boxsaw');
 
         // Slider
         document.getElementById('slider-dark').style.backgroundColor = BCV_200;
@@ -267,6 +319,28 @@ switchButton2.addEventListener('click', () => {
 
         // organims-dark
         document.getElementById('organims-dark').style.backgroundColor = WHCV_500;
+
+
+        // Labels  
+        document.getElementById('sub-label-1').classList.remove('font-wh');
+        document.getElementById('sub-label-2').classList.remove('font-wh');
+        document.getElementById('sub-label-3').classList.remove('font-wh');
+        document.getElementById('sub-label-4').classList.remove('font-wh');
+        document.getElementById('sub-label-5').classList.remove('font-wh');
+        document.getElementById('sub-label-6').classList.remove('font-wh');
+        document.getElementById('sub-label-7').classList.remove('font-wh');
+        document.getElementById('sub-label-8').classList.remove('font-wh');
+        document.getElementById('sub-label-9').classList.remove('font-wh');
+        document.getElementById('sub-label-10').classList.remove('font-wh');
+        document.getElementById('sub-label-11').classList.remove('font-wh');
+        document.getElementById('sub-label-12').classList.remove('font-wh');
+        document.getElementById('sub-label-13').classList.remove('font-wh');
+        document.getElementById('sub-label-14').classList.remove('font-wh');
+        document.getElementById('sub-label-15').classList.remove('font-wh');
+        document.getElementById('sub-label-16').classList.remove('font-wh');
+
+        // Boxshadow
+        document.getElementById('organims-dark').classList.remove('bg-boxsaw');
 
 
         // Slider
@@ -344,6 +418,28 @@ if (localStorage.getItem('theme') == 'true') {
 
     // organims-dark
     document.getElementById('organims-dark').style.backgroundColor = BCV_400;
+
+    // Labels  
+    document.getElementById('sub-label-1').classList.add('font-wh');
+    document.getElementById('sub-label-2').classList.add('font-wh');
+    document.getElementById('sub-label-3').classList.add('font-wh');
+    document.getElementById('sub-label-4').classList.add('font-wh');
+    document.getElementById('sub-label-5').classList.add('font-wh');
+    document.getElementById('sub-label-6').classList.add('font-wh');
+    document.getElementById('sub-label-7').classList.add('font-wh');
+    document.getElementById('sub-label-8').classList.add('font-wh');
+    document.getElementById('sub-label-9').classList.add('font-wh');
+    document.getElementById('sub-label-10').classList.add('font-wh');
+    document.getElementById('sub-label-11').classList.add('font-wh');
+    document.getElementById('sub-label-12').classList.add('font-wh');
+    document.getElementById('sub-label-13').classList.add('font-wh');
+    document.getElementById('sub-label-14').classList.add('font-wh');
+    document.getElementById('sub-label-15').classList.add('font-wh');
+    document.getElementById('sub-label-16').classList.add('font-wh');
+
+    // Boxshadow
+    document.getElementById('organims-dark').classList.add('bg-boxsaw');
+
 
     // Slider
     document.getElementById('slider-dark').style.backgroundColor = BCV_200;
@@ -463,19 +559,33 @@ if (localStorage.getItem('theme') == 'true') {
     // organims-dark
     document.getElementById('organims-dark').style.backgroundColor = WHCV_500;
 
+    // Labels  
+    document.getElementById('sub-label-1').classList.remove('font-wh');
+    document.getElementById('sub-label-2').classList.remove('font-wh');
+    document.getElementById('sub-label-3').classList.remove('font-wh');
+    document.getElementById('sub-label-4').classList.remove('font-wh');
+    document.getElementById('sub-label-5').classList.remove('font-wh');
+    document.getElementById('sub-label-6').classList.remove('font-wh');
+    document.getElementById('sub-label-7').classList.remove('font-wh');
+    document.getElementById('sub-label-8').classList.remove('font-wh');
+    document.getElementById('sub-label-9').classList.remove('font-wh');
+    document.getElementById('sub-label-10').classList.remove('font-wh');
+    document.getElementById('sub-label-11').classList.remove('font-wh');
+    document.getElementById('sub-label-12').classList.remove('font-wh');
+    document.getElementById('sub-label-13').classList.remove('font-wh');
+    document.getElementById('sub-label-14').classList.remove('font-wh');
+    document.getElementById('sub-label-15').classList.remove('font-wh');
+    document.getElementById('sub-label-16').classList.remove('font-wh');
+
+    // Boxshadow
+    document.getElementById('organims-dark').classList.remove('bg-boxsaw');
+
     // Slider
     document.getElementById('slider-dark').style.backgroundColor = BCV_500;
     // Cards
     document.getElementById('content-dark').style.backgroundColor = WHCV_500;
     document.getElementById('content1-dark').style.backgroundColor = WHCV_500;
     document.getElementById('content2-dark').style.backgroundColor = WHCV_500;
-
-
-
-
-
-
-
 
 
 

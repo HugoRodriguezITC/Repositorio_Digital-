@@ -107,6 +107,12 @@ switchButton.addEventListener('click', () => {
         document.getElementById('item-dark2').style.backgroundColor = PCV_200;
 
 
+        // Boxshaw
+        document.getElementById('item-dark').classList.add('bg-boxsaw');
+        document.getElementById('item-dark2').classList.add('bg-boxsaw');
+
+
+
 
 
 
@@ -201,6 +207,11 @@ switchButton.addEventListener('click', () => {
 
         // Item List
         document.getElementById('item-dark2').style.backgroundColor = WHCV_500;
+
+
+        // Boxshaw
+        document.getElementById('item-dark').classList.remove('bg-boxsaw');
+        document.getElementById('item-dark2').classList.remove('bg-boxsaw');
 
 
 
@@ -318,6 +329,10 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('item-dark2').style.backgroundColor = PCV_200;
 
 
+        // Boxshaw
+        document.getElementById('item-dark').classList.add('bg-boxsaw');
+        document.getElementById('item-dark2').classList.add('bg-boxsaw');
+
 
 
 
@@ -406,6 +421,12 @@ switchButton2.addEventListener('click', () => {
 
         // Item List
         document.getElementById('item-dark2').style.backgroundColor = WHCV_500;
+
+
+        // Boxshaw
+        document.getElementById('item-dark').classList.remove('bg-boxsaw');
+        document.getElementById('item-dark2').classList.remove('bg-boxsaw');
+
 
 
 
@@ -513,6 +534,10 @@ if (localStorage.getItem('theme') == 'true') {
     // Item List
     document.getElementById('item-dark2').style.backgroundColor = PCV_200;
 
+    // Boxshaw
+    document.getElementById('item-dark').classList.add('bg-boxsaw');
+    document.getElementById('item-dark2').classList.add('bg-boxsaw');
+
 
 
 
@@ -608,6 +633,10 @@ if (localStorage.getItem('theme') == 'true') {
     // Item List
     document.getElementById('item-dark2').style.backgroundColor = WHCV_500;
 
+
+    // Boxshaw
+    document.getElementById('item-dark').classList.remove('bg-boxsaw');
+    document.getElementById('item-dark2').classList.remove('bg-boxsaw');
 
 
 

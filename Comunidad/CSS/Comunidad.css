@@ -480,3 +480,14 @@ table td {
     /*  */
     color: var(--BCV_700);
 }
+
+
+/* Dark mode */
+
+.font-wh {
+    color: var(--WHCV_500) !important;
+}
+
+.bg-boxsaw {
+    box-shadow: 4px 8px 8px 0px #A1A3A980;
+}

@@ -22,10 +22,6 @@
     border: 1px solid #141927;
     box-sizing: border-box;
     border-radius: 16px;
-}
-
-.create-new a {
-    /*  */
     /* Button */
     font-family: var(--font_body);
     font-style: normal;
@@ -543,4 +539,8 @@ DARK MODE
     background-color: var(--ECV_200);
     border: 1px solid var(--WHCV_500);
     color: var(--BCV_500);
+}
+
+.bg-boxsaw {
+    box-shadow: 4px 8px 8px 0px #A1A3A980 !important;
 }

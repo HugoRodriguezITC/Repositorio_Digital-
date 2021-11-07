@@ -146,9 +146,6 @@
     border: 1px solid #141927;
     box-sizing: border-box;
     border-radius: 16px;
-}
-
-.save-cl a {
     /* Button */
     font-family: var(--font_body);
     font-style: normal;
@@ -176,4 +173,16 @@ DARK MODE
 
 .border-black {
     border: 2px solid var(--BCV_500);
+}
+
+.buton-dark {
+    background-color: var(--BCV_500) !important;
+    color: var(--WHCV_500) !important;
+    border: 2px solid var(--WHCV_500) !important;
+}
+
+.newbutton-dark {
+    background-color: var(--PCV_200) !important;
+    color: var(--BCV_500) !important;
+    border: 1px solid var(--WHCV_500) !important;
 }

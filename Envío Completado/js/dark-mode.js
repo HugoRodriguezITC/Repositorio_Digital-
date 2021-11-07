@@ -75,11 +75,9 @@ switchButton.addEventListener('click', () => {
         // Font
         document.getElementById('font-bc1').style.color = BCV_500;
         document.getElementById('font-bc2').style.color = BCV_500;
-
         // Buttons
         document.getElementById('see-send').classList.add('buton-dark');
         document.getElementById('new-send').classList.add('newbutton-dark');
-        document.getElementById('new-send-a').style.color = BCV_500;
 
 
 
@@ -150,8 +148,6 @@ switchButton.addEventListener('click', () => {
         // Buttons
         document.getElementById('see-send').classList.remove('buton-dark');
         document.getElementById('new-send').classList.remove('newbutton-dark');
-        document.getElementById('new-send-a').style.color = WHCV_500;
-
 
 
 
@@ -247,7 +243,6 @@ switchButton2.addEventListener('click', () => {
         // Buttons
         document.getElementById('see-send').classList.add('buton-dark');
         document.getElementById('new-send').classList.add('newbutton-dark');
-        document.getElementById('new-send-a').style.color = BCV_500;
 
 
 
@@ -323,8 +318,6 @@ switchButton2.addEventListener('click', () => {
         // Buttons
         document.getElementById('see-send').classList.remove('buton-dark');
         document.getElementById('new-send').classList.remove('newbutton-dark');
-        document.getElementById('new-send-a').style.color = WHCV_500;
-
 
 
 
@@ -414,7 +407,7 @@ if (localStorage.getItem('theme') == 'true') {
     // Buttons
     document.getElementById('see-send').classList.add('buton-dark');
     document.getElementById('new-send').classList.add('newbutton-dark');
-    document.getElementById('new-send-a').style.color = BCV_500;
+
 
 
 
@@ -491,7 +484,6 @@ if (localStorage.getItem('theme') == 'true') {
     // Buttons
     document.getElementById('see-send').classList.remove('buton-dark');
     document.getElementById('new-send').classList.remove('newbutton-dark');
-    document.getElementById('new-send-a').style.color = WHCV_500;
 
 
 
