@@ -383,27 +383,27 @@
                     <!-- Serie -->
                     <article class="cont-serie">
                         <!-- Titulo -->
-                        <h6>Serie(s) / Num. Reporte</h6>
+                        <h6 id="label-series">Serie(s) / Num. Reporte</h6>
                         <!-- Descripcion -->
-                        <div class="descripc">
-                            <h6>Ingrese la serie y el número asignado a este artículo por su comunidad.</h6>
+                        <div id="descrip-1" class="descripc">
+                            <h6 id="descrip-dark"> Ingrese la serie y el número asignado a este artículo por su comunidad.</h6>
                         </div>
                         <!-- Inputs Buttons -->
                         <div class="inputs-butt">
                             <div class="item-input-serie">
-                                <label for="">Nombre de la serie</label>
-                                <input type="text">
+                                <label id="label-dark-1" for="">Nombre de la serie</label>
+                                <input id="input1-dark-series" type="text">
                             </div>
                             <div class="item-input-serie">
-                                <label for="">Num. de Informe</label>
-                                <input type="text" class="padding-left" placeholder="5464656858">
+                                <label id="label-dark-2" for="">Num. de Informe</label>
+                                <input id="input2-dark-series" type="text" class="padding-left" placeholder="5464656858">
                             </div>
                             <!-- Add -->
                             <div class="add-item">
                                 <!-- Add -->
                                 <svg class="img-source cursor" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" fill="#1AAC54" />
-                                    <path
+                                    <rect id="add-series" x="0.5" y="0.5" width="31" height="31" rx="3.5" fill="#1AAC54" />
+                                    <path 
                                         d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
                                         fill="#141927" />
                                     <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="#141927" />
@@ -415,21 +415,21 @@
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check7" id="check7">
-                                <label class="label" for="check7">Nombre; número de la serie</label>
+                                <label id="label-1-series" class="label" for="check7">Nombre; número de la serie</label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check8" id="check8">
-                                <label class="label" for="check8">Nombre; número de la serie </label>
+                                <label id="label-2-series" class="label" for="check8">Nombre; número de la serie </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check9" id="check9">
-                                <label class="label" for="check9">Nombre; número de la serie 2</label>
+                                <label id="label-3-series" class="label" for="check9">Nombre; número de la serie </label>
                             </div>
                         </div>
                         <!-- Button -->
-                        <button class="remove-nums cursor">QUITAR NÚMERO(S) DE SERIE</button>
+                        <button id="remove-button-dark-2" class="remove-nums cursor">QUITAR NÚMERO(S) DE SERIE</button>
                     </article>
 
 
@@ -437,15 +437,15 @@
                     <!-- Identificador -->
                     <article class="cont-ident">
                         <!-- Titulo -->
-                        <h6>Edentificador(es)</h6>
+                        <h6 id="label-identifi">Edentificador(es)</h6>
                         <!-- Descripcion -->
-                        <div class="descripc">
-                            <h6>Si el artículo tiene algún número de identificación o código asociado, ingrese los tipos y los números o códigos reales.</h6>
+                        <div id="descrip-2" class="descripc">
+                            <h6 id="identifi-dark">Si el artículo tiene algún número de identificación o código asociado, ingrese los tipos y los números o códigos reales.</h6>
                         </div>
                         <!-- Inputs Buttons -->
                         <div class="inputs-butt">
                             <div class="item-input-ident">
-                                <select class="select1" name="OS">
+                                <select id="input1-dark-identifi" class="select1" name="OS">
                                     <option value="1">ISSN</option>
                                     <option value="2">Opción 2</option>
                                     <option value="3">Opción 3</option>
@@ -454,13 +454,13 @@
                             </div>
                             <div class="item-input-ident">
 
-                                <input type="text" class="padding-left" placeholder="5464656858">
+                                <input id="input2-dark-identifi" type="text" class="padding-left" placeholder="5464656858">
                             </div>
                             <!-- Add -->
                             <div class="add-item">
                                 <!-- Add -->
                                 <svg class="img-source cursor" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" fill="#1AAC54" />
+                                    <rect id="add-identifi" x="0.5" y="0.5" width="31" height="31" rx="3.5" fill="#1AAC54" />
                                     <path
                                         d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
                                         fill="#141927" />
@@ -473,21 +473,21 @@
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check10" id="check10">
-                                <label class="label" for="check10">Tipo; valor_de_identificación</label>
+                                <label id="label-1-identifi" class="label" for="check10">Tipo; valor_de_identificación</label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check11" id="check11">
-                                <label class="label" for="check11">Tipo; valor_de_identificación </label>
+                                <label id="label-2-identifi" class="label" for="check11">Tipo; valor_de_identificación </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check12" id="check12">
-                                <label class="label" for="check12">Tipo; valor_de_identificación</label>
+                                <label id="label-3-identifi" class="label" for="check12">Tipo; valor_de_identificación</label>
                             </div>
                         </div>
                         <!-- Button -->
-                        <button class="remove-nums cursor">QUITAR IDENTIFICADOR(ES)</button>
+                        <button id="remove-button-dark-3" class="remove-nums cursor">QUITAR IDENTIFICADOR(ES)</button>
                     </article>
 
 
@@ -496,12 +496,12 @@
                     <!-- type -->
                     <article class="cont-type">
                         <!-- Titulo -->
-                        <h6>Tipo (s)</h6>
+                        <h6 id="label-type">Tipo (s)</h6>
                         <!--select and button  -->
                         <div class="item-type">
                             <div class="select-type">
-                                <label for="">Seleccione el (los) tipo(s) de contenido del artículo.</label>
-                                <select class="select1" name="OS">
+                                <label id="label-type-2" for="">Seleccione el (los) tipo(s) de contenido del artículo.</label>
+                                <select id="input1-dark-type" class="select1" name="OS">
                                     <option value="1">Reporte técnico</option>
                                     <option value="2">Opción 2</option>
                                     <option value="3">Opción 3</option>
@@ -510,7 +510,7 @@
                             <!-- Add -->
                             <div class="add-item">
                                 <svg class="img-source cursor" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" fill="#1AAC54" />
+                                    <rect id="add-type" x="0.5" y="0.5" width="31" height="31" rx="3.5" fill="#1AAC54" />
                                     <path
                                         d="M25.3327 17.3333H17.3327V25.3333H14.666V17.3333H6.66602V14.6666H14.666V6.66663H17.3327V14.6666H25.3327V17.3333Z"
                                         fill="#141927" />
@@ -523,21 +523,21 @@
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check13" id="check13">
-                                <label class="label" for="check13">Tipo 1</label>
+                                <label id="label-1-type" class="label" for="check13">Tipo 1</label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check14" id="check14">
-                                <label class="label" for="check14">Tipo 2 </label>
+                                <label id="label-2-type" class="label" for="check14">Tipo 2 </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
                                 <input class="style-check" type="checkbox" name="check15" id="check15">
-                                <label class="label" for="check15">Tipo 3</label>
+                                <label id="label-3-type" class="label" for="check15">Tipo 3</label>
                             </div>
                         </div>
                         <!-- Button -->
-                        <button>QUITAR TÍTULO(S)</button>
+                        <button id="remove-button-dark-4">QUITAR TÍTULO(S)</button>
                     </article>
 
 
@@ -545,14 +545,14 @@
                     <!-- Lenguaje -->
                     <article class="cont-lenguaje">
                         <!-- Titulo -->
-                        <h6>Lenguaje</h6>
+                        <h6 id="label-lenguajes">Lenguaje</h6>
                         <!-- Descripcion -->
-                        <div class="descripc-lenguaje">
-                            <h6>Seleccione el idioma del contenido principal del artículo. Si el idioma no aparece en la lista, seleccione 'Otro'. Si el contenido realmente no tiene un idioma (por ejemplo, si es un conjunto de datos o una imagen), seleccione
+                        <div id="descrip-3" class="descripc-lenguaje">
+                            <h6 id="lenguaje-dark">Seleccione el idioma del contenido principal del artículo. Si el idioma no aparece en la lista, seleccione 'Otro'. Si el contenido realmente no tiene un idioma (por ejemplo, si es un conjunto de datos o una imagen), seleccione
                                 'N / A'.</h6>
                         </div>
                         <!-- Select -->
-                        <select class="select1" name="OS">
+                        <select id="input1-dark-lenguaje" class="select1" name="OS">
                             <option value="1">Español</option>
                             <option value="2">Opción 2</option>
                             <option value="3">Opción 3</option>
@@ -567,12 +567,12 @@
             <!-- Botones -->
             <div class="botones">
                 <!-- Cancel -->
-                <button class="cancel-button cursor">
+                <button id="cancel-button" class="cancel-button cursor">
                     GUARDAR Y SALIR
                 </button>
                 <!-- Next -->
-                <button class="next-button cursor">
-                    <a href="/Nuevo Envío/03/Describir Item.html">SIGUIENTE</a>
+                <button id="next-button" onclick="location.href='/Nuevo Envío/03/Describir Item.html'" class="next-button cursor">
+                    SIGUIENTE             
                 </button>
             </div>
 

@@ -1098,9 +1098,6 @@ input[type=checkbox]:checked+label::before {
     border: 1px solid #141927;
     box-sizing: border-box;
     border-radius: 16px;
-}
-
-.next-button a {
     /* Button */
     font-family: var(--font_body);
     font-style: normal;
@@ -1318,6 +1315,24 @@ DARK MODE
 
 .remove-button-dark {
     background-color: var(--ECV_200);
+    border: 1px solid var(--WHCV_500);
+    color: var(--BCV_500);
+}
+
+.remove-button-dark2 {
+    background-color: var(--ECV_200) !important;
+    border: 1px solid var(--WHCV_500) !important;
+    color: var(--BCV_500) !important;
+}
+
+.cancel-button-dark {
+    background-color: var(--BCV_500);
+    border: 2px solid var(--WHCV_500);
+    color: var(--WHCV_500);
+}
+
+.next-button-dark {
+    background-color: var(--PCV_200);
     border: 1px solid var(--WHCV_500);
     color: var(--BCV_500);
 }

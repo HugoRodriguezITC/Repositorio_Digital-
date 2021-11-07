@@ -195,6 +195,87 @@ switchButton.addEventListener('click', () => {
         document.getElementById('descrip-dark-1').style.color = ICV_200;
         document.getElementById('descrip-dark-2').style.color = ICV_200;
 
+        // ===========================================================>
+        // Label Series
+        document.getElementById('label-series').style.color = WHCV_500;
+        document.getElementById('descrip-1').style.backgroundColor = ICV_200;
+        document.getElementById('descrip-dark').style.color = BCV_500;
+        // Labels Inputs
+        document.getElementById('label-dark-1').style.color = WHCV_500;
+        document.getElementById('label-dark-2').style.color = WHCV_500;
+        // Input 1
+        document.getElementById('input1-dark-series').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-series').style.color = WHCV_500;
+        document.getElementById('input1-dark-series').style.border = '1px solid #F9F9F9';
+        // Input 2
+        document.getElementById('input2-dark-series').style.backgroundColor = BCV_400;
+        document.getElementById('input2-dark-series').style.color = WHCV_500;
+        document.getElementById('input2-dark-series').style.border = '1px solid #F9F9F9';
+        // Button Series
+        document.getElementById('add-series').style.fill = SUCV_200;
+        // Labels check
+        document.getElementById('label-1-series').style.color = WHCV_500;
+        document.getElementById('label-2-series').style.color = WHCV_500;
+        document.getElementById('label-3-series').style.color = WHCV_500;
+        // Button
+        document.getElementById('remove-button-dark-2').classList.add('remove-button-dark2');
+        // ======================================================================>
+        // Label Series Identificadores
+        document.getElementById('label-identifi').style.color = WHCV_500;
+        document.getElementById('descrip-2').style.backgroundColor = ICV_200;
+        document.getElementById('identifi-dark').style.color = BCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-identifi').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-identifi').style.color = WHCV_500;
+        document.getElementById('input1-dark-identifi').style.border = '1px solid #F9F9F9';
+        // Input 2
+        document.getElementById('input2-dark-identifi').style.backgroundColor = BCV_400;
+        document.getElementById('input2-dark-identifi').style.color = WHCV_500;
+        document.getElementById('input2-dark-identifi').style.border = '1px solid #F9F9F9';
+        // Button Identifi
+        document.getElementById('add-identifi').style.fill = SUCV_200;
+        // Labels check
+        document.getElementById('label-1-identifi').style.color = WHCV_500;
+        document.getElementById('label-2-identifi').style.color = WHCV_500;
+        document.getElementById('label-3-identifi').style.color = WHCV_500;
+        // Button
+        document.getElementById('remove-button-dark-3').classList.add('remove-button-dark2');
+
+
+        // ======================================================================>
+        // Label Series Tipos
+        document.getElementById('label-type').style.color = WHCV_500;
+        document.getElementById('label-type-2').style.color = WHCV_500;
+
+        // Input 1               
+        document.getElementById('input1-dark-type').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-type').style.color = WHCV_500;
+        document.getElementById('input1-dark-type').style.border = '1px solid #F9F9F9';
+        // Button Identifi
+        document.getElementById('add-type').style.fill = SUCV_200;
+        // Labels check
+        document.getElementById('label-1-type').style.color = WHCV_500;
+        document.getElementById('label-2-type').style.color = WHCV_500;
+        document.getElementById('label-3-type').style.color = WHCV_500;
+        // Button
+        document.getElementById('remove-button-dark-4').classList.add('remove-button-dark2');
+        // ======================================================================>
+        // Label Lenguaje
+        document.getElementById('label-lenguajes').style.color = WHCV_500;
+        document.getElementById('descrip-3').style.backgroundColor = ICV_200;
+        document.getElementById('lenguaje-dark').style.color = BCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-lenguaje').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-lenguaje').style.color = WHCV_500;
+        document.getElementById('input1-dark-lenguaje').style.border = '1px solid #F9F9F9';
+        // ======================================================================>
+        // Buttons
+        document.getElementById('cancel-button').classList.add('cancel-button-dark');
+        document.getElementById('next-button').classList.add('next-button-dark');
+
+
+
+
 
 
 
@@ -394,6 +475,85 @@ switchButton.addEventListener('click', () => {
         document.getElementById('descrip-dark-1').style.color = ICV_200;
         document.getElementById('descrip-dark-2').style.color = ICV_200;
 
+        // ===========================================================>
+        // Label Series
+        document.getElementById('label-series').style.color = BCV_500;
+        document.getElementById('descrip-1').style.backgroundColor = ICV_500;
+        document.getElementById('descrip-dark').style.color = WHCV_500;
+        // Labels Inputs
+        document.getElementById('label-dark-1').style.color = WHCV_500;
+        document.getElementById('label-dark-2').style.color = WHCV_500;
+        // Input 1
+        document.getElementById('input1-dark-series').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-series').style.color = BCV_500;
+        document.getElementById('input1-dark-series').style.border = '1px solid #141927';
+        // Input 2
+        document.getElementById('input2-dark-series').style.backgroundColor = WHCV_500;
+        document.getElementById('input2-dark-series').style.color = BCV_500;
+        document.getElementById('input2-dark-series').style.border = '1px solid #141927';
+        // Button Series
+        document.getElementById('add-series').style.fill = SUCV_500;
+        // Labels check
+        document.getElementById('label-1-series').style.color = BCV_500;
+        document.getElementById('label-2-series').style.color = BCV_500;
+        document.getElementById('label-3-series').style.color = BCV_500;
+        // Button
+        document.getElementById('remove-button-dark-2').classList.remove('remove-button-dark2');
+
+        // ======================================================================>
+        // Label Series Identificadores
+        document.getElementById('label-identifi').style.color = BCV_500;
+        document.getElementById('descrip-2').style.backgroundColor = ICV_500;
+        document.getElementById('identifi-dark').style.color = WHCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-identifi').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-identifi').style.color = BCV_500;
+        document.getElementById('input1-dark-identifi').style.border = '1px solid #141927';
+        // Input 2
+        document.getElementById('input2-dark-identifi').style.backgroundColor = WHCV_500;
+        document.getElementById('input2-dark-identifi').style.color = BCV_500;
+        document.getElementById('input2-dark-identifi').style.border = '1px solid #141927';
+        // Button Identifi
+        document.getElementById('add-identifi').style.fill = SUCV_500;
+        // Labels check
+        document.getElementById('label-1-identifi').style.color = BCV_500;
+        document.getElementById('label-2-identifi').style.color = BCV_500;
+        document.getElementById('label-3-identifi').style.color = BCV_500;
+        // Button
+        document.getElementById('remove-button-dark-3').classList.remove('remove-button-dark2');
+
+        // ======================================================================>
+        // Label Series Tipos
+        document.getElementById('label-type').style.color = BCV_500;
+        document.getElementById('label-type-2').style.color = BCV_500;
+
+        // Input 1               
+        document.getElementById('input1-dark-type').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-type').style.color = BCV_500;
+        document.getElementById('input1-dark-type').style.border = '1px solid #141927';
+        // Button Identifi
+        document.getElementById('add-type').style.fill = SUCV_500;
+        // Labels check
+        document.getElementById('label-1-type').style.color = BCV_500;
+        document.getElementById('label-2-type').style.color = BCV_500;
+        document.getElementById('label-3-type').style.color = BCV_500;
+        // Button
+        document.getElementById('remove-button-dark-4').classList.remove('remove-button-dark2');
+        // ======================================================================>
+        // Label Lenguaje
+        document.getElementById('label-lenguajes').style.color = BCV_500;
+        document.getElementById('descrip-3').style.backgroundColor = ICV_500;
+        document.getElementById('lenguaje-dark').style.color = WHCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-lenguaje').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-lenguaje').style.color = BCV_500;
+        document.getElementById('input1-dark-lenguaje').style.border = '1px solid #141927';
+
+        // ======================================================================>
+        // Buttons
+        document.getElementById('cancel-button').classList.remove('cancel-button-dark');
+        document.getElementById('next-button').classList.remove('next-button-dark');
+
 
 
         // Footer
@@ -585,6 +745,82 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('descrip-dark-1').style.color = ICV_200;
         document.getElementById('descrip-dark-2').style.color = ICV_200;
 
+        // ===========================================================>
+        // Label Series
+        document.getElementById('label-series').style.color = WHCV_500;
+        document.getElementById('descrip-1').style.backgroundColor = ICV_200;
+        document.getElementById('descrip-dark').style.color = BCV_500;
+        // Labels Inputs
+        document.getElementById('label-dark-1').style.color = WHCV_500;
+        document.getElementById('label-dark-2').style.color = WHCV_500;
+        // Input 1
+        document.getElementById('input1-dark-series').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-series').style.color = WHCV_500;
+        document.getElementById('input1-dark-series').style.border = '1px solid #F9F9F9';
+        // Input 2
+        document.getElementById('input2-dark-series').style.backgroundColor = BCV_400;
+        document.getElementById('input2-dark-series').style.color = WHCV_500;
+        document.getElementById('input2-dark-series').style.border = '1px solid #F9F9F9';
+        // Button Series
+        document.getElementById('add-series').style.fill = SUCV_200;
+        // Labels check
+        document.getElementById('label-1-series').style.color = WHCV_500;
+        document.getElementById('label-2-series').style.color = WHCV_500;
+        document.getElementById('label-3-series').style.color = WHCV_500;
+        // Button
+        document.getElementById('remove-button-dark-2').classList.add('remove-button-dark2');
+        // ======================================================================>
+        // Label Series Identificadores
+        document.getElementById('label-identifi').style.color = WHCV_500;
+        document.getElementById('descrip-2').style.backgroundColor = ICV_200;
+        document.getElementById('identifi-dark').style.color = BCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-identifi').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-identifi').style.color = WHCV_500;
+        document.getElementById('input1-dark-identifi').style.border = '1px solid #F9F9F9';
+        // Input 2
+        document.getElementById('input2-dark-identifi').style.backgroundColor = BCV_400;
+        document.getElementById('input2-dark-identifi').style.color = WHCV_500;
+        document.getElementById('input2-dark-identifi').style.border = '1px solid #F9F9F9';
+        // Button Identifi
+        document.getElementById('add-identifi').style.fill = SUCV_200;
+        // Labels check
+        document.getElementById('label-1-identifi').style.color = WHCV_500;
+        document.getElementById('label-2-identifi').style.color = WHCV_500;
+        document.getElementById('label-3-identifi').style.color = WHCV_500;
+        // Button
+        document.getElementById('remove-button-dark-3').classList.add('remove-button-dark2');
+        // ======================================================================>
+        // Label Series Tipos
+        document.getElementById('label-type').style.color = WHCV_500;
+        document.getElementById('label-type-2').style.color = WHCV_500;
+
+        // Input 1               
+        document.getElementById('input1-dark-type').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-type').style.color = WHCV_500;
+        document.getElementById('input1-dark-type').style.border = '1px solid #F9F9F9';
+        // Button Identifi
+        document.getElementById('add-type').style.fill = SUCV_200;
+        // Labels check
+        document.getElementById('label-1-type').style.color = WHCV_500;
+        document.getElementById('label-2-type').style.color = WHCV_500;
+        document.getElementById('label-3-type').style.color = WHCV_500;
+        // Button
+        document.getElementById('remove-button-dark-4').classList.add('remove-button-dark2');
+        // ======================================================================>
+        // Label Lenguaje
+        document.getElementById('label-lenguajes').style.color = WHCV_500;
+        document.getElementById('descrip-3').style.backgroundColor = ICV_200;
+        document.getElementById('lenguaje-dark').style.color = BCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-lenguaje').style.backgroundColor = BCV_400;
+        document.getElementById('input1-dark-lenguaje').style.color = WHCV_500;
+        document.getElementById('input1-dark-lenguaje').style.border = '1px solid #F9F9F9';
+
+        // ======================================================================>
+        // Buttons
+        document.getElementById('cancel-button').classList.add('cancel-button-dark');
+        document.getElementById('next-button').classList.add('next-button-dark');
 
 
         // Footer
@@ -752,6 +988,86 @@ switchButton2.addEventListener('click', () => {
         // Descrip
         document.getElementById('descrip-dark-1').style.color = ICV_500;
         document.getElementById('descrip-dark-2').style.color = ICV_500;
+
+        // ===========================================================>
+        // Label Series
+        document.getElementById('label-series').style.color = BCV_500;
+        document.getElementById('descrip-1').style.backgroundColor = ICV_500;
+        document.getElementById('descrip-dark').style.color = WHCV_500;
+        // Labels Inputs
+        document.getElementById('label-dark-1').style.color = WHCV_500;
+        document.getElementById('label-dark-2').style.color = WHCV_500;
+        // Input 1
+        document.getElementById('input1-dark-series').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-series').style.color = BCV_500;
+        document.getElementById('input1-dark-series').style.border = '1px solid #141927';
+        // Input 2
+        document.getElementById('input2-dark-series').style.backgroundColor = WHCV_500;
+        document.getElementById('input2-dark-series').style.color = BCV_500;
+        document.getElementById('input2-dark-series').style.border = '1px solid #141927';
+        // Button Series
+        document.getElementById('add-series').style.fill = SUCV_500;
+        // Labels check
+        document.getElementById('label-1-series').style.color = BCV_500;
+        document.getElementById('label-2-series').style.color = BCV_500;
+        document.getElementById('label-3-series').style.color = BCV_500;
+        // Button
+        document.getElementById('remove-button-dark-2').classList.remove('remove-button-dark2');
+
+        // ======================================================================>
+        // Label Series Identificadores
+        document.getElementById('label-identifi').style.color = BCV_500;
+        document.getElementById('descrip-2').style.backgroundColor = ICV_500;
+        document.getElementById('identifi-dark').style.color = WHCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-identifi').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-identifi').style.color = BCV_500;
+        document.getElementById('input1-dark-identifi').style.border = '1px solid #141927';
+        // Input 2
+        document.getElementById('input2-dark-identifi').style.backgroundColor = WHCV_500;
+        document.getElementById('input2-dark-identifi').style.color = BCV_500;
+        document.getElementById('input2-dark-identifi').style.border = '1px solid #141927';
+        // Button Identifi
+        document.getElementById('add-identifi').style.fill = SUCV_500;
+        // Labels check
+        document.getElementById('label-1-identifi').style.color = BCV_500;
+        document.getElementById('label-2-identifi').style.color = BCV_500;
+        document.getElementById('label-3-identifi').style.color = BCV_500;
+        // Button
+        document.getElementById('remove-button-dark-3').classList.remove('remove-button-dark2');
+
+        // ======================================================================>
+        // Label Series Tipos
+        document.getElementById('label-type').style.color = BCV_500;
+        document.getElementById('label-type-2').style.color = BCV_500;
+
+        // Input 1               
+        document.getElementById('input1-dark-type').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-type').style.color = BCV_500;
+        document.getElementById('input1-dark-type').style.border = '1px solid #141927';
+        // Button Identifi
+        document.getElementById('add-type').style.fill = SUCV_500;
+        // Labels check
+        document.getElementById('label-1-type').style.color = BCV_500;
+        document.getElementById('label-2-type').style.color = BCV_500;
+        document.getElementById('label-3-type').style.color = BCV_500;
+        // Button
+        document.getElementById('remove-button-dark-4').classList.remove('remove-button-dark2');
+        // ======================================================================>
+        // Label Lenguaje
+        document.getElementById('label-lenguajes').style.color = BCV_500;
+        document.getElementById('descrip-3').style.backgroundColor = ICV_500;
+        document.getElementById('lenguaje-dark').style.color = WHCV_500;
+        // Input 1               
+        document.getElementById('input1-dark-lenguaje').style.backgroundColor = WHCV_500;
+        document.getElementById('input1-dark-lenguaje').style.color = BCV_500;
+        document.getElementById('input1-dark-lenguaje').style.border = '1px solid #141927';
+
+        // ======================================================================>
+        // Buttons
+        document.getElementById('cancel-button').classList.remove('cancel-button-dark');
+        document.getElementById('next-button').classList.remove('next-button-dark');
+
 
 
 
@@ -940,6 +1256,86 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('descrip-dark-1').style.color = ICV_200;
     document.getElementById('descrip-dark-2').style.color = ICV_200;
 
+    // ===========================================================>
+    // Label Series
+    document.getElementById('label-series').style.color = WHCV_500;
+    document.getElementById('descrip-1').style.backgroundColor = ICV_200;
+    document.getElementById('descrip-dark').style.color = BCV_500;
+    // Labels Inputs
+    document.getElementById('label-dark-1').style.color = WHCV_500;
+    document.getElementById('label-dark-2').style.color = WHCV_500;
+    // Input 1
+    document.getElementById('input1-dark-series').style.backgroundColor = BCV_400;
+    document.getElementById('input1-dark-series').style.color = WHCV_500;
+    document.getElementById('input1-dark-series').style.border = '1px solid #F9F9F9';
+    // Input 2
+    document.getElementById('input2-dark-series').style.backgroundColor = BCV_400;
+    document.getElementById('input2-dark-series').style.color = WHCV_500;
+    document.getElementById('input2-dark-series').style.border = '1px solid #F9F9F9';
+    // Button Series
+    document.getElementById('add-series').style.fill = SUCV_200;
+    // Labels check
+    document.getElementById('label-1-series').style.color = WHCV_500;
+    document.getElementById('label-2-series').style.color = WHCV_500;
+    document.getElementById('label-3-series').style.color = WHCV_500;
+    // Button
+    document.getElementById('remove-button-dark-2').classList.add('remove-button-dark2');
+
+
+    // ======================================================================>
+    // Label Series Identificadores
+    document.getElementById('label-identifi').style.color = WHCV_500;
+    document.getElementById('descrip-2').style.backgroundColor = ICV_200;
+    document.getElementById('identifi-dark').style.color = BCV_500;
+    // Input 1               
+    document.getElementById('input1-dark-identifi').style.backgroundColor = BCV_400;
+    document.getElementById('input1-dark-identifi').style.color = WHCV_500;
+    document.getElementById('input1-dark-identifi').style.border = '1px solid #F9F9F9';
+    // Input 2
+    document.getElementById('input2-dark-identifi').style.backgroundColor = BCV_400;
+    document.getElementById('input2-dark-identifi').style.color = WHCV_500;
+    document.getElementById('input2-dark-identifi').style.border = '1px solid #F9F9F9';
+    // Button Identifi
+    document.getElementById('add-identifi').style.fill = SUCV_200;
+    // Labels check
+    document.getElementById('label-1-identifi').style.color = WHCV_500;
+    document.getElementById('label-2-identifi').style.color = WHCV_500;
+    document.getElementById('label-3-identifi').style.color = WHCV_500;
+    // Button
+    document.getElementById('remove-button-dark-3').classList.add('remove-button-dark2');
+
+    // ======================================================================>
+    // Label Series Tipos
+    document.getElementById('label-type').style.color = WHCV_500;
+    document.getElementById('label-type-2').style.color = WHCV_500;
+
+    // Input 1               
+    document.getElementById('input1-dark-type').style.backgroundColor = BCV_400;
+    document.getElementById('input1-dark-type').style.color = WHCV_500;
+    document.getElementById('input1-dark-type').style.border = '1px solid #F9F9F9';
+    // Button Identifi
+    document.getElementById('add-type').style.fill = SUCV_200;
+    // Labels check
+    document.getElementById('label-1-type').style.color = WHCV_500;
+    document.getElementById('label-2-type').style.color = WHCV_500;
+    document.getElementById('label-3-type').style.color = WHCV_500;
+    // Button
+    document.getElementById('remove-button-dark-4').classList.add('remove-button-dark2');
+
+    // ======================================================================>
+    // Label Lenguaje
+    document.getElementById('label-lenguajes').style.color = WHCV_500;
+    document.getElementById('descrip-3').style.backgroundColor = ICV_200;
+    document.getElementById('lenguaje-dark').style.color = BCV_500;
+    // Input 1               
+    document.getElementById('input1-dark-lenguaje').style.backgroundColor = BCV_400;
+    document.getElementById('input1-dark-lenguaje').style.color = WHCV_500;
+    document.getElementById('input1-dark-lenguaje').style.border = '1px solid #F9F9F9';
+
+    // ======================================================================>
+    // Buttons
+    document.getElementById('cancel-button').classList.add('cancel-button-dark');
+    document.getElementById('next-button').classList.add('next-button-dark');
 
 
 
@@ -1112,6 +1508,88 @@ if (localStorage.getItem('theme') == 'true') {
     // Descrip
     document.getElementById('descrip-dark-1').style.color = ICV_500;
     document.getElementById('descrip-dark-2').style.color = ICV_500;
+
+    // ===========================================================>
+    // Label Series
+    document.getElementById('label-series').style.color = BCV_500;
+    document.getElementById('descrip-1').style.backgroundColor = ICV_500;
+    document.getElementById('descrip-dark').style.color = WHCV_500;
+    // Labels Inputs
+    document.getElementById('label-dark-1').style.color = WHCV_500;
+    document.getElementById('label-dark-2').style.color = WHCV_500;
+    // Input 1
+    document.getElementById('input1-dark-series').style.backgroundColor = WHCV_500;
+    document.getElementById('input1-dark-series').style.color = BCV_500;
+    document.getElementById('input1-dark-series').style.border = '1px solid #141927';
+    // Input 2
+    document.getElementById('input2-dark-series').style.backgroundColor = WHCV_500;
+    document.getElementById('input2-dark-series').style.color = BCV_500;
+    document.getElementById('input2-dark-series').style.border = '1px solid #141927';
+    // Button Series
+    document.getElementById('add-series').style.fill = SUCV_500;
+    // Labels check
+    document.getElementById('label-1-series').style.color = BCV_500;
+    document.getElementById('label-2-series').style.color = BCV_500;
+    document.getElementById('label-3-series').style.color = BCV_500;
+    // Button
+    document.getElementById('remove-button-dark-2').classList.remove('remove-button-dark2');
+
+    // ======================================================================>
+    // Label Series Identificadores
+    document.getElementById('label-identifi').style.color = BCV_500;
+    document.getElementById('descrip-2').style.backgroundColor = ICV_500;
+    document.getElementById('identifi-dark').style.color = WHCV_500;
+    // Input 1               
+    document.getElementById('input1-dark-identifi').style.backgroundColor = WHCV_500;
+    document.getElementById('input1-dark-identifi').style.color = BCV_500;
+    document.getElementById('input1-dark-identifi').style.border = '1px solid #141927';
+    // Input 2
+    document.getElementById('input2-dark-identifi').style.backgroundColor = WHCV_500;
+    document.getElementById('input2-dark-identifi').style.color = BCV_500;
+    document.getElementById('input2-dark-identifi').style.border = '1px solid #141927';
+    // Button Identifi
+    document.getElementById('add-identifi').style.fill = SUCV_500;
+    // Labels check
+    document.getElementById('label-1-identifi').style.color = BCV_500;
+    document.getElementById('label-2-identifi').style.color = BCV_500;
+    document.getElementById('label-3-identifi').style.color = BCV_500;
+    // Button
+    document.getElementById('remove-button-dark-3').classList.remove('remove-button-dark2');
+
+    // ======================================================================>
+    // Label Series Tipos
+    document.getElementById('label-type').style.color = BCV_500;
+    document.getElementById('label-type-2').style.color = BCV_500;
+
+    // Input 1               
+    document.getElementById('input1-dark-type').style.backgroundColor = WHCV_500;
+    document.getElementById('input1-dark-type').style.color = BCV_500;
+    document.getElementById('input1-dark-type').style.border = '1px solid #141927';
+    // Button Identifi
+    document.getElementById('add-type').style.fill = SUCV_500;
+    // Labels check
+    document.getElementById('label-1-type').style.color = BCV_500;
+    document.getElementById('label-2-type').style.color = BCV_500;
+    document.getElementById('label-3-type').style.color = BCV_500;
+    // Button
+    document.getElementById('remove-button-dark-4').classList.remove('remove-button-dark2');
+
+    // ======================================================================>
+    // Label Lenguaje
+    document.getElementById('label-lenguajes').style.color = BCV_500;
+    document.getElementById('descrip-3').style.backgroundColor = ICV_500;
+    document.getElementById('lenguaje-dark').style.color = WHCV_500;
+    // Input 1               
+    document.getElementById('input1-dark-lenguaje').style.backgroundColor = WHCV_500;
+    document.getElementById('input1-dark-lenguaje').style.color = BCV_500;
+    document.getElementById('input1-dark-lenguaje').style.border = '1px solid #141927';
+
+    // ======================================================================>
+    // Buttons
+    document.getElementById('cancel-button').classList.remove('cancel-button-dark');
+    document.getElementById('next-button').classList.remove('next-button-dark');
+
+
 
 
     // Footer
