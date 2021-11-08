@@ -85,6 +85,10 @@ switchButton.addEventListener('click', () => {
         document.getElementById('input-dark-4-1').classList.add('input-dark');
         document.getElementById('input-dark-5').classList.add('input-dark');
 
+        // Password
+        document.getElementById('show-pass-1').classList.add('input-dark');
+        document.getElementById('show-pass-2').classList.add('input-dark');
+
 
 
 
@@ -259,6 +263,10 @@ switchButton.addEventListener('click', () => {
 
         // Button Save
         document.getElementById('save-change').classList.remove('button-save');
+
+        // Password
+        document.getElementById('show-pass-1').classList.remove('input-dark');
+        document.getElementById('show-pass-2').classList.remove('input-dark');
 
 
 
@@ -403,6 +411,9 @@ switchButton2.addEventListener('click', () => {
         // Button Save
         document.getElementById('save-change').classList.add('button-save');
 
+        // Password
+        document.getElementById('show-pass-1').classList.add('input-dark');
+        document.getElementById('show-pass-2').classList.add('input-dark');
 
 
 
@@ -528,6 +539,10 @@ switchButton2.addEventListener('click', () => {
 
         // Button Save
         document.getElementById('save-change').classList.remove('button-save');
+
+        // Password
+        document.getElementById('show-pass-1').classList.remove('input-dark');
+        document.getElementById('show-pass-2').classList.remove('input-dark');
 
 
 
@@ -666,6 +681,11 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('save-change').classList.add('button-save');
 
 
+    // Password
+    document.getElementById('show-pass-1').classList.add('input-dark');
+    document.getElementById('show-pass-2').classList.add('input-dark');
+
+
 
 
 
@@ -795,6 +815,10 @@ if (localStorage.getItem('theme') == 'true') {
 
     // Button Save
     document.getElementById('save-change').classList.remove('button-save');
+
+    // Password
+    document.getElementById('show-pass-1').classList.remove('input-dark');
+    document.getElementById('show-pass-2').classList.remove('input-dark');
 
 
 

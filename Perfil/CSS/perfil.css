@@ -585,6 +585,44 @@ h2 {
     /* border: 1px dashed blue; */
 }
 
+.content-change-passw input {
+    /* WShades-500 */
+    background-color: var(--WHCV_500);
+    /* Primary-500 */
+    border: 1px solid #1B396A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    /* Font */
+    font-family: var(--font_body);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+    /* BShades-200 */
+    color: #A1A3A9;
+    /* position */
+    position: relative;
+    padding-left: 40px;
+}
+
+.lock {
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 8px;
+}
+
+.eye {
+    position: absolute;
+    margin-top: 25px;
+    margin-top: -32px;
+    margin-left: 270px;
+}
+
 .content-change-passw label {
     /* Body 1 */
     font-family: var(--font_body);
@@ -719,8 +757,9 @@ DARK MODE
 }
 
 .input-dark {
-    background-color: var(--BCV_400);
-    color: var(--WHCV_500);
+    background-color: var(--BCV_400) !important;
+    color: var(--WHCV_500) !important;
+    border: 1px solid var(--WHCV_500) !important;
 }
 
 .list-wh {
