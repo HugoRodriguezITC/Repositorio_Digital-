@@ -106,8 +106,18 @@
                     <button onclick="location.href='/Home.html'" class="button-on cursor">INGRESAR</button>
 
 
+
                     <!-- question -->
-                    <h6 class="cursor modal-btn">¿Olvidó su contraseña?</h6>
+                    <h6 id="forget-label" class="cursor modal-btn ">¿Olvidó su contraseña?</h6>
+
+                    <div style="visibility: hidden;" id="notify" class="notify-succ">
+                        <!-- Icon -->
+                        <svg class="icon" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27 0.333252C12.28 0.333252 0.333313 12.2799 0.333313 26.9999C0.333313 41.7199 12.28 53.6666 27 53.6666C41.72 53.6666 53.6666 41.7199 53.6666 26.9999C53.6666 12.2799 41.72 0.333252 27 0.333252ZM29.6666 40.3333H24.3333V24.3333H29.6666V40.3333ZM29.6666 18.9999H24.3333V13.6666H29.6666V18.9999Z" fill="#0C0F17"/>
+                            </svg>
+                        <!-- Descripcion -->
+                        <h6 class="succ"> La contraseña se ha cambiado exitosamente.</h6>
+                    </div>
                 </div>
             </article>
 
@@ -247,7 +257,7 @@
 
     <!-- Mi Modal Rec. Pass -->
     <div class="modal-blur">
-        <div class="content-modal">
+        <div id="content-modal" class="content-modal">
             <!-- Headline -->
             <div class="headline-modal">
                 <h4>Recuperación de contraseña</h4>
@@ -259,37 +269,97 @@
                 <div class="nums">
                     <!-- Steps -->
                     <div class="steps">
-                        <div class="num-1">
-                            <h4>1</h4>
-
+                        <div id="num-1" class="num-1">
+                            <h4 id="h4-1">1</h4>
                         </div>
-                        <sub>Enviar correo</sub>
+                        <sub id="descrip-1">Enviar correo</sub>
                     </div>
 
                     <!-- Line -->
 
                     <svg class="line-7" viewBox="0 0 175 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1.74846e-07" y1="2" x2="175" y2="2.00002" stroke="#A1B9DF" stroke-width="4"/>
+                        <line  id="line-7"x1="1.74846e-07" y1="2" x2="175" y2="2.00002" stroke="#A1B9DF" stroke-width="4"/>
                         </svg>
 
                     <div class="steps steps-2">
-                        <div class="num-2">
-                            <h4>2</h4>
-
+                        <div id="num-2" class="num-2">
+                            <h4 id="h4-2"> 2</h4>
                         </div>
-                        <sub>Restablecer</sub>
+                        <sub id="descrip-2">Restablecer</sub>
                     </div>
                 </div>
 
                 <!-- Descripcion -->
-                <h6>Introduzca el correo con el que está registrado. Se le enviará <br> un correo electrónico con las instrucciones de recuperación.</h6>
+                <h6 id="h6">Introduzca el correo con el que está registrado. Se le enviará <br> un correo electrónico con las instrucciones de recuperación.</h6>
 
                 <!-- Input Content -->
-                <div class="content-input"></div>
-
-
+                <div id="content-input" class="content-input">
+                    <!-- Correo Electronico -->
+                    <label for="">Correo Electrónico</label>
+                    <!-- Input  -->
+                    <input placeholder="17680215@cuautla.tecnm.mx" type="password">
+                    <!-- Icon -->
+                    <svg id="message" width="26.67" height="21.33" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="#A1A3A9"/>
+                    </svg>
+                </div>
                 <!-- Button -->
-                <button class="send-email" id="">ENVÍAR CORREO</button>
+                <button onclick="OcultarItems();" class="cursor send-email" id="send-button">ENVÍAR CORREO</button>
+
+                <!-- Animation -->
+
+                <div id="animation-content" class="animation">
+                    <img src="" id="load-img" alt="" srcset="">
+                </div>
+
+                <!-- Recovery  -->
+                <div id="recovery-item" class="recovery">
+
+                    <div id="item-input-1" class="items-input">
+                        <!-- Label -->
+                        <label class="label-input" for="">Ingresa el código que se envió por correo</label>
+                        <!-- Input -->
+                        <input placeholder="123 456 789" type="text">
+                    </div>
+
+                    <div id="item-input-2" class="items-input">
+                        <!-- Label -->
+                        <label class="label-input" for="">Ingrese la  nueva contraseña</label>
+                        <!-- Input -->
+                        <input id="show-pass-r1" placeholder="*** *** ***" type="password">
+                        <!-- Lock -->
+                        <svg id="lock-1" class="lock" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5002 10.6668H23.1668V8.00016C23.1668 4.32016 20.1802 1.3335 16.5002 1.3335C12.8202 1.3335 9.8335 4.32016 9.8335 8.00016V10.6668H8.50016C7.0335 10.6668 5.8335 11.8668 5.8335 13.3335V26.6668C5.8335 28.1335 7.0335 29.3335 8.50016 29.3335H24.5002C25.9668 29.3335 27.1668 28.1335 27.1668 26.6668V13.3335C27.1668 11.8668 25.9668 10.6668 24.5002 10.6668ZM16.5002 22.6668C15.0335 22.6668 13.8335 21.4668 13.8335 20.0002C13.8335 18.5335 15.0335 17.3335 16.5002 17.3335C17.9668 17.3335 19.1668 18.5335 19.1668 20.0002C19.1668 21.4668 17.9668 22.6668 16.5002 22.6668ZM20.6335 10.6668H12.3668V8.00016C12.3668 5.72016 14.2202 3.86683 16.5002 3.86683C18.7802 3.86683 20.6335 5.72016 20.6335 8.00016V10.6668Z" fill="#A1A3A9"/>
+                        </svg>
+                        <!-- Eye -->
+                        <svg id="eye-r1" class="eye cursor" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 4.5C7.5 4.5 3.23 7.61 1.5 12C3.23 16.39 7.5 19.5 12.5 19.5C17.5 19.5 21.77 16.39 23.5 12C21.77 7.61 17.5 4.5 12.5 4.5ZM12.5 17C9.74 17 7.5 14.76 7.5 12C7.5 9.24 9.74 7 12.5 7C15.26 7 17.5 9.24 17.5 12C17.5 14.76 15.26 17 12.5 17ZM12.5 9C10.84 9 9.5 10.34 9.5 12C9.5 13.66 10.84 15 12.5 15C14.16 15 15.5 13.66 15.5 12C15.5 10.34 14.16 9 12.5 9Z" fill="#A1A3A9"/>
+                    </svg>
+                    </div>
+
+                    <div id="item-input-3" class="items-input">
+                        <!-- Label -->
+                        <label class="label-input" for="">Repite la nueva contraseña </label>
+                        <!-- Input -->
+                        <input id="show-pass-r2" placeholder="*** *** ***" type="password">
+                        <!-- Lock -->
+                        <svg id="lock-2" class="lock" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5002 10.6668H23.1668V8.00016C23.1668 4.32016 20.1802 1.3335 16.5002 1.3335C12.8202 1.3335 9.8335 4.32016 9.8335 8.00016V10.6668H8.50016C7.0335 10.6668 5.8335 11.8668 5.8335 13.3335V26.6668C5.8335 28.1335 7.0335 29.3335 8.50016 29.3335H24.5002C25.9668 29.3335 27.1668 28.1335 27.1668 26.6668V13.3335C27.1668 11.8668 25.9668 10.6668 24.5002 10.6668ZM16.5002 22.6668C15.0335 22.6668 13.8335 21.4668 13.8335 20.0002C13.8335 18.5335 15.0335 17.3335 16.5002 17.3335C17.9668 17.3335 19.1668 18.5335 19.1668 20.0002C19.1668 21.4668 17.9668 22.6668 16.5002 22.6668ZM20.6335 10.6668H12.3668V8.00016C12.3668 5.72016 14.2202 3.86683 16.5002 3.86683C18.7802 3.86683 20.6335 5.72016 20.6335 8.00016V10.6668Z" fill="#A1A3A9"/>
+                        </svg>
+                        <!-- Eye -->
+                        <svg id="eye-r2" class="eye cursor" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 4.5C7.5 4.5 3.23 7.61 1.5 12C3.23 16.39 7.5 19.5 12.5 19.5C17.5 19.5 21.77 16.39 23.5 12C21.77 7.61 17.5 4.5 12.5 4.5ZM12.5 17C9.74 17 7.5 14.76 7.5 12C7.5 9.24 9.74 7 12.5 7C15.26 7 17.5 9.24 17.5 12C17.5 14.76 15.26 17 12.5 17ZM12.5 9C10.84 9 9.5 10.34 9.5 12C9.5 13.66 10.84 15 12.5 15C14.16 15 15.5 13.66 15.5 12C15.5 10.34 14.16 9 12.5 9Z" fill="#A1A3A9"/>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <!-- button Recobery -->
+                <button onclick="SendRecovery();" id="recovery-button" class=" cursor recovery-button"> RESTABLECER CONTRASEÑA</button>
+
+
+                <!-- Send Git -->
+
             </div>
 
             <!-- Close Modal -->
