@@ -23,3 +23,24 @@ function Ocultar() {
     Input.type = "password";
     Input2.type = "password";
 }
+
+
+// Modal
+var modalBtn = document.querySelector('.modal-btn')
+var modalBlur = document.querySelector('.modal-blur')
+var modalClose = document.querySelector('.modal-close')
+    /*Prueba de ocultar */
+
+
+modalBtn.addEventListener('click', function() {
+    modalBlur.classList.add('blur-active')
+})
+
+modalClose.addEventListener('click', function() {
+    modalBlur.classList.remove('blur-active')
+})
+
+/*Prueba de ocultar*/
+function ocultar() {
+    document.getElementById('caja').style.visibility = "hidden";
+}
