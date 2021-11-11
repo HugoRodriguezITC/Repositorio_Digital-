@@ -634,5 +634,5 @@ table td {
 }
 
 .box-shawn {
-    box-shadow: 4px 8px 8px 0px #A1A3A980;
+    box-shadow: 4px 8px 8px 0px #A1A3A980 !important;
 }

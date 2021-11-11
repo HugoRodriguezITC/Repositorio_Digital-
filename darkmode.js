@@ -153,6 +153,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('type-dark-5').style.color = WHCV_500;
         document.getElementById('type-dark-6').style.color = WHCV_500;
 
+        document.getElementById('bg-dark').classList.add('box-shawn');
+
+
 
 
 
@@ -290,6 +293,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('type-dark-4').style.color = BCV_500;
         document.getElementById('type-dark-5').style.color = BCV_500;
         document.getElementById('type-dark-6').style.color = BCV_500;
+
+        document.getElementById('bg-dark').classList.remove('box-shawn');
+
 
 
 
@@ -453,6 +459,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('type-dark-6').style.color = WHCV_500;
 
 
+        document.getElementById('bg-dark').classList.add('box-shawn');
+
+
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
         // Icon Footer
@@ -584,6 +593,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('type-dark-4').style.color = BCV_500;
         document.getElementById('type-dark-5').style.color = BCV_500;
         document.getElementById('type-dark-6').style.color = BCV_500;
+
+        document.getElementById('bg-dark').classList.remove('box-shawn');
+
 
 
         // Footer
@@ -742,6 +754,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('type-dark-6').style.color = WHCV_500;
 
 
+    document.getElementById('bg-dark').classList.add('box-shawn');
+
+
 
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
@@ -889,6 +904,7 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('type-dark-5').style.color = BCV_500;
     document.getElementById('type-dark-6').style.color = BCV_500;
 
+    document.getElementById('bg-dark').classList.remove('box-shawn');
 
 
 
