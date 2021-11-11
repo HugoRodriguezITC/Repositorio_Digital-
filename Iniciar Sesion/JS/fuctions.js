@@ -125,12 +125,6 @@ function RecoveryPassword() {
         document.getElementById('recovery-button').classList.remove('button-dark');
     }
 
-
-
-
-
-
-
     //Recovery
     document.getElementById('recovery-item').style.display = 'block';
     document.getElementById('item-input-1').style.display = 'block';
@@ -190,11 +184,38 @@ function SendRecovery() {
     document.getElementById('animation-content').style.display = 'block';
     // Img
 
+
     if (localStorage.getItem('theme') == 'true') {
         document.getElementById('load-img').src = 'img-source-login/checkblack.gif';
+        // Numeros
+        document.getElementById('num-1').classList.add('num-dark-pass');
+        document.getElementById('h4-1').classList.add('color-dark');
+        document.getElementById('descrip-1').classList.add('color-ic5');
+        document.getElementById('line-7').style.stroke = '#A1B9DF';
+
+        // Numeros 2
+        document.getElementById('num-2').classList.remove('num-dark-pass2');
+        document.getElementById('h4-2').classList.remove('color-wh');
+        document.getElementById('descrip-2').classList.remove('color-wh');
+        // Numeros 2
+        document.getElementById('num-2').classList.add('num-dark-pass');
+        document.getElementById('h4-2').classList.add('color-dark');
+        document.getElementById('descrip-2').classList.add('color-ic5');
+
     } else {
         document.getElementById('load-img').src = 'img-source-login/check.gif';
+        // Numeros
+        document.getElementById('num-1').classList.add('new-nums');
+        document.getElementById('h4-1').classList.add('h4-wh');
+        document.getElementById('descrip-1').classList.add('font-info');
+        document.getElementById('line-7').style.stroke = '#1550AF';
+        document.getElementById('num-2').classList.add('new-nums');
+        document.getElementById('descrip-2').classList.add('font-info');
     }
+
+
+
+
     // Modal Height
     document.getElementById('content-modal').style.height = '579px';
     document.getElementById('num-2').classList.add('new-nums-20');
@@ -208,4 +229,5 @@ function EndSend() {
     modalBlur.classList.remove('blur-active');
     document.getElementById('forget-label').style.display = 'none';
     document.getElementById('notify').style.visibility = 'visible';
+
 }

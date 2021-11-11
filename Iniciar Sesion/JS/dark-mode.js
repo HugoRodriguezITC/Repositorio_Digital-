@@ -95,7 +95,13 @@ switchButton.addEventListener('click', () => {
         // Buton Modal
         document.getElementById('send-button').classList.add('button-dark');
 
-        document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+        // Success
+        document.getElementById('notify').classList.add('notify');
+
+
+
+
+
 
 
 
@@ -166,7 +172,10 @@ switchButton.addEventListener('click', () => {
         // Buton Modal
         document.getElementById('send-button').classList.remove('button-dark');
 
-        document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+
+        // Success
+        document.getElementById('notify').classList.remove('notify');
+
 
 
 
@@ -265,6 +274,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('send-button').classList.add('button-dark');
 
 
+        // Success
+        document.getElementById('notify').classList.add('notify');
+
 
 
 
@@ -341,6 +353,11 @@ switchButton2.addEventListener('click', () => {
 
         // Buton Modal
         document.getElementById('send-button').classList.remove('button-dark');
+
+
+        // Success
+        document.getElementById('notify').classList.remove('notify');
+
 
 
         // Footer
@@ -430,8 +447,8 @@ if (localStorage.getItem('theme') == 'true') {
     // Buton Modal
     document.getElementById('send-button').classList.add('button-dark');
 
-    document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
-
+    // Success
+    document.getElementById('notify').classList.add('notify');
 
 
 
@@ -518,6 +535,8 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('send-button').classList.remove('button-dark');
 
 
+    // Success
+    document.getElementById('notify').classList.remove('notify');
 
     // Footer
     document.getElementById('dark-footer').classList.remove('dark-background');
@@ -534,9 +553,4 @@ if (localStorage.getItem('theme') == 'true') {
     // Icons Contactenos
     document.getElementById('dark-messa').style.fill = SCV_500;
     document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
-
-
 }

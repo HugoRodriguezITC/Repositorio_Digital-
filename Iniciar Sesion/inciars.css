@@ -122,7 +122,7 @@
     letter-spacing: 0.5px;
     /* BShades-200 */
     color: var(--BCV_500);
-    padding-left: 72px;
+    text-align: center;
     position: relative;
 }
 
@@ -519,7 +519,6 @@
     border: 1px solid var(--PCV_500);
     box-sizing: border-box;
     border-radius: 8px;
-    padding-left: 72px;
     /* Font */
     font-family: var(--font_body);
     font-style: normal;
@@ -532,6 +531,7 @@
     color: var(--BCV_500);
     position: relative;
     /* display: none; */
+    text-align: center;
 }
 
 #message {
@@ -696,7 +696,7 @@
     letter-spacing: 0.5px;
     /* BShades-200 */
     color: var(--BCV_500);
-    padding-left: 118px;
+    /* padding-left: 118px; */
     position: relative;
 }
 
@@ -752,6 +752,7 @@ Dark-mode
     border: 1px solid var(--WHCV_500) !important;
     background-color: var(--BCV_400) !important;
     color: var(--WHCV_500) !important;
+    text-align: center;
 }
 
 .button-dark {
@@ -806,4 +807,9 @@ Dark-mode
 
 .color-wh {
     color: var(--WHCV_500) !important;
+}
+
+.notify {
+    border: 1px solid var(--WHCV_500) !important;
+    background-color: var( --SUCV_200) !important;
 }
