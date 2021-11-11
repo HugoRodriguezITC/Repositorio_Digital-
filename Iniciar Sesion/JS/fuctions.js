@@ -32,7 +32,8 @@ var modalClose = document.querySelector('.modal-close')
 
 
 modalBtn.addEventListener('click', function() {
-    modalBlur.classList.add('blur-active')
+    modalBlur.classList.add('blur-active');
+
 })
 
 modalClose.addEventListener('click', function() {
@@ -60,7 +61,12 @@ function OcultarItems() {
 function AnimationSend() {
     document.getElementById('animation-content').style.display = 'block';
     // Img
-    document.getElementById('load-img').src = 'img-source-login/EnvioDeCorreo.gif';
+    if (localStorage.getItem('theme') == 'true') {
+        document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+    } else {
+        document.getElementById('load-img').src = 'img-source-login/EnvioDeCorreo.gif';
+    }
+
     //  despues de 3sg
     setTimeout("RecoveryPassword()", 6000);
 }
@@ -70,13 +76,60 @@ function RecoveryPassword() {
     // Modal Height
     document.getElementById('content-modal').style.height = '679px';
 
-    // Numeros
-    document.getElementById('num-1').classList.add('new-nums');
-    document.getElementById('h4-1').classList.add('h4-wh');
-    document.getElementById('descrip-1').classList.add('font-info');
-    document.getElementById('line-7').style.stroke = '#1550AF';
-    document.getElementById('num-2').classList.add('new-nums-2');
-    document.getElementById('descrip-2').classList.add('font-bc');
+
+    // Img
+    if (localStorage.getItem('theme') == 'true') {
+        // Numeros
+        document.getElementById('num-1').classList.add('num-dark-pass');
+        document.getElementById('h4-1').classList.add('color-dark');
+        document.getElementById('descrip-1').classList.add('color-ic5');
+        // 
+        document.getElementById('line-7').style.stroke = '#A1B9DF';
+        // Numeros 2
+        document.getElementById('num-2').classList.add('num-dark-pass2');
+        document.getElementById('h4-2').classList.add('color-wh');
+        document.getElementById('descrip-2').classList.add('color-wh');
+    } else {
+        // Numeros
+        document.getElementById('num-1').classList.add('new-nums');
+        document.getElementById('h4-1').classList.add('h4-wh');
+        document.getElementById('descrip-1').classList.add('font-info');
+        document.getElementById('line-7').style.stroke = '#1550AF';
+        document.getElementById('num-2').classList.add('new-nums-2');
+        document.getElementById('descrip-2').classList.add('font-bc');
+    }
+
+    // Inputs
+    if (localStorage.getItem('theme') == 'true') {
+        document.getElementById('input-label-1').classList.add('color-wh');
+        document.getElementById('input-label-2').classList.add('color-wh');
+        document.getElementById('input-label-3').classList.add('color-wh');
+        // inputs
+        document.getElementById('input-pass-1').classList.add('input-dark');
+        document.getElementById('show-pass-r1').classList.add('input-dark');
+        document.getElementById('show-pass-r2').classList.add('input-dark');
+
+        // Butoon
+        document.getElementById('recovery-button').classList.add('button-dark');
+
+
+    } else {
+        document.getElementById('input-label-1').classList.add('color-dark');
+        document.getElementById('input-label-2').classList.add('color-dark');
+        document.getElementById('input-label-3').classList.add('color-dark');
+        // inputs
+        document.getElementById('input-pass-1').classList.remove('input-dark');
+        document.getElementById('show-pass-r1').classList.remove('input-dark');
+        document.getElementById('show-pass-r2').classList.remove('input-dark');
+        // Butoon
+        document.getElementById('recovery-button').classList.remove('button-dark');
+    }
+
+
+
+
+
+
 
     //Recovery
     document.getElementById('recovery-item').style.display = 'block';
@@ -136,7 +189,12 @@ function SendRecovery() {
     // Animation
     document.getElementById('animation-content').style.display = 'block';
     // Img
-    document.getElementById('load-img').src = 'img-source-login/check.gif';
+
+    if (localStorage.getItem('theme') == 'true') {
+        document.getElementById('load-img').src = 'img-source-login/checkblack.gif';
+    } else {
+        document.getElementById('load-img').src = 'img-source-login/check.gif';
+    }
     // Modal Height
     document.getElementById('content-modal').style.height = '579px';
     document.getElementById('num-2').classList.add('new-nums-20');

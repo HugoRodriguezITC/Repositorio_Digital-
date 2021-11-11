@@ -734,3 +734,76 @@
     color: var(--WHCV_500);
     display: none;
 }
+
+
+/* ================================
+Dark-mode 
+===================================*/
+
+.tertary-color {
+    color: #9BDCBA !important;
+}
+
+.font-wh {
+    color: var(--WHCV_500) !important;
+}
+
+.input-dark {
+    border: 1px solid var(--WHCV_500) !important;
+    background-color: var(--BCV_400) !important;
+    color: var(--WHCV_500) !important;
+}
+
+.button-dark {
+    border: 1px solid var(--WHCV_500) !important;
+    background-color: var(--ICV_200) !important;
+    color: var(--BCV_500) !important;
+}
+
+.label-scv {
+    color: var(--SCV_500);
+}
+
+.bg-dark {
+    background-color: var(--BCV_500) !important;
+}
+
+.color-dark {
+    color: var(--BCV_500) !important;
+}
+
+.bg-ic2 {
+    background-color: var(--ICV_200) !important;
+}
+
+.num-dark-1 {
+    border: 3px solid var(--ICV_200) !important;
+    background-color: var(--BCV_500) !important;
+}
+
+.num-dark-2 {
+    border: 3px solid var(--WHCV_500) !important;
+    background-color: var(--BCV_200) !important;
+}
+
+.color-wh7 {
+    color: var(--WHCV_700) !important;
+}
+
+.num-dark-pass {
+    border: 3px solid var(--ICV_200) !important;
+    background-color: var(--ICV_200) !important;
+}
+
+.num-dark-pass2 {
+    border: 3px solid var(--ICV_200) !important;
+    background-color: var(--BCV_500) !important;
+}
+
+.color-ic5 {
+    color: var(--ICV_200) !important;
+}
+
+.color-wh {
+    color: var(--WHCV_500) !important;
+}

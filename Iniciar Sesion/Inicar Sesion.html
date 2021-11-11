@@ -62,12 +62,12 @@
                 <!-- Title -->
                 <div class="title">
                     <!-- H3 -->
-                    <h3>Hola.</h3>
+                    <h3 id="tertary-1">Hola.</h3>
                     <br>
-                    <h3>¡Bienvenido de nuevo!</h3>
+                    <h3 id="tertary-2">¡Bienvenido de nuevo!</h3>
 
                     <!-- Descrip -->
-                    <p>Ingrese sus datos de acceso para colaborar en el repositorio.</p>
+                    <p id="title-descrip">Ingrese sus datos de acceso para colaborar en el repositorio.</p>
 
                 </div>
 
@@ -75,9 +75,9 @@
                 <div class="user-pass">
                     <!-- Correo -->
                     <div class="correo-content">
-                        <label for="">Correo Elctrónico</label>
+                        <label id="label-wh-1" for="">Correo Elctrónico</label>
                         <!-- Input -->
-                        <input type="email" name="" placeholder="17680215@cuautla.tecnm.mx" class="input-g" id="">
+                        <input type="email" name="" placeholder="17680215@cuautla.tecnm.mx" class="input-g" id="input-email">
                         <!-- Icon -->
                         <svg class="mesage" width="26.67" height="21.33" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="#A1A3A9";
@@ -87,7 +87,7 @@
 
                     <!-- Password -->
                     <div class="pass-content">
-                        <label for="">Contraseña</label>
+                        <label id="label-wh-2" for="">Contraseña</label>
                         <!-- Input -->
                         <input class="input-g" type="password" name="" id="show-pass-1">
                         <!-- Lock -->
@@ -103,7 +103,7 @@
 
                     <!-- Button -->
 
-                    <button onclick="location.href='/Home.html'" class="button-on cursor">INGRESAR</button>
+                    <button onclick="location.href='/Home.html'" id="sing-button" class="button-on cursor">INGRESAR</button>
 
 
 
@@ -259,8 +259,8 @@
     <div class="modal-blur">
         <div id="content-modal" class="content-modal">
             <!-- Headline -->
-            <div class="headline-modal">
-                <h4>Recuperación de contraseña</h4>
+            <div id="head-modal" class="headline-modal">
+                <h4 id="title-head-modal">Recuperación de contraseña</h4>
             </div>
 
             <!-- Content Num -->
@@ -295,15 +295,16 @@
                 <!-- Input Content -->
                 <div id="content-input" class="content-input">
                     <!-- Correo Electronico -->
-                    <label for="">Correo Electrónico</label>
+                    <label id="modal-label-1" for="">Correo Electrónico</label>
                     <!-- Input  -->
-                    <input placeholder="17680215@cuautla.tecnm.mx" type="password">
+                    <input id="modal-input-1" placeholder="17680215@cuautla.tecnm.mx" type="password">
                     <!-- Icon -->
                     <svg id="message" width="26.67" height="21.33" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="#A1A3A9"/>
                     </svg>
                 </div>
                 <!-- Button -->
+                <a href="img-source-login/EnvioCorreoBlack.gif"></a>
                 <button onclick="OcultarItems();" class="cursor send-email" id="send-button">ENVÍAR CORREO</button>
 
                 <!-- Animation -->
@@ -317,14 +318,14 @@
 
                     <div id="item-input-1" class="items-input">
                         <!-- Label -->
-                        <label class="label-input" for="">Ingresa el código que se envió por correo</label>
+                        <label class="label-input" id="input-label-1" for="">Ingresa el código que se envió por correo</label>
                         <!-- Input -->
-                        <input placeholder="123 456 789" type="text">
+                        <input id="input-pass-1" placeholder="123 456 789" type="text">
                     </div>
 
                     <div id="item-input-2" class="items-input">
                         <!-- Label -->
-                        <label class="label-input" for="">Ingrese la  nueva contraseña</label>
+                        <label class="label-input" id="input-label-2" for="">Ingrese la  nueva contraseña</label>
                         <!-- Input -->
                         <input id="show-pass-r1" placeholder="*** *** ***" type="password">
                         <!-- Lock -->
@@ -339,7 +340,7 @@
 
                     <div id="item-input-3" class="items-input">
                         <!-- Label -->
-                        <label class="label-input" for="">Repite la nueva contraseña </label>
+                        <label class="label-input" id="input-label-3" for="">Repite la nueva contraseña </label>
                         <!-- Input -->
                         <input id="show-pass-r2" placeholder="*** *** ***" type="password">
                         <!-- Lock -->

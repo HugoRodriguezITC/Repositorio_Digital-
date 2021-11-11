@@ -52,6 +52,54 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-Lhelp').classList.add('dark-font');
 
 
+
+        // Title
+        document.getElementById('tertary-1').classList.add('tertary-color');
+        document.getElementById('tertary-2').classList.add('tertary-color');
+        // Descrip
+        document.getElementById('title-descrip').classList.add('font-wh');
+
+        // Label Inputs
+        document.getElementById('label-wh-1').classList.add('font-wh');
+        document.getElementById('label-wh-2').classList.add('font-wh');
+        // Inputs
+        document.getElementById('input-email').classList.add('input-dark');
+        document.getElementById('show-pass-1').classList.add('input-dark');
+
+        // Button
+        document.getElementById('sing-button').classList.add('button-dark');
+        document.getElementById('sing-button').classList.add('button-dark');
+
+        // Label Forget
+        document.getElementById('forget-label').classList.add('label-scv');
+
+        // Recover 1 
+        document.getElementById('content-modal').classList.add('bg-dark');
+        document.getElementById('head-modal').classList.add('bg-ic2');
+        document.getElementById('title-head-modal').classList.add('color-dark');
+
+        // Numeros
+        document.getElementById('num-1').classList.add('num-dark-1');
+        document.getElementById('h4-1').classList.add('font-wh');
+        document.getElementById('descrip-1').classList.add('font-wh');
+        // Numeros 2
+        document.getElementById('num-2').classList.add('num-dark-2');
+        document.getElementById('h4-2').classList.add('color-dark');
+        document.getElementById('descrip-2').classList.add('color-wh7');
+        // h6
+        document.getElementById('h6').classList.add('font-wh');
+        // Input
+        document.getElementById('modal-label-1').classList.add('font-wh');
+        document.getElementById('modal-input-1').classList.add('input-dark');
+
+        // Buton Modal
+        document.getElementById('send-button').classList.add('button-dark');
+
+        document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+
+
+
+
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
         // Icon Footer
@@ -74,6 +122,52 @@ switchButton.addEventListener('click', () => {
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
+
+
+        // Title
+        document.getElementById('tertary-1').classList.remove('tertary-color');
+        document.getElementById('tertary-2').classList.remove('tertary-color');
+        // Descrip
+        document.getElementById('title-descrip').classList.remove('font-wh');
+
+        // Label Inputs
+        document.getElementById('label-wh-1').classList.remove('font-wh');
+        document.getElementById('label-wh-2').classList.remove('font-wh');
+        // Inputs
+        document.getElementById('input-email').classList.remove('input-dark');
+        document.getElementById('show-pass-1').classList.remove('input-dark');
+
+        // Button
+        document.getElementById('sing-button').classList.remove('button-dark');
+        document.getElementById('sing-button').classList.remove('button-dark');
+
+        // Label Forget
+        document.getElementById('forget-label').classList.remove('label-scv');
+
+        // Recover 1 
+        document.getElementById('content-modal').classList.remove('bg-dark');
+        document.getElementById('head-modal').classList.remove('bg-ic2');
+        document.getElementById('title-head-modal').classList.remove('color-dark');
+
+        // Numeros
+        document.getElementById('num-1').classList.remove('num-dark-1');
+        document.getElementById('h4-1').classList.remove('font-wh');
+        document.getElementById('descrip-1').classList.remove('font-wh');
+        // Numeros 2
+        document.getElementById('num-2').classList.remove('num-dark-2');
+        document.getElementById('h4-2').classList.remove('color-dark');
+        document.getElementById('descrip-2').classList.remove('color-wh7');
+        // h6
+        document.getElementById('h6').classList.remove('font-wh');
+        // Input
+        document.getElementById('modal-label-1').classList.remove('font-wh');
+        document.getElementById('modal-input-1').classList.remove('input-dark');
+
+        // Buton Modal
+        document.getElementById('send-button').classList.remove('button-dark');
+
+        document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+
 
 
         // Footer
@@ -128,6 +222,49 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-Lhelp').classList.add('dark-font');
 
 
+        // Title
+        document.getElementById('tertary-1').classList.add('tertary-color');
+        document.getElementById('tertary-2').classList.add('tertary-color');
+        // Descrip
+        document.getElementById('title-descrip').classList.add('font-wh');
+
+        // Label Inputs
+        document.getElementById('label-wh-1').classList.add('font-wh');
+        document.getElementById('label-wh-2').classList.add('font-wh');
+        // Inputs
+        document.getElementById('input-email').classList.add('input-dark');
+        document.getElementById('show-pass-1').classList.add('input-dark');
+
+        // Button
+        document.getElementById('sing-button').classList.add('button-dark');
+        document.getElementById('sing-button').classList.add('button-dark');
+
+        // Label Forget
+        document.getElementById('forget-label').classList.add('label-scv');
+
+        // Recover 1 
+        document.getElementById('content-modal').classList.add('bg-dark');
+        document.getElementById('head-modal').classList.add('bg-ic2');
+        document.getElementById('title-head-modal').classList.add('color-dark');
+
+        // Numeros
+        document.getElementById('num-1').classList.add('num-dark-1');
+        document.getElementById('h4-1').classList.add('font-wh');
+        document.getElementById('descrip-1').classList.add('font-wh');
+        // Numeros 2
+        document.getElementById('num-2').classList.add('num-dark-2');
+        document.getElementById('h4-2').classList.add('color-dark');
+        document.getElementById('descrip-2').classList.add('color-wh7');
+        // h6
+        document.getElementById('h6').classList.add('font-wh');
+        // Input
+        document.getElementById('modal-label-1').classList.add('font-wh');
+        document.getElementById('modal-input-1').classList.add('input-dark');
+
+        // Buton Modal
+        document.getElementById('send-button').classList.add('button-dark');
+
+
 
 
 
@@ -161,6 +298,49 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
+
+
+        // Title
+        document.getElementById('tertary-1').classList.remove('tertary-color');
+        document.getElementById('tertary-2').classList.remove('tertary-color');
+        // Descrip
+        document.getElementById('title-descrip').classList.remove('font-wh');
+
+        // Label Inputs
+        document.getElementById('label-wh-1').classList.remove('font-wh');
+        document.getElementById('label-wh-2').classList.remove('font-wh');
+        // Inputs
+        document.getElementById('input-email').classList.remove('input-dark');
+        document.getElementById('show-pass-1').classList.remove('input-dark');
+
+        // Button
+        document.getElementById('sing-button').classList.remove('button-dark');
+        document.getElementById('sing-button').classList.remove('button-dark');
+
+        // Label Forget
+        document.getElementById('forget-label').classList.remove('label-scv');
+
+        // Recover 1 
+        document.getElementById('content-modal').classList.remove('bg-dark');
+        document.getElementById('head-modal').classList.remove('bg-ic2');
+        document.getElementById('title-head-modal').classList.remove('color-dark');
+
+        // Numeros
+        document.getElementById('num-1').classList.remove('num-dark-1');
+        document.getElementById('h4-1').classList.remove('font-wh');
+        document.getElementById('descrip-1').classList.remove('font-wh');
+        // Numeros 2
+        document.getElementById('num-2').classList.remove('num-dark-2');
+        document.getElementById('h4-2').classList.remove('color-dark');
+        document.getElementById('descrip-2').classList.remove('color-wh7');
+        // h6
+        document.getElementById('h6').classList.remove('font-wh');
+        // Input
+        document.getElementById('modal-label-1').classList.remove('font-wh');
+        document.getElementById('modal-input-1').classList.remove('input-dark');
+
+        // Buton Modal
+        document.getElementById('send-button').classList.remove('button-dark');
 
 
         // Footer
@@ -208,6 +388,59 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('login-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
 
+    // Title
+    document.getElementById('tertary-1').classList.add('tertary-color');
+    document.getElementById('tertary-2').classList.add('tertary-color');
+    // Descrip
+    document.getElementById('title-descrip').classList.add('font-wh');
+
+    // Label Inputs
+    document.getElementById('label-wh-1').classList.add('font-wh');
+    document.getElementById('label-wh-2').classList.add('font-wh');
+    // Inputs
+    document.getElementById('input-email').classList.add('input-dark');
+    document.getElementById('show-pass-1').classList.add('input-dark');
+
+    // Button
+    document.getElementById('sing-button').classList.add('button-dark');
+    document.getElementById('sing-button').classList.add('button-dark');
+
+    // Label Forget
+    document.getElementById('forget-label').classList.add('label-scv');
+
+    // Recover 1 
+    document.getElementById('content-modal').classList.add('bg-dark');
+    document.getElementById('head-modal').classList.add('bg-ic2');
+    document.getElementById('title-head-modal').classList.add('color-dark');
+
+    // Numeros
+    document.getElementById('num-1').classList.add('num-dark-1');
+    document.getElementById('h4-1').classList.add('font-wh');
+    document.getElementById('descrip-1').classList.add('font-wh');
+    // Numeros 2
+    document.getElementById('num-2').classList.add('num-dark-2');
+    document.getElementById('h4-2').classList.add('color-dark');
+    document.getElementById('descrip-2').classList.add('color-wh7');
+    // h6
+    document.getElementById('h6').classList.add('font-wh');
+    // Input
+    document.getElementById('modal-label-1').classList.add('font-wh');
+    document.getElementById('modal-input-1').classList.add('input-dark');
+
+    // Buton Modal
+    document.getElementById('send-button').classList.add('button-dark');
+
+    document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -240,6 +473,51 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('login-dark').classList.remove('dark');
     document.getElementById('dark-Lhelp').classList.remove('dark-font');
+
+
+    // Title
+    document.getElementById('tertary-1').classList.remove('tertary-color');
+    document.getElementById('tertary-2').classList.remove('tertary-color');
+    // Descrip
+    document.getElementById('title-descrip').classList.remove('font-wh');
+
+    // Label Inputs
+    document.getElementById('label-wh-1').classList.remove('font-wh');
+    document.getElementById('label-wh-2').classList.remove('font-wh');
+    // Inputs
+    document.getElementById('input-email').classList.remove('input-dark');
+    document.getElementById('show-pass-1').classList.remove('input-dark');
+
+    // Button
+    document.getElementById('sing-button').classList.remove('button-dark');
+    document.getElementById('sing-button').classList.remove('button-dark');
+
+    // Label Forget
+    document.getElementById('forget-label').classList.remove('label-scv');
+
+    // Recover 1 
+    document.getElementById('content-modal').classList.remove('bg-dark');
+    document.getElementById('head-modal').classList.remove('bg-ic2');
+    document.getElementById('title-head-modal').classList.remove('color-dark');
+
+    // Numeros
+    document.getElementById('num-1').classList.remove('num-dark-1');
+    document.getElementById('h4-1').classList.remove('font-wh');
+    document.getElementById('descrip-1').classList.remove('font-wh');
+    // Numeros 2
+    document.getElementById('num-2').classList.remove('num-dark-2');
+    document.getElementById('h4-2').classList.remove('color-dark');
+    document.getElementById('descrip-2').classList.remove('color-wh7');
+    // h6
+    document.getElementById('h6').classList.remove('font-wh');
+    // Input
+    document.getElementById('modal-label-1').classList.remove('font-wh');
+    document.getElementById('modal-input-1').classList.remove('input-dark');
+
+    // Buton Modal
+    document.getElementById('send-button').classList.remove('button-dark');
+
+
 
     // Footer
     document.getElementById('dark-footer').classList.remove('dark-background');
