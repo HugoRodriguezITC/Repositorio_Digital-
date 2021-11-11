@@ -453,8 +453,8 @@
         color: var(--BCV_500);
     }
     
-    header h3 a.dark {
-        color: var(--PCV_500);
+    .dark {
+        color: var(--PCV_500) !important;
     }
     
     section div.dark-headline {

@@ -697,6 +697,7 @@
     /* BShades-200 */
     color: var(--BCV_500);
     /* padding-left: 118px; */
+    text-align: center;
     position: relative;
 }
 
