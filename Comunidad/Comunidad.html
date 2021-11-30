@@ -187,7 +187,18 @@
 
 
             <!--Slider  -->
-            <article onmouseover="Arriba()" ; id="slider-dark" class="slider">
+            <article onmouseout="MoveMouse();" onmouseover="HoverFlechas();" id="slider-dark" class="slider">
+
+                <!-- Hover Divs -->
+                <div id="hover-left" class="hover-left">
+                    <img src="/icon-source/icon-source-cards/left.svg" alt="" srcset="">
+                </div>
+
+                <div id="hover-right" class="hover-right">
+                    <img src="/icon-source/icon-source-cards/right.svg" alt="" srcset="">
+                </div>
+
+
 
                 <!-- Left Card -->
                 <div id="content-dark" class=" cursor card-main-disable-left">
@@ -442,10 +453,10 @@
         </footer>
 
 </body>
-
+<!-- dark mode -->
 <script src="JS/dark-mode.js"></script>
-
-
+<!-- scripts  -->
+<script src="JS/scripts-comunidad.js"></script>
 
 
 </html>

@@ -397,7 +397,16 @@
 
 
             <!-- Content Main Cards -->
-            <article id="slider-dark" class="slider-l">
+            <article onmouseout="MoveMouse();" onmouseover="HoverFlechas();" id="slider-dark" class="slider-l">
+
+                <!-- Hover Divs -->
+                <div onclick="BorderLeft();" id="hover-left" class="hover-left">
+                    <img src="icon-source/icon-source-cards/left.svg" alt="" srcset="">
+                </div>
+
+                <div id="hover-right" class="hover-right">
+                    <img src="icon-source/icon-source-cards/right.svg" alt="" srcset="">
+                </div>
 
                 <!-- Left Card -->
                 <div id="dark-info-1" class="card-main-disable-left">
@@ -527,7 +536,18 @@
             <!-- ========================== -->
 
             <!-- Slider Right -->
-            <article id="slider-dark1" class="slider-r">
+            <article onmouseout="MoveMouse1();" onmouseover="HoverFlechas1();" id="slider-dark1" class="slider-r">
+
+                <!-- Hover Divs -->
+                <div id="hover-left-1" class="hover-left">
+                    <img src="icon-source/icon-source-cards/left.svg" alt="" srcset="">
+                </div>
+
+                <div id="hover-right-1" class="hover-right">
+                    <img src="icon-source/icon-source-cards/right.svg" alt="" srcset="">
+                </div>
+
+
                 <!-- Left Card -->
                 <div id="dark-info-4" class="card-main-disable-left">
                     <div class="bg-disable">
@@ -791,5 +811,7 @@
 
 <!-- Dark Mode -->
 <script src="darkmode.js"></script>
+<!-- !-- Script -->
+<script src="scripts-home.js"></script>
 
 </html>

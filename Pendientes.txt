@@ -2,6 +2,7 @@
 3. Comentar sobre la letras Monserat y sobre opacidad del doc preview
 6. Que debe llevar en los iconos de contactenos
 7.Arregalr los chechbox con SPN y no con pseudo-elementos
+8. Hover de los iconos
 
 
 
