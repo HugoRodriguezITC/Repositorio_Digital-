@@ -506,11 +506,12 @@ table td {
     border-radius: 16px 0px 0px 16px;
     margin-top: 218px;
     z-index: 3;
-    margin-left: 802px;
+    /* margin-left: 802px; */
     display: flex;
     justify-content: center;
     align-items: center;
     visibility: hidden;
+    transform: translateX(802px);
 }
 
 .hover-left:active,
@@ -527,4 +528,12 @@ table td {
 
 .bg-boxsaw {
     box-shadow: 4px 8px 8px 0px #A1A3A980;
+}
+
+.dark-font {
+    color: var(--BCV_500) !important;
+}
+
+.font-wh {
+    color: var(--WHCV_500) !important;
 }

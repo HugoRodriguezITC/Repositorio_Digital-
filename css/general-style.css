@@ -486,7 +486,7 @@
     }
     
     .dark-font {
-        color: var(--BCV_500);
+        color: var(--BCV_500) !important;
     }
     
     .dark-select {

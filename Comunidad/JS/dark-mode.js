@@ -96,6 +96,19 @@ switchButton.addEventListener('click', () => {
         document.getElementById('content-dark').style.backgroundColor = BCV_400;
         document.getElementById('content1-dark').style.backgroundColor = BCV_400;
         document.getElementById('content2-dark').style.backgroundColor = BCV_400;
+        // font cards
+        document.getElementById('font-wh-1').classList.add('font-wh');
+        document.getElementById('font-wh-2').classList.add('font-wh');
+        document.getElementById('font-wh-3').classList.add('font-wh');
+        document.getElementById('font-wh-4').classList.add('font-wh');
+        document.getElementById('font-wh-5').classList.add('font-wh');
+        document.getElementById('font-wh-6').classList.add('font-wh');
+        document.getElementById('font-wh-7').classList.add('font-wh');
+        document.getElementById('font-wh-8').classList.add('font-wh');
+        document.getElementById('font-wh-9').classList.add('font-wh');
+        document.getElementById('font-wh-10').classList.add('font-wh');
+        document.getElementById('font-wh-11').classList.add('font-wh');
+        document.getElementById('font-wh-12').classList.add('font-wh');
 
 
 
@@ -108,9 +121,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-doc1-foot').classList.add('dark-icon-bg');
         document.getElementById('dark-doc2-foot').classList.add('dark-icon-bg');
         // Etiqueeta a
-        document.getElementById('dark-a1').classList.add('dark-font');
-        document.getElementById('dark-a2').classList.add('dark-font');
-        document.getElementById('dark-a3').classList.add('dark-font');
+        document.getElementById('dark-a-1').classList.add('dark-font');
+        document.getElementById('dark-a-2').classList.add('dark-font');
+        document.getElementById('dark-a-3').classList.add('dark-font');
         // Copy R
         document.getElementById('dark-copy').classList.add('dark-font');
         // Icons Contactenos
@@ -171,6 +184,19 @@ switchButton.addEventListener('click', () => {
         document.getElementById('content-dark').style.backgroundColor = WHCV_500;
         document.getElementById('content1-dark').style.backgroundColor = WHCV_500;
         document.getElementById('content2-dark').style.backgroundColor = WHCV_500;
+        // font cards
+        document.getElementById('font-wh-1').classList.remove('font-wh');
+        document.getElementById('font-wh-2').classList.remove('font-wh');
+        document.getElementById('font-wh-3').classList.remove('font-wh');
+        document.getElementById('font-wh-4').classList.remove('font-wh');
+        document.getElementById('font-wh-5').classList.remove('font-wh');
+        document.getElementById('font-wh-6').classList.remove('font-wh');
+        document.getElementById('font-wh-7').classList.remove('font-wh');
+        document.getElementById('font-wh-8').classList.remove('font-wh');
+        document.getElementById('font-wh-9').classList.remove('font-wh');
+        document.getElementById('font-wh-10').classList.remove('font-wh');
+        document.getElementById('font-wh-11').classList.remove('font-wh');
+        document.getElementById('font-wh-12').classList.remove('font-wh');
 
 
 
@@ -183,9 +209,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-doc2-foot').classList.remove('dark-icon-bg');
 
         // Etiqueeta a
-        document.getElementById('dark-a1').classList.remove('dark-font');
-        document.getElementById('dark-a2').classList.remove('dark-font');
-        document.getElementById('dark-a3').classList.remove('dark-font');
+        document.getElementById('dark-a-1').classList.remove('dark-font');
+        document.getElementById('dark-a-2').classList.remove('dark-font');
+        document.getElementById('dark-a-3').classList.remove('dark-font');
         // Copy R
         document.getElementById('dark-copy').classList.remove('dark-font');
         // Icons Contactenos
@@ -265,6 +291,19 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('content-dark').style.backgroundColor = BCV_400;
         document.getElementById('content1-dark').style.backgroundColor = BCV_400;
         document.getElementById('content2-dark').style.backgroundColor = BCV_400;
+        // font cards
+        document.getElementById('font-wh-1').classList.add('font-wh');
+        document.getElementById('font-wh-2').classList.add('font-wh');
+        document.getElementById('font-wh-3').classList.add('font-wh');
+        document.getElementById('font-wh-4').classList.add('font-wh');
+        document.getElementById('font-wh-5').classList.add('font-wh');
+        document.getElementById('font-wh-6').classList.add('font-wh');
+        document.getElementById('font-wh-7').classList.add('font-wh');
+        document.getElementById('font-wh-8').classList.add('font-wh');
+        document.getElementById('font-wh-9').classList.add('font-wh');
+        document.getElementById('font-wh-10').classList.add('font-wh');
+        document.getElementById('font-wh-11').classList.add('font-wh');
+        document.getElementById('font-wh-12').classList.add('font-wh');
 
 
 
@@ -279,9 +318,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-doc1-foot').classList.add('dark-icon-bg');
         document.getElementById('dark-doc2-foot').classList.add('dark-icon-bg');
         // Etiqueeta a
-        document.getElementById('dark-a1').classList.add('dark-font');
-        document.getElementById('dark-a2').classList.add('dark-font');
-        document.getElementById('dark-a3').classList.add('dark-font');
+        document.getElementById('dark-a-1').classList.add('dark-font');
+        document.getElementById('dark-a-2').classList.add('dark-font');
+        document.getElementById('dark-a-3').classList.add('dark-font');
         // Copy R
         document.getElementById('dark-copy').classList.add('dark-font');
         // Icons Contactenos
@@ -349,6 +388,19 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('content-dark').style.backgroundColor = WHCV_500;
         document.getElementById('content1-dark').style.backgroundColor = WHCV_500;
         document.getElementById('content2-dark').style.backgroundColor = WHCV_500;
+        // font cards
+        document.getElementById('font-wh-1').classList.remove('font-wh');
+        document.getElementById('font-wh-2').classList.remove('font-wh');
+        document.getElementById('font-wh-3').classList.remove('font-wh');
+        document.getElementById('font-wh-4').classList.remove('font-wh');
+        document.getElementById('font-wh-5').classList.remove('font-wh');
+        document.getElementById('font-wh-6').classList.remove('font-wh');
+        document.getElementById('font-wh-7').classList.remove('font-wh');
+        document.getElementById('font-wh-8').classList.remove('font-wh');
+        document.getElementById('font-wh-9').classList.remove('font-wh');
+        document.getElementById('font-wh-10').classList.remove('font-wh');
+        document.getElementById('font-wh-11').classList.remove('font-wh');
+        document.getElementById('font-wh-12').classList.remove('font-wh');
 
 
 
@@ -362,9 +414,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-doc1-foot').classList.remove('dark-icon-bg');
         document.getElementById('dark-doc2-foot').classList.remove('dark-icon-bg');
         // Etiqueeta a
-        document.getElementById('dark-a1').classList.remove('dark-font');
-        document.getElementById('dark-a2').classList.remove('dark-font');
-        document.getElementById('dark-a3').classList.remove('dark-font');
+        document.getElementById('dark-a-1').classList.remove('dark-font');
+        document.getElementById('dark-a-2').classList.remove('dark-font');
+        document.getElementById('dark-a-3').classList.remove('dark-font');
         // Copy R
         document.getElementById('dark-copy').classList.remove('dark-font');
         // Icons Contactenos
@@ -447,6 +499,20 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('content-dark').style.backgroundColor = BCV_400;
     document.getElementById('content1-dark').style.backgroundColor = BCV_400;
     document.getElementById('content2-dark').style.backgroundColor = BCV_400;
+    // font cards
+    document.getElementById('font-wh-1').classList.add('font-wh');
+    document.getElementById('font-wh-2').classList.add('font-wh');
+    document.getElementById('font-wh-3').classList.add('font-wh');
+    document.getElementById('font-wh-4').classList.add('font-wh');
+    document.getElementById('font-wh-5').classList.add('font-wh');
+    document.getElementById('font-wh-6').classList.add('font-wh');
+    document.getElementById('font-wh-7').classList.add('font-wh');
+    document.getElementById('font-wh-8').classList.add('font-wh');
+    document.getElementById('font-wh-9').classList.add('font-wh');
+    document.getElementById('font-wh-10').classList.add('font-wh');
+    document.getElementById('font-wh-11').classList.add('font-wh');
+    document.getElementById('font-wh-12').classList.add('font-wh');
+
 
 
 
@@ -461,9 +527,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('dark-doc1-foot').classList.add('dark-icon-bg');
     document.getElementById('dark-doc2-foot').classList.add('dark-icon-bg');
     // Etiqueeta a
-    document.getElementById('dark-a1').classList.add('dark-font');
-    document.getElementById('dark-a2').classList.add('dark-font');
-    document.getElementById('dark-a3').classList.add('dark-font');
+    document.getElementById('dark-a-1').classList.add('dark-font');
+    document.getElementById('dark-a-2').classList.add('dark-font');
+    document.getElementById('dark-a-3').classList.add('dark-font');
     // Copy R
     document.getElementById('dark-copy').classList.add('dark-font');
     // Icons Contactenos
@@ -475,58 +541,6 @@ if (localStorage.getItem('theme') == 'true') {
 
 
 
-    function BGdark1() {
-        document.getElementById('list-item').style.backgroundColor = BCV_400;
-        document.getElementById('dark-a').style.color = WHCV_500;
-        document.getElementById('icon-dark').style.fill = WHCV_500;
-    }
-
-    function BGOriginal1() {
-        document.getElementById('list-item').style.backgroundColor = PCV_200;
-        document.getElementById('dark-a').style.color = BCV_500;
-        document.getElementById('icon-dark').style.fill = BCV_500;
-    }
-
-    // 1
-
-
-    function BGdark2() {
-        document.getElementById('list-item1').style.backgroundColor = BCV_400;
-        document.getElementById('dark-a1').style.color = WHCV_500;
-        document.getElementById('icon1-dark').style.fill = WHCV_500;
-    }
-
-    function BGOriginal2() {
-        document.getElementById('list-item1').style.backgroundColor = PCV_200;
-        document.getElementById('dark-a1').style.color = BCV_500;
-        document.getElementById('icon1-dark').style.fill = BCV_500;
-    }
-
-    // 2
-
-    function BGdark3() {
-        document.getElementById('list-item2').style.backgroundColor = BCV_400;
-        document.getElementById('dark-a2').style.color = WHCV_500;
-        document.getElementById('icon2-dark').style.fill = WHCV_500;
-    }
-
-    function BGOriginal3() {
-        document.getElementById('list-item2').style.backgroundColor = PCV_200;
-        document.getElementById('dark-a2').style.color = BCV_500;
-        document.getElementById('icon2-dark').style.fill = BCV_500;
-    }
-    // 3
-    function BGdark4() {
-        document.getElementById('list-item3').style.backgroundColor = BCV_400;
-        document.getElementById('dark-a3').style.color = WHCV_500;
-        document.getElementById('icon3-dark').style.fill = WHCV_500;
-    }
-
-    function BGOriginal4() {
-        document.getElementById('list-item3').style.backgroundColor = PCV_200;
-        document.getElementById('dark-a3').style.color = BCV_500;
-        document.getElementById('icon3-dark').style.fill = BCV_500;
-    }
 
 
 
@@ -586,6 +600,19 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('content-dark').style.backgroundColor = WHCV_500;
     document.getElementById('content1-dark').style.backgroundColor = WHCV_500;
     document.getElementById('content2-dark').style.backgroundColor = WHCV_500;
+    // font cards
+    document.getElementById('font-wh-1').classList.remove('font-wh');
+    document.getElementById('font-wh-2').classList.remove('font-wh');
+    document.getElementById('font-wh-3').classList.remove('font-wh');
+    document.getElementById('font-wh-4').classList.remove('font-wh');
+    document.getElementById('font-wh-5').classList.remove('font-wh');
+    document.getElementById('font-wh-6').classList.remove('font-wh');
+    document.getElementById('font-wh-7').classList.remove('font-wh');
+    document.getElementById('font-wh-8').classList.remove('font-wh');
+    document.getElementById('font-wh-9').classList.remove('font-wh');
+    document.getElementById('font-wh-10').classList.remove('font-wh');
+    document.getElementById('font-wh-11').classList.remove('font-wh');
+    document.getElementById('font-wh-12').classList.remove('font-wh');
 
 
 
@@ -596,49 +623,15 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('dark-doc1-foot').classList.remove('dark-icon-bg');
     document.getElementById('dark-doc2-foot').classList.remove('dark-icon-bg');
     // Etiqueeta a
-    document.getElementById('dark-a1').classList.remove('dark-font');
-    document.getElementById('dark-a2').classList.remove('dark-font');
-    document.getElementById('dark-a3').classList.remove('dark-font');
+    document.getElementById('dark-a-1').classList.remove('dark-font');
+    document.getElementById('dark-a-2').classList.remove('dark-font');
+    document.getElementById('dark-a-3').classList.remove('dark-font');
     // Copy R
     document.getElementById('dark-copy').classList.remove('dark-font');
     // Icons Contactenos
     document.getElementById('dark-messa').style.fill = SCV_500;
     document.getElementById('dark-thel').style.fill = TCV_500;
 
-    function BGdark1() {
-        document.getElementById('list-item').style.backgroundColor = WHCV_500;
 
-    }
-
-    function BGOriginal1() {
-        document.getElementById('list-item').style.backgroundColor = PCV_200;
-    }
-    // 1
-    function BGdark2() {
-        document.getElementById('list-item1').style.backgroundColor = WHCV_500;
-
-    }
-
-    function BGOriginal2() {
-        document.getElementById('list-item1').style.backgroundColor = PCV_200;
-    }
-    // 2
-    function BGdark3() {
-        document.getElementById('list-item2').style.backgroundColor = WHCV_500;
-
-    }
-
-    function BGOriginal3() {
-        document.getElementById('list-item2').style.backgroundColor = PCV_200;
-    }
-    // 3
-    function BGdark4() {
-        document.getElementById('list-item3').style.backgroundColor = WHCV_500;
-
-    }
-
-    function BGOriginal4() {
-        document.getElementById('list-item3').style.backgroundColor = PCV_200;
-    }
 
 }
