@@ -262,6 +262,9 @@ button img {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     margin-top: 50px;
+    transform: translateX(0px) scale(1);
+    z-index: 99;
+    transition: all .5s;
 }
 
 .bg {
@@ -350,7 +353,7 @@ table td {
     font-family: var(--font_body);
     font-style: normal;
     font-weight: normal;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
     line-height: 1.25;
     /*  */
     display: flex;
@@ -375,6 +378,8 @@ table td {
     -o-border-radius: 16px;
     opacity: 0.6;
     margin-left: 16px;
+    z-index: 9;
+    transition: all .5s;
 }
 
 .card-main-disable-left {
@@ -389,6 +394,8 @@ table td {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     opacity: 0.6;
+    z-index: 9;
+    transition: all .5s;
 }
 
 .bg-disable {
@@ -488,7 +495,7 @@ table td {
     width: 4rem;
     border-radius: 0px 16px 16px 0px;
     margin-top: 218px;
-    z-index: 3;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,7 +509,7 @@ table td {
     width: 4rem;
     border-radius: 16px 0px 0px 16px;
     margin-top: 218px;
-    z-index: 3;
+    z-index: 100;
     /* margin-left: 802px; */
     display: flex;
     justify-content: center;
