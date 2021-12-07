@@ -90,7 +90,27 @@ main {
     border: 1px dashed blue;
 }
 
-.card-main {
+.slider-l {
+    grid-column: 1/6;
+    height: 500px;
+    background-color: var(--BCV_500);
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* position: relative; */
+}
+
+.slider-r {
+    grid-column: 8/13;
+    height: 500px;
+    background-color: var(--BCV_500);
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slider-l .card-main,
+.slider-r .card-main {
     width: 262px;
     height: 400px;
     /* margin: 50px 155px 50px 155px; */
@@ -103,6 +123,9 @@ main {
     -o-border-radius: 16px;
     /* opacity: 0.6; */
     position: absolute;
+    transform: translateX(0px) scale(1);
+    z-index: 99;
+    transition: all .5s;
 }
 
 .bg {
@@ -114,22 +137,6 @@ main {
     -moz-border-radius: 16px 16px 0px 0px;
     -ms-border-radius: 16px 16px 0px 0px;
     -o-border-radius: 16px 16px 0px 0px;
-}
-
-.slider-l {
-    grid-column: 1/6;
-    height: 500px;
-    background-color: var(--BCV_500);
-    border-radius: 16px;
-    display: flex;
-}
-
-.slider-r {
-    grid-column: 8/13;
-    height: 500px;
-    background-color: var(--BCV_500);
-    border-radius: 16px;
-    display: flex;
 }
 
 .bg img {
@@ -148,6 +155,7 @@ main {
 .slider-card-cont {
     width: 13.125rem;
     height: 2.5rem;
+    flex-wrap: nowrap;
 }
 
 .slider-card-cont sub {
@@ -220,7 +228,8 @@ table td {
 
 /* Disable */
 
-.card-main-disable-right {
+.slider-l .card-main-disable-right,
+.slider-r .card-main-disable-right {
     width: 200.71px;
     height: 306.42px;
     margin-top: 97px;
@@ -231,10 +240,15 @@ table td {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     opacity: 0.6;
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    z-index: 9;
+    /* position: absolute; */
+    transform: translateX(90px);
+    transition: all .5s;
 }
 
-.card-main-disable-left {
+.slider-l .card-main-disable-left,
+.slider-r .card-main-disable-left {
     width: 200.71px;
     height: 306.42px;
     margin-left: 20px;
@@ -246,6 +260,9 @@ table td {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     opacity: 0.6;
+    z-index: 9;
+    transform: translateX(-0px);
+    transition: all .5s;
 }
 
 .bg-disable {
@@ -368,4 +385,41 @@ table td {
     width: 192px;
     /* border: 1px solid red; */
     margin: 20px;
+}
+
+
+/* hover cards */
+
+.hover-left {
+    position: absolute;
+    background-color: var(--SCV_500);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0px 16px 16px 0px;
+    margin-top: 218px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.hover-right {
+    position: absolute;
+    background-color: var(--SCV_500);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 16px 0px 0px 16px;
+    margin-top: 218px;
+    z-index: 100;
+    margin-left: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.hover-left:active,
+.hover-right:active {
+    border: 4px solid #FAE39F;
 }

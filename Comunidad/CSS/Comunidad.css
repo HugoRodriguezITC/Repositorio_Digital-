@@ -254,7 +254,6 @@ button img {
 .card-main {
     width: 262px;
     height: 400px;
-    /* margin: 50px 155px 50px 155px; */
     margin-left: 16.16px;
     background-color: var(--WHCV_500);
     border-radius: 16px;
@@ -262,8 +261,6 @@ button img {
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
-    /* opacity: 0.6; */
-    /* position: absolute; */
     margin-top: 50px;
 }
 
