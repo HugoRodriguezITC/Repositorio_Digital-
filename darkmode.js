@@ -122,9 +122,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-info-1').style.backgroundColor = BCV_400;
         document.getElementById('dark-info-2').style.backgroundColor = BCV_400;
         document.getElementById('dark-info-3').style.backgroundColor = BCV_400;
-        document.getElementById('dark-info-4').style.backgroundColor = BCV_400;
-        document.getElementById('dark-info-5').style.backgroundColor = BCV_400;
-        document.getElementById('dark-info-6').style.backgroundColor = BCV_400;
+        document.getElementById('dark-info-4-r').style.backgroundColor = BCV_400;
+        document.getElementById('dark-info-5-r').style.backgroundColor = BCV_400;
+        document.getElementById('dark-info-6-r').style.backgroundColor = BCV_400;
         // Font White
         document.getElementById('title-font-1').style.color = WHCV_500;
         document.getElementById('title-font-2').style.color = WHCV_500;
@@ -261,9 +261,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-info-1').style.backgroundColor = WHCV_500;
         document.getElementById('dark-info-2').style.backgroundColor = WHCV_500;
         document.getElementById('dark-info-3').style.backgroundColor = WHCV_500;
-        document.getElementById('dark-info-4').style.backgroundColor = WHCV_500;
-        document.getElementById('dark-info-5').style.backgroundColor = WHCV_500;
-        document.getElementById('dark-info-6').style.backgroundColor = WHCV_500;
+        document.getElementById('dark-info-4-r').style.backgroundColor = WHCV_500;
+        document.getElementById('dark-info-5-r').style.backgroundColor = WHCV_500;
+        document.getElementById('dark-info-6-r').style.backgroundColor = WHCV_500;
         // Font White
         document.getElementById('title-font-1').style.color = BCV_500;
         document.getElementById('title-font-2').style.color = BCV_500;
@@ -427,9 +427,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-info-1').style.backgroundColor = BCV_400;
         document.getElementById('dark-info-2').style.backgroundColor = BCV_400;
         document.getElementById('dark-info-3').style.backgroundColor = BCV_400;
-        document.getElementById('dark-info-4').style.backgroundColor = BCV_400;
-        document.getElementById('dark-info-5').style.backgroundColor = BCV_400;
-        document.getElementById('dark-info-6').style.backgroundColor = BCV_400;
+        document.getElementById('dark-info-4-r').style.backgroundColor = BCV_400;
+        document.getElementById('dark-info-5-r').style.backgroundColor = BCV_400;
+        document.getElementById('dark-info-6-r').style.backgroundColor = BCV_400;
         // Font White
         document.getElementById('title-font-1').style.color = WHCV_500;
         document.getElementById('title-font-2').style.color = WHCV_500;
@@ -562,9 +562,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-info-1').style.backgroundColor = WHCV_500;
         document.getElementById('dark-info-2').style.backgroundColor = WHCV_500;
         document.getElementById('dark-info-3').style.backgroundColor = WHCV_500;
-        document.getElementById('dark-info-4').style.backgroundColor = WHCV_500;
-        document.getElementById('dark-info-5').style.backgroundColor = WHCV_500;
-        document.getElementById('dark-info-6').style.backgroundColor = WHCV_500;
+        document.getElementById('dark-info-4-r').style.backgroundColor = WHCV_500;
+        document.getElementById('dark-info-5-r').style.backgroundColor = WHCV_500;
+        document.getElementById('dark-info-6-r').style.backgroundColor = WHCV_500;
         // Font White
         document.getElementById('title-font-1').style.color = BCV_500;
         document.getElementById('title-font-2').style.color = BCV_500;
@@ -722,9 +722,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('dark-info-1').style.backgroundColor = BCV_400;
     document.getElementById('dark-info-2').style.backgroundColor = BCV_400;
     document.getElementById('dark-info-3').style.backgroundColor = BCV_400;
-    document.getElementById('dark-info-4').style.backgroundColor = BCV_400;
-    document.getElementById('dark-info-5').style.backgroundColor = BCV_400;
-    document.getElementById('dark-info-6').style.backgroundColor = BCV_400;
+    document.getElementById('dark-info-4-r').style.backgroundColor = BCV_400;
+    document.getElementById('dark-info-5-r').style.backgroundColor = BCV_400;
+    document.getElementById('dark-info-6-r').style.backgroundColor = BCV_400;
     // Font White
     document.getElementById('title-font-1').style.color = WHCV_500;
     document.getElementById('title-font-2').style.color = WHCV_500;
@@ -872,9 +872,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('dark-info-1').style.backgroundColor = WHCV_500;
     document.getElementById('dark-info-2').style.backgroundColor = WHCV_500;
     document.getElementById('dark-info-3').style.backgroundColor = WHCV_500;
-    document.getElementById('dark-info-4').style.backgroundColor = WHCV_500;
-    document.getElementById('dark-info-5').style.backgroundColor = WHCV_500;
-    document.getElementById('dark-info-6').style.backgroundColor = WHCV_500;
+    document.getElementById('dark-info-4-r').style.backgroundColor = WHCV_500;
+    document.getElementById('dark-info-5-r').style.backgroundColor = WHCV_500;
+    document.getElementById('dark-info-6-r').style.backgroundColor = WHCV_500;
 
     // Font White
     document.getElementById('title-font-1').style.color = BCV_500;

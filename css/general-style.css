@@ -303,7 +303,7 @@
         height: 102px;
         padding: 1rem;
         min-width: 100%;
-        z-index: 4;
+        z-index: 150;
         transition: var(--transition-effects);
     }
     
