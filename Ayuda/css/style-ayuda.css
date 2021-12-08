@@ -7,7 +7,7 @@
 
 .contenido {
     width: 100%;
-    height: 832px;
+    height: auto;
     /* border: 1px solid red; */
 }
 
@@ -15,7 +15,79 @@
     grid-column: 2/7;
     height: 244px;
     margin-top: 60px;
-    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px dashed red; */
+}
+
+.preguntas-cont {
+    width: 100%;
+    height: 40px;
+    /* WShades-500 */
+    background-color: var(--WHCV_500);
+    /* Primary-500 */
+    border: 1px solid #1B396A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 4px 8px 4px 16px;
+    cursor: pointer;
+}
+
+.pregunta-2 {
+    height: 52px;
+}
+
+.preguntas-cont sub {
+    /* Subtitle 1 */
+    width: 499px;
+    font-family: var(--font_headlines);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    /* BShades-500 */
+    color: var(--BCV_500);
+}
+
+.none-icon {
+    display: none;
+}
+
+.respuestas {
+    width: 100%;
+    height: auto;
+    margin-top: -22px;
+    padding: 8px 16px 24px;
+    /* Primary-200 */
+    background-color: var(--PCV_200);
+    /* Info-500 */
+    border: 2px solid #1550AF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: none;
+    transition: all .10s;
+}
+
+.respuestas p {
+    /* Body 1 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #000000;
 }
 
 .info-ayuda {
@@ -89,94 +161,6 @@
     /* border: 1px dashed blue; */
 }
 
-.accordion {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    /* border: 1px solid #0D3069; */
-    width: 100%;
-    height: 100%;
-}
-
-.conten-question {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    padding: 4px 8px 4px 16px;
-    /*  */
-    border: 1px solid rgba(27, 57, 106, 1);
-    background-color: var(--WHCV_500);
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.accordion-link {
-    font-family: var(--font_headlines);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 22px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15px;
-    /* BShades-500 */
-    color: #141927;
-}
-
-.remove-io {
-    display: none;
-}
-
-.answer p {
-    font-family: var(--font_body);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.5px;
-    color: var(--BCV_500);
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    transition: max-height 650ms;
-    -webkit-transition: max-height 650ms;
-    -moz-transition: max-height 650ms;
-    -ms-transition: max-height 650ms;
-    -o-transition: max-height 650ms;
-}
-
-.accordion-item:target .answer {
-    padding: 8px 16px 24px;
-    margin-top: 8px;
-    margin-bottom: 28px;
-    max-height: 152px;
-    background: #A4B0C3;
-    /* Info-500 */
-    border: 2px solid #1550AF;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.accordion-item {
-    margin-top: 28px;
-    margin-bottom: 28px;
-}
-
-.accordion-item:target .conten-question .add-io {
-    display: none;
-}
-
-.accordion-item:target .conten-question .remove-io {
-    display: block;
-}
-
 h5 a {
     /* H5 */
     font-family: var(--font_headlines);
@@ -205,6 +189,19 @@ h5 a {
 }
 
 .dark-question {
-    background-color: var(--BCV_400);
-    border: 1px solid var(--PCV_200);
+    background-color: var(--PCV_200) !important;
+    border: 2px solid #A1B9DF !important;
+}
+
+.dark-font-wh {
+    color: var(--WHCV_500) !important;
+}
+
+.dark-font-bl {
+    color: #000000 !important;
+}
+
+.conten-quest-dark {
+    background-color: var(--BCV_400) !important;
+    border: 1px solid var(--WHCV_500) !important;
 }

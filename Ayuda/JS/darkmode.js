@@ -49,24 +49,34 @@ switchButton.addEventListener('click', () => {
         document.getElementById('h5-dark').classList.add('dark-h5');
 
         // Questions
-        document.getElementById('dark-con-ques').classList.add('dark-question');
-        document.getElementById('dark-con-ques2').classList.add('dark-question');
-        document.getElementById('dark-con-ques3').classList.add('dark-question');
-        document.getElementById('dark-con-ques4').classList.add('dark-question');
+        document.getElementById('respuesta1').classList.add('dark-question');
+        document.getElementById('respuesta2').classList.add('dark-question');
+        document.getElementById('respuesta3').classList.add('dark-question');
+        document.getElementById('respuesta4').classList.add('dark-question');
         // Questios font
-        document.getElementById('font-dark').classList.add('dark-font-wh');
-        document.getElementById('font-dark2').classList.add('dark-font-wh');
-        document.getElementById('font-dark3').classList.add('dark-font-wh');
-        document.getElementById('font-dark4').classList.add('dark-font-wh');
+        document.getElementById('anwser-p-1').classList.add('dark-font-bl');
+        document.getElementById('anwser-p-2').classList.add('dark-font-bl');
+        document.getElementById('anwser-p-3').classList.add('dark-font-bl');
+        document.getElementById('anwser-p-4').classList.add('dark-font-bl');
         // Questions icons
-        document.getElementById('up-1').style.fill = WHCV_500;
-        document.getElementById('down-1').style.fill = WHCV_500;
-        document.getElementById('up-2').style.fill = WHCV_500;
-        document.getElementById('down-2').style.fill = WHCV_500;
-        document.getElementById('up-3').style.fill = WHCV_500;
-        document.getElementById('down-3').style.fill = WHCV_500;
-        document.getElementById('up-4').style.fill = WHCV_500;
-        document.getElementById('down-4').style.fill = WHCV_500;
+        document.getElementById('Fup-1').style.fill = WHCV_500;
+        document.getElementById('Fdonw-1').style.fill = WHCV_500;
+        document.getElementById('Fup-2').style.fill = WHCV_500;
+        document.getElementById('Fdonw-2').style.fill = WHCV_500;
+        document.getElementById('Fup-3').style.fill = WHCV_500;
+        document.getElementById('Fdonw-3').style.fill = WHCV_500;
+        document.getElementById('Fup-4').style.fill = WHCV_500;
+        document.getElementById('Fdonw-4').style.fill = WHCV_500;
+        // Content Questions
+        document.getElementById('conte-pregunta-1').classList.add('conten-quest-dark');
+        document.getElementById('conte-pregunta-2').classList.add('conten-quest-dark');
+        document.getElementById('conte-pregunta-3').classList.add('conten-quest-dark');
+        document.getElementById('conte-pregunta-4').classList.add('conten-quest-dark');
+        // Font White Questions
+        document.getElementById('sub-1').classList.add('dark-font-wh');
+        document.getElementById('sub-2').classList.add('dark-font-wh');
+        document.getElementById('sub-3').classList.add('dark-font-wh');
+        document.getElementById('sub-4').classList.add('dark-font-wh');
 
 
         // Footer
@@ -107,24 +117,34 @@ switchButton.addEventListener('click', () => {
         document.getElementById('h5-dark').classList.remove('dark-h5');
 
         // Questions
-        document.getElementById('dark-con-ques').classList.remove('dark-question');
-        document.getElementById('dark-con-ques2').classList.remove('dark-question');
-        document.getElementById('dark-con-ques3').classList.remove('dark-question');
-        document.getElementById('dark-con-ques4').classList.remove('dark-question');
+        document.getElementById('respuesta1').classList.remove('dark-question');
+        document.getElementById('respuesta2').classList.remove('dark-question');
+        document.getElementById('respuesta3').classList.remove('dark-question');
+        document.getElementById('respuesta4').classList.remove('dark-question');
         // Questios font
-        document.getElementById('font-dark').classList.remove('dark-font-wh');
-        document.getElementById('font-dark2').classList.remove('dark-font-wh');
-        document.getElementById('font-dark3').classList.remove('dark-font-wh');
-        document.getElementById('font-dark4').classList.remove('dark-font-wh');
+        document.getElementById('anwser-p-1').classList.remove('dark-fobl-wh');
+        document.getElementById('anwser-p-2').classList.remove('dark-fobl-wh');
+        document.getElementById('anwser-p-3').classList.remove('dark-fobl-wh');
+        document.getElementById('anwser-p-4').classList.remove('dark-fobl-wh');
         // Questions icons
-        document.getElementById('up-1').style.fill = PCV_500;
-        document.getElementById('down-1').style.fill = PCV_500;
-        document.getElementById('up-2').style.fill = PCV_500;
-        document.getElementById('down-2').style.fill = PCV_500;
-        document.getElementById('up-3').style.fill = PCV_500;
-        document.getElementById('down-3').style.fill = PCV_500;
-        document.getElementById('up-4').style.fill = PCV_500;
-        document.getElementById('down-4').style.fill = PCV_500;
+        document.getElementById('Fup-1').style.fill = PCV_500;
+        document.getElementById('Fdonw-1').style.fill = PCV_500;
+        document.getElementById('Fup-2').style.fill = PCV_500;
+        document.getElementById('Fdonw-2').style.fill = PCV_500;
+        document.getElementById('Fup-3').style.fill = PCV_500;
+        document.getElementById('Fdonw-3').style.fill = PCV_500;
+        document.getElementById('Fup-4').style.fill = PCV_500;
+        document.getElementById('Fdonw-4').style.fill = PCV_500;
+        // Content Questions
+        document.getElementById('conte-pregunta-1').classList.remove('conten-quest-dark');
+        document.getElementById('conte-pregunta-2').classList.remove('conten-quest-dark');
+        document.getElementById('conte-pregunta-3').classList.remove('conten-quest-dark');
+        document.getElementById('conte-pregunta-4').classList.remove('conten-quest-dark');
+        // Font White Questions
+        document.getElementById('sub-1').classList.remove('dark-font-wh');
+        document.getElementById('sub-2').classList.remove('dark-font-wh');
+        document.getElementById('sub-3').classList.remove('dark-font-wh');
+        document.getElementById('sub-4').classList.remove('dark-font-wh');
 
 
         // Footer
@@ -184,24 +204,34 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('h5-dark').classList.add('dark-h5');
 
         // Questions
-        document.getElementById('dark-con-ques').classList.add('dark-question');
-        document.getElementById('dark-con-ques2').classList.add('dark-question');
-        document.getElementById('dark-con-ques3').classList.add('dark-question');
-        document.getElementById('dark-con-ques4').classList.add('dark-question');
+        document.getElementById('respuesta1').classList.add('dark-question');
+        document.getElementById('respuesta2').classList.add('dark-question');
+        document.getElementById('respuesta3').classList.add('dark-question');
+        document.getElementById('respuesta4').classList.add('dark-question');
         // Questios font
-        document.getElementById('font-dark').classList.add('dark-font-wh');
-        document.getElementById('font-dark2').classList.add('dark-font-wh');
-        document.getElementById('font-dark3').classList.add('dark-font-wh');
-        document.getElementById('font-dark4').classList.add('dark-font-wh');
+        document.getElementById('anwser-p-1').classList.add('dark-font-bl');
+        document.getElementById('anwser-p-2').classList.add('dark-font-bl');
+        document.getElementById('anwser-p-3').classList.add('dark-font-bl');
+        document.getElementById('anwser-p-4').classList.add('dark-font-bl');
         // Questions icons
-        document.getElementById('up-1').style.fill = WHCV_500;
-        document.getElementById('down-1').style.fill = WHCV_500;
-        document.getElementById('up-2').style.fill = WHCV_500;
-        document.getElementById('down-2').style.fill = WHCV_500;
-        document.getElementById('up-3').style.fill = WHCV_500;
-        document.getElementById('down-3').style.fill = WHCV_500;
-        document.getElementById('up-4').style.fill = WHCV_500;
-        document.getElementById('down-4').style.fill = WHCV_500;
+        document.getElementById('Fup-1').style.fill = WHCV_500;
+        document.getElementById('Fdonw-1').style.fill = WHCV_500;
+        document.getElementById('Fup-2').style.fill = WHCV_500;
+        document.getElementById('Fdonw-2').style.fill = WHCV_500;
+        document.getElementById('Fup-3').style.fill = WHCV_500;
+        document.getElementById('Fdonw-3').style.fill = WHCV_500;
+        document.getElementById('Fup-4').style.fill = WHCV_500;
+        document.getElementById('Fdonw-4').style.fill = WHCV_500;
+        // Content Questions
+        document.getElementById('conte-pregunta-1').classList.add('conten-quest-dark');
+        document.getElementById('conte-pregunta-2').classList.add('conten-quest-dark');
+        document.getElementById('conte-pregunta-3').classList.add('conten-quest-dark');
+        document.getElementById('conte-pregunta-4').classList.add('conten-quest-dark');
+        // Font White Questions
+        document.getElementById('sub-1').classList.add('dark-font-wh');
+        document.getElementById('sub-2').classList.add('dark-font-wh');
+        document.getElementById('sub-3').classList.add('dark-font-wh');
+        document.getElementById('sub-4').classList.add('dark-font-wh');
 
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
@@ -240,24 +270,34 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('h5-dark').classList.remove('dark-h5');
 
         // Questions
-        document.getElementById('dark-con-ques').classList.remove('dark-question');
-        document.getElementById('dark-con-ques2').classList.remove('dark-question');
-        document.getElementById('dark-con-ques3').classList.remove('dark-question');
-        document.getElementById('dark-con-ques4').classList.remove('dark-question');
+        document.getElementById('respuesta1').classList.remove('dark-question');
+        document.getElementById('respuesta2').classList.remove('dark-question');
+        document.getElementById('respuesta3').classList.remove('dark-question');
+        document.getElementById('respuesta4').classList.remove('dark-question');
         // Questios font
-        document.getElementById('font-dark').classList.remove('dark-font-wh');
-        document.getElementById('font-dark2').classList.remove('dark-font-wh');
-        document.getElementById('font-dark3').classList.remove('dark-font-wh');
-        document.getElementById('font-dark4').classList.remove('dark-font-wh');
+        document.getElementById('anwser-p-1').classList.remove('dark-fobl-wh');
+        document.getElementById('anwser-p-2').classList.remove('dark-fobl-wh');
+        document.getElementById('anwser-p-3').classList.remove('dark-fobl-wh');
+        document.getElementById('anwser-p-4').classList.remove('dark-fobl-wh');
         // Questions icons
-        document.getElementById('up-1').style.fill = PCV_500;
-        document.getElementById('down-1').style.fill = PCV_500;
-        document.getElementById('up-2').style.fill = PCV_500;
-        document.getElementById('down-2').style.fill = PCV_500;
-        document.getElementById('up-3').style.fill = PCV_500;
-        document.getElementById('down-3').style.fill = PCV_500;
-        document.getElementById('up-4').style.fill = PCV_500;
-        document.getElementById('down-4').style.fill = PCV_500;
+        document.getElementById('Fup-1').style.fill = PCV_500;
+        document.getElementById('Fdonw-1').style.fill = PCV_500;
+        document.getElementById('Fup-2').style.fill = PCV_500;
+        document.getElementById('Fdonw-2').style.fill = PCV_500;
+        document.getElementById('Fup-3').style.fill = PCV_500;
+        document.getElementById('Fdonw-3').style.fill = PCV_500;
+        document.getElementById('Fup-4').style.fill = PCV_500;
+        document.getElementById('Fdonw-4').style.fill = PCV_500;
+        // Content Questions
+        document.getElementById('conte-pregunta-1').classList.remove('conten-quest-dark');
+        document.getElementById('conte-pregunta-2').classList.remove('conten-quest-dark');
+        document.getElementById('conte-pregunta-3').classList.remove('conten-quest-dark');
+        document.getElementById('conte-pregunta-4').classList.remove('conten-quest-dark');
+        // Font White Questions
+        document.getElementById('sub-1').classList.remove('dark-font-wh');
+        document.getElementById('sub-2').classList.remove('dark-font-wh');
+        document.getElementById('sub-3').classList.remove('dark-font-wh');
+        document.getElementById('sub-4').classList.remove('dark-font-wh');
 
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
@@ -314,24 +354,34 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('h5-dark').classList.add('dark-h5');
 
     // Questions
-    document.getElementById('dark-con-ques').classList.add('dark-question');
-    document.getElementById('dark-con-ques2').classList.add('dark-question');
-    document.getElementById('dark-con-ques3').classList.add('dark-question');
-    document.getElementById('dark-con-ques4').classList.add('dark-question');
+    document.getElementById('respuesta1').classList.add('dark-question');
+    document.getElementById('respuesta2').classList.add('dark-question');
+    document.getElementById('respuesta3').classList.add('dark-question');
+    document.getElementById('respuesta4').classList.add('dark-question');
     // Questios font
-    document.getElementById('font-dark').classList.add('dark-font-wh');
-    document.getElementById('font-dark2').classList.add('dark-font-wh');
-    document.getElementById('font-dark3').classList.add('dark-font-wh');
-    document.getElementById('font-dark4').classList.add('dark-font-wh');
+    document.getElementById('anwser-p-1').classList.add('dark-font-bl');
+    document.getElementById('anwser-p-2').classList.add('dark-font-bl');
+    document.getElementById('anwser-p-3').classList.add('dark-font-bl');
+    document.getElementById('anwser-p-4').classList.add('dark-font-bl');
     // Questions icons
-    document.getElementById('up-1').style.fill = WHCV_500;
-    document.getElementById('down-1').style.fill = WHCV_500;
-    document.getElementById('up-2').style.fill = WHCV_500;
-    document.getElementById('down-2').style.fill = WHCV_500;
-    document.getElementById('up-3').style.fill = WHCV_500;
-    document.getElementById('down-3').style.fill = WHCV_500;
-    document.getElementById('up-4').style.fill = WHCV_500;
-    document.getElementById('down-4').style.fill = WHCV_500;
+    document.getElementById('Fup-1').style.fill = WHCV_500;
+    document.getElementById('Fdonw-1').style.fill = WHCV_500;
+    document.getElementById('Fup-2').style.fill = WHCV_500;
+    document.getElementById('Fdonw-2').style.fill = WHCV_500;
+    document.getElementById('Fup-3').style.fill = WHCV_500;
+    document.getElementById('Fdonw-3').style.fill = WHCV_500;
+    document.getElementById('Fup-4').style.fill = WHCV_500;
+    document.getElementById('Fdonw-4').style.fill = WHCV_500;
+    // Content Questions
+    document.getElementById('conte-pregunta-1').classList.add('conten-quest-dark');
+    document.getElementById('conte-pregunta-2').classList.add('conten-quest-dark');
+    document.getElementById('conte-pregunta-3').classList.add('conten-quest-dark');
+    document.getElementById('conte-pregunta-4').classList.add('conten-quest-dark');
+    // Font White Questions
+    document.getElementById('sub-1').classList.add('dark-font-wh');
+    document.getElementById('sub-2').classList.add('dark-font-wh');
+    document.getElementById('sub-3').classList.add('dark-font-wh');
+    document.getElementById('sub-4').classList.add('dark-font-wh');
 
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
@@ -378,24 +428,34 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('h5-dark').classList.remove('dark-h5');
 
     // Questions
-    document.getElementById('dark-con-ques').classList.remove('dark-question');
-    document.getElementById('dark-con-ques2').classList.remove('dark-question');
-    document.getElementById('dark-con-ques3').classList.remove('dark-question');
-    document.getElementById('dark-con-ques4').classList.remove('dark-question');
+    document.getElementById('respuesta1').classList.remove('dark-question');
+    document.getElementById('respuesta2').classList.remove('dark-question');
+    document.getElementById('respuesta3').classList.remove('dark-question');
+    document.getElementById('respuesta4').classList.remove('dark-question');
     // Questios font
-    document.getElementById('font-dark').classList.remove('dark-font-wh');
-    document.getElementById('font-dark2').classList.remove('dark-font-wh');
-    document.getElementById('font-dark3').classList.remove('dark-font-wh');
-    document.getElementById('font-dark4').classList.remove('dark-font-wh');
+    document.getElementById('anwser-p-1').classList.remove('dark-fobl-wh');
+    document.getElementById('anwser-p-2').classList.remove('dark-fobl-wh');
+    document.getElementById('anwser-p-3').classList.remove('dark-fobl-wh');
+    document.getElementById('anwser-p-4').classList.remove('dark-fobl-wh');
     // Questions icons
-    document.getElementById('up-1').style.fill = PCV_500;
-    document.getElementById('down-2').style.fill = PCV_500;
-    document.getElementById('up-2').style.fill = PCV_500;
-    document.getElementById('down-2').style.fill = PCV_500;
-    document.getElementById('up-3').style.fill = PCV_500;
-    document.getElementById('down-3').style.fill = PCV_500;
-    document.getElementById('up-4').style.fill = PCV_500;
-    document.getElementById('down-4').style.fill = PCV_500;
+    document.getElementById('Fup-1').style.fill = PCV_500;
+    document.getElementById('Fdonw-2').style.fill = PCV_500;
+    document.getElementById('Fup-2').style.fill = PCV_500;
+    document.getElementById('Fdonw-2').style.fill = PCV_500;
+    document.getElementById('Fup-3').style.fill = PCV_500;
+    document.getElementById('Fdonw-3').style.fill = PCV_500;
+    document.getElementById('Fup-4').style.fill = PCV_500;
+    document.getElementById('Fdonw-4').style.fill = PCV_500;
+    // Content Questions
+    document.getElementById('conte-pregunta-1').classList.remove('conten-quest-dark');
+    document.getElementById('conte-pregunta-2').classList.remove('conten-quest-dark');
+    document.getElementById('conte-pregunta-3').classList.remove('conten-quest-dark');
+    document.getElementById('conte-pregunta-4').classList.remove('conten-quest-dark');
+    // Font White Questions
+    document.getElementById('sub-1').classList.remove('dark-font-wh');
+    document.getElementById('sub-2').classList.remove('dark-font-wh');
+    document.getElementById('sub-3').classList.remove('dark-font-wh');
+    document.getElementById('sub-4').classList.remove('dark-font-wh');
 
     // Footer
     document.getElementById('dark-footer').classList.remove('dark-background');
