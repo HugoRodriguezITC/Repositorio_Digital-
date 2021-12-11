@@ -1,0 +1,194 @@
+@media only screen and (max-width: 414px) {
+    .menu-dark {
+        border: 3px solid #F9F9F9 !important;
+        background-color: var(--PCV_200) !important;
+    }
+    body {
+        /* background-color: darkcyan; */
+    }
+    .colum-12 {
+        width: 100%-1px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 16px;
+        padding: 0px 16px 0px 16px;
+        /* border: 1px dashed red; */
+    }
+    /* Headlines */
+    .headline-4c {
+        grid-column: 1/5;
+        height: 43px;
+        border-radius: 5.06294px;
+        margin-top: 0px;
+    }
+    .headline-4c h2 {
+        font-size: 20px;
+    }
+    /* Header */
+    header {
+        width: 100%;
+        height: 56px;
+        margin: 13px auto 13 px 16px;
+        /* flex-wrap: wrap-reverse; */
+    }
+    .menu-responsive-icon {
+        /* border: 1px solid white; */
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .header-sec-r {
+        width: 246px;
+        height: 30px;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+    .header-sec-r h4 {
+        font-size: 16px;
+    }
+    .header-sec-l {
+        background-color: var(--PCV_500);
+        width: 197px;
+        height: 301.25px;
+        padding: 16px 28px;
+        /* Primary-200 */
+        border: 3px solid #A4B0C3;
+        box-sizing: border-box;
+        box-shadow: 4px 8px 8px rgba(20, 25, 39, 0.5);
+        border-radius: 0px 0px 16px 16px;
+        display: none;
+        margin-top: 8px;
+        margin-left: 53%;
+        /* displ */
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-sec-l svg {
+        width: 100%;
+        margin-left: 30px;
+        /* border: 1px solid red; */
+    }
+    .header-sec-l h4 {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .user h3 {
+        margin-top: 10px;
+    }
+    .header-sec-l #abajo {
+        display: none;
+    }
+    .menu-float {
+        margin-left: 52%;
+        width: 173px;
+        height: 127.25px;
+        margin-top: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 11.5px;
+        display: none;
+    }
+    .menu-float svg {
+        width: 18px;
+        height: 18px;
+    }
+    .menu-float .container-menu {
+        margin: 0px;
+        width: 100%;
+        height: 24.75px;
+        /* border: 1px solid red; */
+    }
+    .menu-float .container-menu h5 a {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /* Fotter Responsive */
+    footer {
+        height: 840px;
+    }
+    .pages-footer {
+        grid-column: 1/9;
+        margin-top: 48px;
+        height: 240px;
+        /* border: 1px solid red; */
+    }
+    .img-link-footer {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid cadetblue; */
+    }
+    .justify-c {
+        /* border: 1px dashed black; */
+    }
+    .justify-s h4 a {
+        font-size: 24px;
+        line-height: 33px;
+        /* border: 1px dashed red; */
+    }
+    .socials {
+        grid-column: 1/9;
+        margin-top: 0px;
+        height: 147px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* border: 1px solid red; */
+    }
+    .socials .titulo {
+        width: 181px;
+        height: 43px;
+        border-radius: 5.06294px;
+    }
+    .socials .img-socials {
+        height: 64px;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .socials .titulo h2 {
+        font-size: 20px;
+    }
+    .contacts {
+        grid-column: 1/9;
+        margin-top: 0px;
+        height: 147px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .contacts .titulo {
+        width: 181px;
+        height: 43px;
+        border-radius: 5.06294px;
+    }
+    .contacts .titulo h2 {
+        font-size: 20px;
+    }
+    .contacts .img-contacts {
+        width: 100%;
+        height: 64px;
+    }
+    .credits {
+        grid-column: 1/9;
+        height: 97px;
+        margin-top: 0px;
+        /* border: 1px solid red; */
+    }
+    .credits h4 {
+        font-size: 18px;
+    }
+}

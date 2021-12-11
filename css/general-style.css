@@ -297,6 +297,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         padding: 40px 20px;
         background-color: var(--PCV_500);
         width: 100%-1px !important;
@@ -305,6 +306,10 @@
         min-width: 100%;
         z-index: 150;
         transition: var(--transition-effects);
+    }
+    
+    .menu-responsive-icon {
+        display: none;
     }
     
     .header-sec-l {
@@ -331,6 +336,7 @@
     /* --footer --*/
     
     footer {
+        /* visibility: hidden; */
         height: 832px;
         background-color: var(--PCV_500);
         color: var(--WHCV_500);
@@ -431,7 +437,7 @@
         grid-column: 2/12;
         height: 108px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 8px;
@@ -445,7 +451,7 @@
     }
     
     header.dark {
-        background-color: var(--PCV_200);
+        background-color: var(--PCV_200) !important;
     }
     
     h4.dark,
