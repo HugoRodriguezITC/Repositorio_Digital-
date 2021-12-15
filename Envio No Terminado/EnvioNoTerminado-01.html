@@ -55,9 +55,6 @@
                 <svg id="abajo" class="img-source" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="dowm-dark" d="M19.1667 26.6665L32.5001 39.9998L45.8334 26.6665H19.1667Z" fill="#F2B90F" />
                 </svg>
-
-
-
             </div>
         </section>
         <!-- ------------------ -->
@@ -98,11 +95,11 @@
         <!-- Icon Responsive -->
         <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
             <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
             </svg>
 
             <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
                 </svg>
 
         </div>
@@ -122,7 +119,7 @@
                 <div class="preview_and_button">
                     <!-- Preview del documento -->
                     <div id="preview-dark" class="preview">
-                        <div class="content-doc">
+                        <div id="content-doc" class="content-doc">
                             <!-- Document Hover -->
                             <div class="contenido">
                                 <!-- Name Document -->
@@ -153,11 +150,18 @@
                                 </div>
                             </div>
                             <!-- Layer -->
-                            <div class="capa">
+                            <div id="capa" class="capa">
 
                             </div>
                         </div>
 
+                        <!-- Button Responsibe -->
+                        <div onclick="ShowCapa();" id="showoption" class="button-responsive">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="dark-up" d="M33.4901 30L24.3101 20.84L15.1301 30L12.3101 27.18L24.3101 15.18L36.3101 27.18L33.4901 30Z" fill="#F9F9F9"/>
+                                </svg>
+
+                        </div>
                     </div>
                     <!-- Contenedor del boton -->
                     <div class="type-document">
@@ -165,6 +169,7 @@
                             <h5><a href="Registro Completo.html">Mostrar registro completo</a></h5>
                         </div>
                     </div>
+
                 </div>
                 <!-- Content Information -->
                 <div class="information-doc">

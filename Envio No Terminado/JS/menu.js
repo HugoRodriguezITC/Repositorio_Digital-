@@ -47,7 +47,19 @@ function QuitarMenu() {
     document.getElementById('close-icon').style.display = 'none';
     document.getElementById('header-sec-l').style.display = 'none';
     document.getElementById('menu-icon').style.display = 'block';
+}
 
+function ShowCapa() {
+    document.getElementById('showoption').style.display = 'none';
+    document.getElementById('capa').style.display = 'block';
+    document.getElementById('content-doc').style.display = 'block';
+
+}
+
+function ShowCapa2() {
+    document.getElementById('button-responsive').style.display = 'none'
+    document.getElementById('content-doc').style.display = 'block'
+    document.getElementById('capa').style.display = 'block'
 
 
 }

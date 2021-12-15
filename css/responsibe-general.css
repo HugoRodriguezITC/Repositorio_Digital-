@@ -3,9 +3,6 @@
         border: 3px solid #F9F9F9 !important;
         background-color: var(--PCV_200) !important;
     }
-    body {
-        /* background-color: darkcyan; */
-    }
     .colum-12 {
         width: 100%-1px;
         display: grid;
@@ -20,6 +17,7 @@
         height: 43px;
         border-radius: 5.06294px;
         margin-top: 0px;
+        /* background-color: red; */
     }
     .headline-4c h2 {
         font-size: 20px;
@@ -127,9 +125,6 @@
         display: flex;
         justify-content: space-between;
         /* border: 1px solid cadetblue; */
-    }
-    .justify-c {
-        /* border: 1px dashed black; */
     }
     .justify-s h4 a {
         font-size: 24px;
