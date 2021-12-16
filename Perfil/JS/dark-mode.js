@@ -32,6 +32,19 @@ switchButton.addEventListener('click', () => {
     // Activamos el darkmode
     document.body.classList.toggle('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+
+    }
+
+
+
 
 
 
@@ -41,6 +54,7 @@ switchButton.addEventListener('click', () => {
 
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -79,15 +93,17 @@ switchButton.addEventListener('click', () => {
         // Inputs
         document.getElementById('input-dark-1').classList.add('input-dark');
         document.getElementById('input-dark-2').classList.add('input-dark');
-        document.getElementById('input-dark-3').classList.add('input-dark');
         document.getElementById('input-dark-3-1').classList.add('input-dark');
-        document.getElementById('input-dark-4').classList.add('input-dark');
         document.getElementById('input-dark-4-1').classList.add('input-dark');
         document.getElementById('input-dark-5').classList.add('input-dark');
 
         // Password
         document.getElementById('show-pass-1').classList.add('input-dark');
         document.getElementById('show-pass-2').classList.add('input-dark');
+
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -164,6 +180,7 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-thel').style.fill = TCV_700;
     } else {
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -203,7 +220,6 @@ switchButton.addEventListener('click', () => {
         // Inputs
         document.getElementById('input-dark-1').classList.remove('input-dark');
         document.getElementById('input-dark-2').classList.remove('input-dark');
-        document.getElementById('input-dark-3').classList.remove('input-dark');
         document.getElementById('input-dark-3-1').classList.remove('input-dark');
         document.getElementById('input-dark-4').classList.remove('input-dark');
         document.getElementById('input-dark-4-1').classList.remove('input-dark');
@@ -267,6 +283,10 @@ switchButton.addEventListener('click', () => {
         // Password
         document.getElementById('show-pass-1').classList.remove('input-dark');
         document.getElementById('show-pass-2').classList.remove('input-dark');
+
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 
@@ -308,11 +328,22 @@ switchButton2.addEventListener('click', () => {
     document.body.classList.remove('dark');
 
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -351,9 +382,7 @@ switchButton2.addEventListener('click', () => {
         // Inputs
         document.getElementById('input-dark-1').classList.add('input-dark');
         document.getElementById('input-dark-2').classList.add('input-dark');
-        document.getElementById('input-dark-3').classList.add('input-dark');
         document.getElementById('input-dark-3-1').classList.add('input-dark');
-        document.getElementById('input-dark-4').classList.add('input-dark');
         document.getElementById('input-dark-4-1').classList.add('input-dark');
         document.getElementById('input-dark-5').classList.add('input-dark');
         // Font
@@ -416,6 +445,11 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('show-pass-2').classList.add('input-dark');
 
 
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
+
+
 
 
 
@@ -440,6 +474,7 @@ switchButton2.addEventListener('click', () => {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -478,9 +513,7 @@ switchButton2.addEventListener('click', () => {
         // Inputs
         document.getElementById('input-dark-1').classList.remove('input-dark');
         document.getElementById('input-dark-2').classList.remove('input-dark');
-        document.getElementById('input-dark-3').classList.remove('input-dark');
         document.getElementById('input-dark-3-1').classList.remove('input-dark');
-        document.getElementById('input-dark-4').classList.remove('input-dark');
         document.getElementById('input-dark-4-1').classList.remove('input-dark');
         document.getElementById('input-dark-5').classList.remove('input-dark');
 
@@ -545,6 +578,11 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('show-pass-2').classList.remove('input-dark');
 
 
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
+
+
 
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
@@ -582,6 +620,7 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.toggle('dark');
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -619,9 +658,8 @@ if (localStorage.getItem('theme') == 'true') {
     // Inputs
     document.getElementById('input-dark-1').classList.add('input-dark');
     document.getElementById('input-dark-2').classList.add('input-dark');
-    document.getElementById('input-dark-3').classList.add('input-dark');
     document.getElementById('input-dark-3-1').classList.add('input-dark');
-    document.getElementById('input-dark-4').classList.add('input-dark');
+
     document.getElementById('input-dark-4-1').classList.add('input-dark');
     document.getElementById('input-dark-5').classList.add('input-dark');
 
@@ -686,6 +724,11 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('show-pass-2').classList.add('input-dark');
 
 
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
+
+
 
 
 
@@ -715,6 +758,7 @@ if (localStorage.getItem('theme') == 'true') {
 
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -753,9 +797,8 @@ if (localStorage.getItem('theme') == 'true') {
     // Inputs
     document.getElementById('input-dark-1').classList.remove('input-dark');
     document.getElementById('input-dark-2').classList.remove('input-dark');
-    document.getElementById('input-dark-3').classList.remove('input-dark');
     document.getElementById('input-dark-3-1').classList.remove('input-dark');
-    document.getElementById('input-dark-4').classList.remove('input-dark');
+
     document.getElementById('input-dark-4-1').classList.remove('input-dark');
     document.getElementById('input-dark-5').classList.remove('input-dark');
 
@@ -796,6 +839,8 @@ if (localStorage.getItem('theme') == 'true') {
 
 
 
+
+
     // Fieldset ========================= 4
     document.getElementById('fieldset-dark-3').classList.remove('border-bg-dark');
     // Legend
@@ -819,6 +864,10 @@ if (localStorage.getItem('theme') == 'true') {
     // Password
     document.getElementById('show-pass-1').classList.remove('input-dark');
     document.getElementById('show-pass-2').classList.remove('input-dark');
+
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 

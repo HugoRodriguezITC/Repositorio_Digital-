@@ -6,6 +6,10 @@
     background-color: var (--WHCV_500);
 }
 
+#close-icon {
+    display: none;
+}
+
 
 /* Fielshield */
 
@@ -120,6 +124,36 @@
 .input-telefonos {
     grid-column: 7/10;
     margin-top: 36px;
+    position: relative;
+}
+
+.nb-input {
+    width: 100%;
+    height: 40px;
+    /* WShades-500 */
+    background: #F9F9F9;
+    /* Primary-500 */
+    border: 1px solid #A1A3A9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    left: calc(50% - 132px/2);
+    top: calc(50% - 20px/2);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+    /* BShades-200 */
+    color: #A1A3A9;
+}
+
+.icon-absolute {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 4px;
 }
 
 .input-correo {
@@ -156,47 +190,10 @@
     letter-spacing: 0.15px;
 }
 
-.nb-input {
-    border: none;
-    /*WShades-500*/
-    background-color: var(--WHCV_500);
-    height: 100%-1px;
-    width: auto;
-    /**/
-    /*Body1*/
-    font-family: var(--font_body);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    /*identicaltoboxheight*/
-    letter-spacing: 0.5px;
-    /*TextColor*/
-    color: #1A1A1A;
-    border-radius: 0px 8px 8px 0px;
-    -webkit-border-radius: 0px 8px 8px 0px;
-    -moz-border-radius: 0px 8px 8px 0px;
-    -ms-border-radius: 0px 8px 8px 0px;
-    -o-border-radius: 0px 8px 8px 0px;
-}
 
-.nb-input:focus {
+/* .nb-input:focus {
     outline: 1px solid var(--WHCV_500);
-}
-
-.inpunt-with-icon {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: row;
-    /* WShades-500 */
-    background-color: var(--WHCV_500);
-    /* box-sizing: border-box; */
-    border-radius: 8px;
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(161, 163, 169, 1);
-}
+} */
 
 .suspcriciones {
     grid-column: 2/12;
@@ -770,4 +767,8 @@ DARK MODE
     border: 1px solid var(--WHCV_500);
     background-color: var(--PCV_200);
     color: var(--BCV_500);
+}
+
+.dark-fill {
+    fill: var(--BCV_500);
 }

@@ -8,7 +8,10 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="CSS/responsive-perfil.css">
+    <!-- Style general -->
     <link rel="stylesheet" href="/css/general-style.css">
+    <link rel="stylesheet" href="/css/responsibe-general.css">
 </head>
 
 <body>
@@ -18,7 +21,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -39,7 +42,7 @@
 
             <div onclick="mostrarMenu()" class="user">
                 <h3>
-                    <label id="user-dark" class="headline-1rem-s menu cursor " for="">Hugo</label>
+                    <label id="user-dark" class="headline-1rem-s menu" for="">Hugo</label>
                 </h3>
                 <!-- Up -->
                 <svg id="up" class="img-source" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,52 +52,61 @@
                 <svg id="abajo" class="img-source" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="dowm-dark" d="M19.1667 26.6665L32.5001 39.9998L45.8334 26.6665H19.1667Z" fill="#F2B90F" />
                 </svg>
-
-
-
             </div>
         </section>
         <!-- ------------------ -->
         <div id="menu" class="menu-float">
-            <div class="nav-menu">
-                <div class="container-menu">
-                    <!-- Perfil -->
-                    <svg class="img-source" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <div class="container-menu">
+                <!-- Perfil -->
+                <svg class="img-source" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="icon-dark-perfil"
                             d="M10.9999 11.4997C13.9466 11.4997 16.3333 9.11301 16.3333 6.16634C16.3333 3.21967 13.9466 0.833008 10.9999 0.833008C8.05325 0.833008 5.66658 3.21967 5.66658 6.16634C5.66658 9.11301 8.05325 11.4997 10.9999 11.4997ZM10.9999 14.1663C7.43992 14.1663 0.333252 15.953 0.333252 19.4997V22.1663H21.6666V19.4997C21.6666 15.953 14.5599 14.1663 10.9999 14.1663Z"
                             fill="#141927" />
                     </svg>
-                    <h5><a id="dark-wh-1" href="/Perfil/perfil.html">Ver Perfil</a></h5>
-                </div>
-                <!-- Envios -->
-                <div class="container-menu">
-                    <svg class="img-source" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h5><a id="dark-wh-1" href="/Perfil/perfil.html">Ver Perfil</a></h5>
+            </div>
+            <!-- Envios -->
+            <div class="container-menu">
+                <svg class="img-source" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="icon-dark-doc"
                             d="M13.6666 0.166992H2.99992C1.53325 0.166992 0.346586 1.36699 0.346586 2.83366L0.333252 24.167C0.333252 25.6337 1.51992 26.8337 2.98658 26.8337H18.9999C20.4666 26.8337 21.6666 25.6337 21.6666 24.167V8.16699L13.6666 0.166992ZM16.3333 21.5003H5.66658V18.8337H16.3333V21.5003ZM16.3333 16.167H5.66658V13.5003H16.3333V16.167ZM12.3333 9.50033V2.16699L19.6666 9.50033H12.3333Z"
                             fill="#141927" />
                     </svg>
 
-                    <h5><a id="dark-wh-2" href="/Envios/Envios.html">Ver Envios</a></h5>
-                </div>
-                <!-- Cerrar Sesión -->
-                <div class="container-menu">
-                    <svg class="img-source" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h5><a id="dark-wh-2" href="/Envios/Envios.html">Ver Envios</a></h5>
+            </div>
+            <!-- Cerrar Sesión -->
+            <div class="container-menu">
+                <svg class="img-source" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="icon-dark-close"
                             d="M20.6667 5.83333L18.7867 7.71333L22.2267 11.1667H8.66675V13.8333H22.2267L18.7867 17.2733L20.6667 19.1667L27.3334 12.5L20.6667 5.83333ZM3.33341 3.16667H14.0001V0.5H3.33341C1.86675 0.5 0.666748 1.7 0.666748 3.16667V21.8333C0.666748 23.3 1.86675 24.5 3.33341 24.5H14.0001V21.8333H3.33341V3.16667Z"
                             fill="#991344" />
                     </svg>
 
-                    <h5><a id="dark-wh-3" class="exit-s" href="#">Cerrar Sesión</a></h5>
-                </div>
+                <h5><a id="dark-wh-3" class="exit-s" href="#">Cerrar Sesión</a></h5>
             </div>
+
+        </div>
+
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
+
         </div>
     </header>
 
     <!-- Main -->
     <main>
-        <section class="colum-12 content-perfil ">
+        <section class="colum-12 content-perfil">
             <!-- Headline -->
-            <div id="head-dark" class=" headline-3c ">
+            <div id="head-dark" class="headline-3c">
                 <h2 id="font-wh" class=" headline-h2 ">Perfil</h2>
             </div>
 
@@ -120,26 +132,26 @@
                     <!--  -->
                     <div class="input-telefonos item-identidad">
                         <label id="label-wh-3" class="label-item" for="">Telefono</label>
-                        <div id="input-dark-3" class="inpunt-with-icon">
-                            <svg class="img-source" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.5067 19.6 20.9867 19.72 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z"
-                                    fill="#A1A3A9" />
-                            </svg>
-                            <input id="input-dark-3-1" class="nb-input" placeholder="735 000 0000" type="text">
-                        </div>
+
+                        <svg class="img-source icon-absolute" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.5067 19.6 20.9867 19.72 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z"
+                                fill="#A1A3A9" />
+                        </svg>
+
+                        <input id="input-dark-3-1" class="nb-input" placeholder="735 000 0000" type="text">
+
                     </div>
                     <!--  -->
                     <div class="input-correo item-identidad">
                         <label id="label-wh-4" class="label-item" for="">Correo electronico</label>
-                        <div id="input-dark-4" class="inpunt-with-icon">
-                            <svg class="img-source" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M26.6665 5.3335H5.33317C3.8665 5.3335 2.67984 6.5335 2.67984 8.00016L2.6665 24.0002C2.6665 25.4668 3.8665 26.6668 5.33317 26.6668H26.6665C28.1332 26.6668 29.3332 25.4668 29.3332 24.0002V8.00016C29.3332 6.5335 28.1332 5.3335 26.6665 5.3335ZM26.6665 10.6668L15.9998 17.3335L5.33317 10.6668V8.00016L15.9998 14.6668L26.6665 8.00016V10.6668Z"
-                                    fill="#A1A3A9" />
-                            </svg>
-                            <input id="input-dark-4-1" class="nb-input" placeholder="17680215@cuautla.tecnm.mx" type="text">
-                        </div>
+                        <svg class="img-source icon-absolute" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.6665 5.3335H5.33317C3.8665 5.3335 2.67984 6.5335 2.67984 8.00016L2.6665 24.0002C2.6665 25.4668 3.8665 26.6668 5.33317 26.6668H26.6665C28.1332 26.6668 29.3332 25.4668 29.3332 24.0002V8.00016C29.3332 6.5335 28.1332 5.3335 26.6665 5.3335ZM26.6665 10.6668L15.9998 17.3335L5.33317 10.6668V8.00016L15.9998 14.6668L26.6665 8.00016V10.6668Z"
+                                fill="#A1A3A9" />
+                        </svg>
+                        <input id="input-dark-4-1" class="nb-input" placeholder="17680215@cuautla.tecnm.mx" type="text">
+
                     </div>
                     <!--  -->
                     <div class="input-lenguaje item-identidad">
@@ -212,7 +224,7 @@
 
 
         <!-- division secction -->
-        <section class="colum-12 content-perfil ">
+        <section class="colum-12 content-perfil secction-2">
             <!-- Password -->
             <div id="fieldset-dark-2" class="password">
                 <div id="legend-2" class="lenged2">

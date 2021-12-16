@@ -257,7 +257,6 @@ switchButton2.addEventListener('click', () => {
         // Icons
         document.getElementById('close-icon').style.display = 'none';
         document.getElementById('menu-icon').style.display = 'block';
-
     }
 
 
