@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="home-responsive.css">
+    <!-- General Style -->
     <link rel="stylesheet" href="/css/general-style.css">
+    <link rel="stylesheet" href="css/responsibe-general.css">
 </head>
 
 <body>
@@ -19,7 +22,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -37,10 +40,23 @@
                 <a id="dark-Lhelp" class="headline-1rem-w cursor" href="/Ayuda/01.html">Ayuda</a>
             </h4>
             <h3>
-                <a id="login-dark" class="headline-1rem-s" href="#">Iniciar Sesión</a>
+                <a id="login-dark" class="headline-1rem-s" href="/Iniciar Sesion/Iniciar Sesion.html">Iniciar Sesión</a>
             </h3>
 
         </section>
+
+
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
+
+        </div>
 
     </header>
 
@@ -51,24 +67,21 @@
 
             <div class="colum-12">
                 <article class="main-title">
-                    <div>
-                        <h1 id="colorh1">¡Esta a una busqueda de encontrar la información que necesita!</h1>
+                    <div class="letras">
+                        <h1>¡Esta a una busqueda de encontrar la información que necesita!</h1>
                     </div>
-                    <section class="content-search">
-                        <div class="input-content">
+                    <!-- Search -->
+                    <div class="content-search">
+                        <div class="content-input">
                             <!-- Input -->
-                            <input id="input-dark" class="input-letter" type="text">
+                            <input id="input-dark" type="text">
                             <!-- Icon -->
-                            <svg class="img-source-2 cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path id="bg-pc"
-                                    d="M0 0H48C56.8366 0 64 7.16344 64 16V48C64 56.8366 56.8366 64 48 64H0V0Z"
-                                    fill="#1B396A" />
-                                <path
-                                    d="M41.3333 37.3333H39.2267L38.48 36.6133C41.0933 33.5733 42.6667 29.6267 42.6667 25.3333C42.6667 15.76 34.9067 8 25.3333 8C15.76 8 8 15.76 8 25.3333C8 34.9067 15.76 42.6667 25.3333 42.6667C29.6267 42.6667 33.5733 41.0933 36.6133 38.48L37.3333 39.2267V41.3333L50.6667 54.64L54.64 50.6667L41.3333 37.3333ZM25.3333 37.3333C18.6933 37.3333 13.3333 31.9733 13.3333 25.3333C13.3333 18.6933 18.6933 13.3333 25.3333 13.3333C31.9733 13.3333 37.3333 18.6933 37.3333 25.3333C37.3333 31.9733 31.9733 37.3333 25.3333 37.3333Z"
-                                    fill="#F9F9F9" />
-                            </svg>
+                            <svg class="cursor" width="64" height="65" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="bg-pc" d="M0 0H48C56.8366 0 64 7.16344 64 16V48C64 56.8366 56.8366 64 48 64H0V0Z" fill="#1B396A"/>
+                                <path d="M41.3333 37.3333H39.2267L38.48 36.6133C41.0933 33.5733 42.6667 29.6267 42.6667 25.3333C42.6667 15.76 34.9067 8 25.3333 8C15.76 8 8 15.76 8 25.3333C8 34.9067 15.76 42.6667 25.3333 42.6667C29.6267 42.6667 33.5733 41.0933 36.6133 38.48L37.3333 39.2267V41.3333L50.6667 54.64L54.64 50.6667L41.3333 37.3333ZM25.3333 37.3333C18.6933 37.3333 13.3333 31.9733 13.3333 25.3333C13.3333 18.6933 18.6933 13.3333 25.3333 13.3333C31.9733 13.3333 37.3333 18.6933 37.3333 25.3333C37.3333 31.9733 31.9733 37.3333 25.3333 37.3333Z" fill="#F9F9F9"/>
+                                </svg>
                         </div>
-                    </section>
+                    </div>
                 </article>
             </div>
             <!-- Dar opacidad -->
@@ -79,76 +92,76 @@
 
 
         <!-- Organims -->
-        <section class="general-secction-h colum-12">
+        <section id="area-organims" class="general-secction-h colum-12">
             <div id="cont-h-dark1" class="headline-5c">
-                <h2d id="font-dar-1" class="headline-h2">Índice de contenidos</h2>
+                <h2 id="font-dar-1" class="headline-h2">Índice de contenidos</h2>
             </div>
             <!--  -->
             <div id="bg-dark" class="organims">
                 <div class="list">
                     <!-- Colecciones -->
-                    <div class="list-item bt">
+                    <div onmouseover="FillColor1();" onmouseleave="RemoveColor1();" id="list-dark-1" class="list-item bt list-dark">
                         <div class="justify-c">
                             <svg class="img-source " viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
+                                <path id="icon-organim-1"
                                     d="M17.54 2.23L16.15 0.55C15.88 0.21 15.47 0 15 0H3C2.53 0 2.12 0.21 1.84 0.55L0.46 2.23C0.17 2.57 0 3.02 0 3.5V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V3.5C18 3.02 17.83 2.57 17.54 2.23ZM9 14.5L3.5 9H7V7H11V9H14.5L9 14.5ZM2.12 2L2.93 1H14.93L15.87 2H2.12Z"
                                     fill="#141927" />
                             </svg>
                         </div>
                         <div class="justify-s">
-                            <h5><a href="#">Colecciones</a></h5>
+                            <h5><a id="word-list-1" href="#">Colecciones</a></h5>
                         </div>
                     </div>
                     <!-- Autor -->
-                    <div class="list-item">
+                    <div onmouseover="FillColor2();" onmouseleave="RemoveColor2();" id="list-dark-2" class="list-item list-dark">
                         <div class="justify-c">
                             <svg class="img-source" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
+                                <path id="icon-organim-2"
                                     d="M12 6.75C13.63 6.75 15.07 7.14 16.24 7.65C17.32 8.13 18 9.21 18 10.38V12H6V10.39C6 9.21 6.68 8.13 7.76 7.66C8.93 7.14 10.37 6.75 12 6.75ZM4 7C5.1 7 6 6.1 6 5C6 3.9 5.1 3 4 3C2.9 3 2 3.9 2 5C2 6.1 2.9 7 4 7ZM5.13 8.1C4.76 8.04 4.39 8 4 8C3.01 8 2.07 8.21 1.22 8.58C0.48 8.9 0 9.62 0 10.43V12H4.5V10.39C4.5 9.56 4.73 8.78 5.13 8.1ZM20 7C21.1 7 22 6.1 22 5C22 3.9 21.1 3 20 3C18.9 3 18 3.9 18 5C18 6.1 18.9 7 20 7ZM24 10.43C24 9.62 23.52 8.9 22.78 8.58C21.93 8.21 20.99 8 20 8C19.61 8 19.24 8.04 18.87 8.1C19.27 8.78 19.5 9.56 19.5 10.39V12H24V10.43ZM12 0C13.66 0 15 1.34 15 3C15 4.66 13.66 6 12 6C10.34 6 9 4.66 9 3C9 1.34 10.34 0 12 0Z"
                                     fill="#141927" />
                             </svg>
                         </div>
                         <div class="justify-s">
-                            <h5><a href="#"> Autor</a> </h5>
+                            <h5><a id="word-list-2" href="#"> Autor</a> </h5>
                         </div>
                     </div>
                     <!-- Año de producción -->
-                    <div class="list-item">
+                    <div onmouseover="FillColor3();" onmouseleave="RemoveColor3();" id="list-dark-3" class="list-item list-dark">
                         <div class="justify-c">
                             <svg class="img-source" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
+                                <path id="icon-organim-3"
                                     d="M14 11H9V16H14V11ZM13 0V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2H15V0H13ZM16 18H2V7H16V18Z"
                                     fill="#141927" />
                             </svg>
                         </div>
                         <div class="justify-s">
-                            <h5><a href="#">Año de producción</a></h5>
+                            <h5><a id="word-list-3" href="#">Año de producción</a></h5>
                         </div>
                     </div>
                     <!-- Comunidad -->
-                    <div class="list-item">
+                    <div onmouseover="FillColor4();" onmouseleave="RemoveColor4();" id="list-dark-4" class="list-item list-dark">
                         <div class="justify-c">
                             <svg class="img-source" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
+                                <path id="icon-organim-4"
                                     d="M4 10.18V14.18L11 18L18 14.18V10.18L11 14L4 10.18ZM11 0L0 6L11 12L20 7.09V14H22V6L11 0Z"
                                     fill="#141927" />
                             </svg>
                         </div>
                         <div class="justify-s">
-                            <h5><a href="#">Comunidad</a></h5>
+                            <h5><a id="word-list-4" href="#">Comunidad</a></h5>
                         </div>
                     </div>
                     <!-- Tipo de contenido -->
-                    <div class="list-item bb">
+                    <div onmouseover="FillColor5();" onmouseleave="RemoveColor5();" id="list-dark-5" class="list-item bb list-dark">
                         <div class="justify-c">
                             <svg class="img-source" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
+                                <path id="icon-organim-5"
                                     d="M10 0H2C0.9 0 0.0100002 0.9 0.0100002 2L0 18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM12 16H4V14H12V16ZM12 12H4V10H12V12ZM9 7V1.5L14.5 7H9Z"
                                     fill="#141927" />
                             </svg>
                         </div>
                         <div class="justify-s">
-                            <h5><a href="#">Tipo de contenido</a></h5>
+                            <h5><a id="word-list-5" href="#">Tipo de contenido</a></h5>
                         </div>
                     </div>
                 </div>
