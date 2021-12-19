@@ -74,7 +74,7 @@ function AnimationSend() {
 function RecoveryPassword() {
     document.getElementById('animation-content').style.display = 'none';
     // Modal Height
-    document.getElementById('content-modal').style.height = '679px';
+    document.getElementById('content-modal').style.height = '659px';
 
 
     // Img
@@ -230,4 +230,35 @@ function EndSend() {
     document.getElementById('forget-label').style.display = 'none';
     document.getElementById('notify').style.visibility = 'visible';
 
+}
+
+// Responsive Menu
+function mostrarMenuResponsive() {
+
+    if (localStorage.getItem('Responsivedeploy') == 'false') {
+        document.getElementById('header-sec-l').style.display = 'flex';
+        document.getElementById('header-sec-l').style.transitionDelay = '40s';
+
+
+        document.getElementById('close-icon').style.display = 'block';
+
+        document.getElementById('menu-icon').style.display = 'none';
+
+
+        localStorage.setItem('Responsivedeploy', 'true');
+    } else {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+    }
+
+}
+
+function QuitarMenu() {
+    document.getElementById('close-icon').style.display = 'none';
+    document.getElementById('header-sec-l').style.display = 'none';
+    document.getElementById('menu-icon').style.display = 'block';
+}
+
+function RemoveNotify() {
+    document.getElementById('notify').style.display = 'none';
 }

@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="inciars.css">
+    <link rel="stylesheet" href="CSS/inciars.css">
+    <link rel="stylesheet" href="CSS/responsive-iniciarS.css">
+    <!-- General Style -->
     <link rel="stylesheet" href="/css/general-style.css">
+    <link rel="stylesheet" href="/css/responsibe-general.css">
+
 </head>
 
 <body>
@@ -17,7 +21,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -33,12 +37,18 @@
             <h4>
                 <a id="dark-Lhelp" class="headline-1rem-w cursor" href="/Ayuda/01.html">Ayuda</a>
             </h4>
-            <h3>
-                <a id="login-dark" class="headline-1rem-s" href="#">Iniciar Sesión</a>
-            </h3>
-
         </section>
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+    </svg>
 
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+        </svg>
+
+        </div>
     </header>
 
 
@@ -117,6 +127,12 @@
                             </svg>
                         <!-- Descripcion -->
                         <h6 class="succ"> La contraseña se ha cambiado exitosamente.</h6>
+
+                        <!-- Icon -->
+                        <svg class="cursor" onclick="RemoveNotify();" id="icon-succ" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.0234 8.54699L24.1434 6.66699L16.69 14.1203L9.23669 6.66699L7.35669 8.54699L14.81 16.0003L7.35669 23.4537L9.23669 25.3337L16.69 17.8803L24.1434 25.3337L26.0234 23.4537L18.57 16.0003L26.0234 8.54699Z" fill="#0C0F17"/>
+                            </svg>
+
                     </div>
                 </div>
             </article>
@@ -304,7 +320,7 @@
                     </svg>
                 </div>
                 <!-- Button -->
-                <a href="img-source-login/EnvioCorreoBlack.gif"></a>
+                <a href="img-source-login/EnvioCorreoBlack.gif">hbhuirbiugghriu</a>
                 <button onclick="OcultarItems();" class="cursor send-email" id="send-button">ENVÍAR CORREO</button>
 
                 <!-- Animation -->
