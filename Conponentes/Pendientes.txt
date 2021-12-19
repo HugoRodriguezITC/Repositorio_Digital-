@@ -13,7 +13,7 @@
 
 
 --------Home-----------------
-1.Agregar el hover y crear el boton de "siguiente"
+
 
 
 -------footer--------
