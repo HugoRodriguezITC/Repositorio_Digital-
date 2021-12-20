@@ -204,3 +204,7 @@ DARK MODE
 .font-whc {
     color: var(--WHCV_500);
 }
+
+.dark-fill {
+    fill: var(--BCV_500);
+}

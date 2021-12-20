@@ -37,6 +37,14 @@ switchButton.addEventListener('click', () => {
     // Activamos el darkmode
     document.body.classList.toggle('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
 
 
@@ -45,6 +53,7 @@ switchButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'true');
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('login-dark').classList.add('dark');
@@ -67,6 +76,11 @@ switchButton.addEventListener('click', () => {
         document.getElementById('font-wh-1').style.color = WHCV_500;
         document.getElementById('font-wh-2').style.color = WHCV_500;
         document.getElementById('font-wh-3').style.color = WHCV_500;
+
+
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -98,6 +112,7 @@ switchButton.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
@@ -122,6 +137,11 @@ switchButton.addEventListener('click', () => {
         document.getElementById('font-wh-1').style.color = BCV_500;
         document.getElementById('font-wh-2').style.color = BCV_500;
         document.getElementById('font-wh-3').style.color = BCV_500;
+
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
+
 
 
 
@@ -167,6 +187,15 @@ switchButton2.addEventListener('click', () => {
     // Al clic quitamos el darkmode
     document.body.classList.remove('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
+
 
 
     // alert('no');
@@ -176,6 +205,7 @@ switchButton2.addEventListener('click', () => {
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('login-dark').classList.add('dark');
@@ -199,10 +229,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('font-wh-3').style.color = WHCV_500;
 
 
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
@@ -229,6 +258,7 @@ switchButton2.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
@@ -251,7 +281,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('font-wh-2').style.color = BCV_500;
         document.getElementById('font-wh-3').style.color = BCV_500;
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
         // Footer
@@ -299,6 +331,7 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.toggle('dark');
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('login-dark').classList.add('dark');
@@ -321,7 +354,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('font-wh-2').style.color = WHCV_500;
     document.getElementById('font-wh-3').style.color = WHCV_500;
 
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
     // Footer
@@ -341,12 +376,6 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('dark-thel').style.fill = TCV_700;
 
 
-
-
-
-
-
-
 } else {
     // Ocultar moon
     switchButton.style.display = 'block';
@@ -356,6 +385,7 @@ if (localStorage.getItem('theme') == 'true') {
 
     // Quitamos al cargar valores del localstorage
     document.body.classList.remove('dark');
+    document.getElementById('header-sec-l').classList.remove('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('login-dark').classList.remove('dark');
@@ -378,6 +408,11 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('font-wh-1').style.color = BCV_500;
     document.getElementById('font-wh-2').style.color = BCV_500;
     document.getElementById('font-wh-3').style.color = BCV_500;
+
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
+
 
 
     // Footer
