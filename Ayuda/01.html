@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayuda</title>
     <link rel="stylesheet" href="css/style-ayuda.css">
+    <link rel="stylesheet" href="css/responsive-ayuda.css">
+    <!-- General Style -->
     <link rel="stylesheet" href="/css/general-style.css">
+    <link rel="stylesheet" href="/css/responsibe-general.css">
+
 </head>
 
 <body>
@@ -19,7 +23,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -36,6 +40,17 @@
             </h3>
 
         </section>
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
+
+        </div>
 
     </header>
 
@@ -72,8 +87,6 @@
                     <svg id="up-1" class="none-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="Fdonw-1" d="M22.12 20L16 13.8933L9.88 20L8 18.12L16 10.12L24 18.12L22.12 20Z" fill="#1B396A"/>
                         </svg>
-
-
                 </div>
 
                 <div id="respuesta1" class="respuestas">
