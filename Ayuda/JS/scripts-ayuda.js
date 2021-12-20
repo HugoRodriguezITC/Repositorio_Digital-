@@ -2,6 +2,7 @@ flag1 = localStorage.setItem("ques1", 0);
 flag2 = localStorage.setItem("ques2", 0);
 flag3 = localStorage.setItem("ques3", 0);
 flag4 = localStorage.setItem("ques4", 0);
+var ancho = screen.width;
 
 function Respuesta1() {
     if (localStorage.getItem('ques1') == 0) {
@@ -35,10 +36,19 @@ function Respuesta1() {
         flag1 = localStorage.setItem("ques1", 1);
 
         // Agrandamos el contenedor
-        document.getElementById('content-preguntas').style.height = "444px";
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "544px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "444px";
+        }
     } else {
         // Reducimos el contenedor 
-        document.getElementById('content-preguntas').style.height = "244px";
+        // Agrandamos el contenedor
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "280px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "244px";
+        }
 
         // Show And Drop Icon
         document.getElementById('up-1').classList.add('none-icon');
@@ -85,13 +95,22 @@ function Respuesta2() {
 
 
         // Agrandamos el contenedor
-        document.getElementById('content-preguntas').style.height = "444px";
+        // Agrandamos el contenedor
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "544px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "444px";
+        }
     } else {
         // Abanderamiento
         flag2 = localStorage.setItem("ques2", 0);
 
-        // Reducimos el contenedor 
-        document.getElementById('content-preguntas').style.height = "244px";
+        // Agrandamos el contenedor
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "280px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "244px";
+        }
 
         // Show And Drop Icon
         document.getElementById('up-2').classList.add('none-icon');
@@ -131,12 +150,19 @@ function Respuesta3() {
 
         // Abanderamiento
         flag3 = localStorage.setItem("ques3", 1);
-
         // Agrandamos el contenedor
-        document.getElementById('content-preguntas').style.height = "444px";
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "544px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "444px";
+        }
     } else {
-        // Reducimos el contenedor 
-        document.getElementById('content-preguntas').style.height = "244px";
+        // Agrandamos el contenedor
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "280px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "244px";
+        }
 
         // Show And Drop Icon
         document.getElementById('up-3').classList.add('none-icon');
@@ -180,10 +206,18 @@ function Respuesta4() {
         // Abanderamiento
         flag4 = localStorage.setItem("ques4", 1);
         // Agrandamos el contenedor
-        document.getElementById('content-preguntas').style.height = "444px";
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "544px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "444px";
+        }
     } else {
-        // Reducimos el contenedor 
-        document.getElementById('content-preguntas').style.height = "244px";
+        // Agrandamos el contenedor
+        if (ancho == 414) {
+            document.getElementById('content-preguntas').style.height = "280px";
+        } else {
+            document.getElementById('content-preguntas').style.height = "244px";
+        }
 
         // Show And Drop Icon
         document.getElementById('up-4').classList.add('none-icon');
@@ -195,4 +229,33 @@ function Respuesta4() {
         // Abanderamiento
         flag4 = localStorage.setItem("ques4", 0);
     }
+}
+
+
+
+// Responsive Menu
+function mostrarMenuResponsive() {
+
+    if (localStorage.getItem('Responsivedeploy') == 'false') {
+        document.getElementById('header-sec-l').style.display = 'flex';
+        document.getElementById('header-sec-l').style.transitionDelay = '40s';
+
+
+        document.getElementById('close-icon').style.display = 'block';
+
+        document.getElementById('menu-icon').style.display = 'none';
+
+
+        localStorage.setItem('Responsivedeploy', 'true');
+    } else {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+    }
+
+}
+
+function QuitarMenu() {
+    document.getElementById('close-icon').style.display = 'none';
+    document.getElementById('header-sec-l').style.display = 'none';
+    document.getElementById('menu-icon').style.display = 'block';
 }

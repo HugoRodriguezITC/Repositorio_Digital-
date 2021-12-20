@@ -126,7 +126,7 @@
 }
 
 .frame5 {
-    background-color: var(--PCV_500);
+    background-color: var(--ICV_500);
     width: 100%;
     height: 164px;
     border-radius: 16px;
@@ -204,4 +204,8 @@ h5 a {
 .conten-quest-dark {
     background-color: var(--BCV_400) !important;
     border: 1px solid var(--WHCV_500) !important;
+}
+
+.dark-fill {
+    fill: var(--BCV_500) !important;
 }

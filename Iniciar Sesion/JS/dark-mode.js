@@ -324,12 +324,6 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-messa').style.fill = WCV_700;
         document.getElementById('dark-thel').style.fill = TCV_700;
 
-
-
-
-
-
-
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
