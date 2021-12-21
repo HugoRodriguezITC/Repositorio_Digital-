@@ -425,3 +425,7 @@ header {
 .wh-border {
     border: 1px solid var(--WHCV_500);
 }
+
+.dark-fill {
+    fill: var(--BCV_500);
+}
