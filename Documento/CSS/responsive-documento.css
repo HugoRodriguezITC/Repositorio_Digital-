@@ -79,7 +79,7 @@
         border-radius: 0px 0px 16px 16px;
         background-color: #1550AF;
         /* display*/
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
     }

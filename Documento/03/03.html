@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item Desplegado</title>
     <link rel="stylesheet" href="/Documento/CSS/documento-desplegado.css">
+    <link rel="stylesheet" href="../CSS/responsive-desplega.css">
+    <!-- General Style -->
     <link rel="stylesheet" href="/css/general-style.css">
+    <link rel="stylesheet" href="/css/responsibe-general.css">
 </head>
 
 <body>
@@ -19,7 +22,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -41,6 +44,17 @@
 
         </section>
 
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
+        </div>
+
     </header>
 
 
@@ -53,7 +67,7 @@
                 <div class="preview_and_button">
                     <!-- Preview del documento -->
                     <div id="preview-dark" class="preview">
-                        <div class="content-doc">
+                        <div id="content-doc" class="content-doc">
                             <!-- Document Hover -->
                             <div class="contenido">
                                 <!-- Name Document -->
@@ -84,8 +98,15 @@
                                 </div>
                             </div>
                             <!-- Layer -->
-                            <div class="capa">
+                            <div id="capa" class="capa">
                             </div>
+                        </div>
+
+                        <!-- Responsive Button -->
+                        <div onclick="ShowCapa();" id="button-responsive" class="responsive-button">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.4901 30L24.3101 20.84L15.1301 30L12.3101 27.18L24.3101 15.18L36.3101 27.18L33.4901 30Z" fill="#F9F9F9"/>
+                            </svg>
                         </div>
                     </div>
                     <!-- Contenedor del boton -->
@@ -105,157 +126,187 @@
                             <h5 id="title-dark2">Valor</h5>
                             <h5 id="title-dark3">Lenguaje</h5>
                         </div>
-                        <!-- Author / Item 2 -->
-                        <div class="item-normal">
-                            <h5>dc.contributor.author</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>Cynthia Parker</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <!-- Author / Item 2 -->
+                            <div class="item-normal">
+                                <h5>dc.contributor.author</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>Cynthia Parker</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Author 2 /Item 3 -->
-                        <div class="item-normal">
-                            <h5>dc.contributor.author</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>Jordan Tucker</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.contributor.author</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>Jordan Tucker</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Accessioned / Item 4 -->
-                        <div class="item-normal">
-                            <h5>dc.date.accessioned</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>07/18/2021 09:32 PM</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.date.accessioned</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>07/18/2021 09:32 PM</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Available / Item 5 -->
-                        <div class="item-normal">
-                            <h5>dc.date.available</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>07/18/2021 09:32 PM</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.date.available</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>07/18/2021 09:32 PM</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Issued / Item 6 -->
-                        <div class="item-normal">
-                            <h5>dc.date.issued</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>2018</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.date.issued</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>2018</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Issn / Item 7 -->
-                        <div class="item-normal">
-                            <h5>dc.identifier.issn</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>50232</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.identifier.issn</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>50232</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Abstrack / Item 8 -->
-                        <div class="item-normal Abstrack">
-                            <h5>dc.description.abstract</h5>
-                        </div>
-                        <div class="item-normal Abstrack">
-                            <h5>Este documento abarca la implementación de un software denominado mantenimiento preventivo (MP) para desarrollar planes, y programas de mantenimiento de equipos e instalaciones de cualquier empresa para mantener en forma documentada
-                                y organizada las actividades realizadas, evitando paros no planeados en la producción.
-                            </h5>
-                        </div>
-                        <div class="item-normal Abstrack">
-                            <h5>es_MX</h5>
+                        <div class="item-general-2">
+                            <div class="item-normal Abstrack">
+                                <h5>dc.description.abstract</h5>
+                            </div>
+                            <div class="item-normal Abstrack">
+                                <h5>Este documento abarca la implementación de un software denominado mantenimiento preventivo (MP) para desarrollar planes, y programas de mantenimiento de equipos e instalaciones de cualquier empresa para mantener en forma
+                                    documentada y organizada las actividades realizadas, evitando paros no planeados en la producción.
+                                </h5>
+                            </div>
+                            <div class="item-normal Abstrack">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Iso / Item 9 -->
-                        <div class="item-normal">
-                            <h5>dc.language.iso</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.language.iso</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Publisher / Item 10 -->
-                        <div class="item-normal">
-                            <h5>dc.publisher</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>Instituto Tecnológico de Cuautla</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.publisher</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>Instituto Tecnológico de Cuautla</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Ispartofseries / Item 11 -->
-                        <div class="item-normal">
-                            <h5>dc.relation.ispartofseries</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>50232</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5></h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.relation.ispartofseries</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>50232</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5></h5>
+                            </div>
                         </div>
                         <!-- Subject 1 / Item 12 -->
-                        <div class="item-normal">
-                            <h5>dc.subject</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>Software</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.subject</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>Software</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Subject 2 / Item 13 -->
-                        <div class="item-normal">
-                            <h5>dc.subject</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>prototipo</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.subject</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>prototipo</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Subject 3/ Item 14 -->
-                        <div class="item-normal">
-                            <h5>dc.subject</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>didáctico</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.subject</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>didáctico</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Subject 4/ Item 15 -->
-                        <div class="item-normal">
-                            <h5>dc.subject</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>mantenimiento</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.subject</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>mantenimiento</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                         <!-- Title / Item 13 -->
-                        <div class="item-normal">
-                            <h5>dc.title</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>Programa de mantenimiento software MP</h5>
-                        </div>
-                        <div class="item-normal">
-                            <h5>es_MX</h5>
+                        <div class="item-general">
+                            <div class="item-normal">
+                                <h5>dc.title</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>Programa de mantenimiento software MP</h5>
+                            </div>
+                            <div class="item-normal">
+                                <h5>es_MX</h5>
+                            </div>
                         </div>
                     </div>
                     <!-- Lugares -->
@@ -401,6 +452,9 @@
 
 
 </body>
+
+<!-- Scripts Desplegado -->
+<script src="../JS/fuctions-documento.js"></script>
 
 <!-- Dark mode -->
 <script src="/Documento/JS/dark-mode2.js"></script>

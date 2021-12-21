@@ -388,6 +388,10 @@ header {
     padding-bottom: 1rem;
 }
 
+#button-responsive {
+    display: none;
+}
+
 
 /* ------- Dark Mode -------- */
 

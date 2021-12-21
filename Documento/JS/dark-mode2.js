@@ -33,6 +33,14 @@ switchButton.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
 
     if (document.body.classList.contains('dark')) {
@@ -41,6 +49,7 @@ switchButton.addEventListener('click', () => {
 
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('login-dark').classList.add('dark');
@@ -69,7 +78,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('title-dark2').style.color = BCV_500;
         document.getElementById('title-dark3').style.color = BCV_500;
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -99,6 +110,7 @@ switchButton.addEventListener('click', () => {
 
     } else {
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
@@ -126,13 +138,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('title-dark3').style.color = WHCV_500;
 
 
-
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
         // Footer
@@ -172,11 +180,20 @@ switchButton2.addEventListener('click', () => {
     document.body.classList.remove('dark');
 
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('login-dark').classList.add('dark');
@@ -204,13 +221,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('title-dark2').style.color = BCV_500;
         document.getElementById('title-dark3').style.color = BCV_500;
 
-
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
@@ -232,6 +245,7 @@ switchButton2.addEventListener('click', () => {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
@@ -259,9 +273,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('title-dark3').style.color = WHCV_500;
 
 
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
         // Footer
@@ -300,6 +314,7 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.toggle('dark');
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('login-dark').classList.add('dark');
@@ -326,12 +341,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('title-dark2').style.color = BCV_500;
     document.getElementById('title-dark3').style.color = BCV_500;
 
-
-
-
-
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
 
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
@@ -358,6 +370,7 @@ if (localStorage.getItem('theme') == 'true') {
 
 
     // Header
+    document.getElementById('header-sec-l').classList.remove('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('login-dark').classList.remove('dark');
@@ -385,12 +398,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('title-dark3').style.color = WHCV_500;
 
 
-
-
-
-
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
     // Footer

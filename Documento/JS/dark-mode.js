@@ -119,13 +119,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
-
-
-
-
-
-
-
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
         // Icon Footer
