@@ -7,7 +7,7 @@
     grid-column: 2/6;
     height: 400px;
     margin-top: 60px;
-    background-image: url('img-source-error/error404.gif');
+    background-image: url('../img-source-error/error404.gif');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -134,7 +134,7 @@ DARK-MODE
 
 .change-img {
     transition: color 1s ease, background-color 1s ease;
-    background-image: url('img-source-error/error404_dark.gif') !important;
+    background-image: url('../img-source-error/error404_dark.gif') !important;
 }
 
 .bg-ic200 {
@@ -159,4 +159,8 @@ DARK-MODE
     border: 1px solid var(--WHCV_500) !important;
     background-color: var(--ICV_200) !important;
     color: var(--BCV_500) !important;
+}
+
+.dark-fill {
+    fill: var(--BCV_500);
 }

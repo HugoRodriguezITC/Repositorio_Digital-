@@ -832,8 +832,6 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
-
-
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
     // Icon Footer
@@ -849,13 +847,6 @@ if (localStorage.getItem('theme') == 'true') {
     // Icons Contactenos
     document.getElementById('dark-messa').style.fill = WCV_700;
     document.getElementById('dark-thel').style.fill = TCV_700;
-
-
-
-
-
-
-
 
 } else {
     // Ocultar moon
