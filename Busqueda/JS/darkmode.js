@@ -26,15 +26,15 @@ var wscreen = screen.width;
 
 // Visibilidad de los filtros
 function ShowFilters() {
-
+    const wscreen = screen.width;
     if (localStorage.getItem('mantener') == 'true') {
         if (localStorage.getItem('visible') != 'false') {
             document.getElementById('show-f').style.display = 'none';
             localStorage.setItem('visible', 'false');
         } else {
             if (wscreen == 414) {
-                document.getElementById('show-f').style.display = 'block';
                 document.getElementById('show-f').style.height = '529px';
+                document.getElementById('show-f').style.display = 'block';
                 localStorage.setItem('visible', 'true');
             } else {
                 document.getElementById('show-f').style.display = 'block';
@@ -51,8 +51,8 @@ if (localStorage.getItem('mantener') == 'true') {
     if (localStorage.getItem('visible') != 'false') {
         document.getElementById('show-f').style.display = 'block';
         if (wscreen == 414) {
-            document.getElementById('show-f').style.display = 'block';
             document.getElementById('show-f').style.height = '529px';
+            document.getElementById('show-f').style.display = 'block';
             localStorage.setItem('visible', 'true');
         }
     }

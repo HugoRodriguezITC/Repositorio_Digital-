@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad</title>
     <link rel="stylesheet" href="css/Comunidad.css">
+    <link rel="stylesheet" href="CSS/responsive-comunidad.css">
+    <!-- General Style -->
     <link rel="stylesheet" href="/css/general-style.css">
+    <link rel="stylesheet" href="/css/responsibe-general.css">
 </head>
 
 <body>
@@ -19,7 +22,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -41,6 +44,17 @@
 
         </section>
 
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
+        </div>
+
     </header>
 
 
@@ -54,66 +68,64 @@
             <div id="dark-headline" class="headline-3c">
                 <h2 id="dark-FH" class="headline-h2">Comunidad</h2>
             </div>
-            <!--  -->
+            <!-- organims-dark -->
             <div id="organims-dark" class="organims">
                 <div class="list">
                     <!-- Colecciones -->
-                    <div class="list-item bt">
-                        <div class="justify-s">
-                            <h5>Subcomunidades y Colecciones</h5>
-                        </div>
-                    </div>
-                    <!-- Autor -->
-                    <div onmouseover="BGdark1()" onmouseout="BGOriginal1()" id="list-item" class="list-item">
-                        <div class="justify-c">
-                            <svg class="img-source" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path id="icon-dark"
-                                    d="M12 6.75C13.63 6.75 15.07 7.14 16.24 7.65C17.32 8.13 18 9.21 18 10.38V12H6V10.39C6 9.21 6.68 8.13 7.76 7.66C8.93 7.14 10.37 6.75 12 6.75ZM4 7C5.1 7 6 6.1 6 5C6 3.9 5.1 3 4 3C2.9 3 2 3.9 2 5C2 6.1 2.9 7 4 7ZM5.13 8.1C4.76 8.04 4.39 8 4 8C3.01 8 2.07 8.21 1.22 8.58C0.48 8.9 0 9.62 0 10.43V12H4.5V10.39C4.5 9.56 4.73 8.78 5.13 8.1ZM20 7C21.1 7 22 6.1 22 5C22 3.9 21.1 3 20 3C18.9 3 18 3.9 18 5C18 6.1 18.9 7 20 7ZM24 10.43C24 9.62 23.52 8.9 22.78 8.58C21.93 8.21 20.99 8 20 8C19.61 8 19.24 8.04 18.87 8.1C19.27 8.78 19.5 9.56 19.5 10.39V12H24V10.43ZM12 0C13.66 0 15 1.34 15 3C15 4.66 13.66 6 12 6C10.34 6 9 4.66 9 3C9 1.34 10.34 0 12 0Z"
-                                    fill="#141927" />
-                            </svg>
-                        </div>
-                        <div class="justify-s">
-                            <h5><a id="dark-a" href="#">Autor</a> </h5>
+                    <div id="list-dark-1" class="bt list-dark">
+                        <div id="subcomunidades" class="justify-s responsive-display ">
+                            <h5><a id="word-list-1" href="#">Subcomunidades y Colecciones</a></h5>
                         </div>
                     </div>
                     <!-- Titulos -->
-                    <div onmouseover="BGdark2()" onmouseout="BGOriginal2()" id="list-item1" class="list-item">
-                        <div class="justify-c">
+                    <div onmouseover="FillColor2();" onmouseleave="RemoveColor2();" id="list-dark-2" class="list-item list-dark">
+                        <div class="justify-c  ">
                             <svg class="img-source" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path id="icon1-dark" d="M13.3335 10.666V18.666H28.0002V50.666H36.0002V18.666H50.6668V10.666H13.3335Z"
-                                    fill="#141927" />
-                            </svg>
+                                <path id="icon-organim-2" d="M32.0002 5.33333C17.2802 5.33333 5.3335 17.28 5.3335 32C5.3335 46.72 17.2802 58.6667 32.0002 58.6667C46.7202 58.6667 58.6668 46.72 58.6668 32C58.6668 17.28 46.7202 5.33333 32.0002 5.33333ZM34.6668 45.3333H29.3335V29.3333H34.6668V45.3333ZM34.6668 24H29.3335V18.6667H34.6668V24Z" fill="#141927"/>
+                                </svg>
 
                         </div>
-                        <div class="justify-s">
-                            <h5><a id="dark-a1" href="#">Títulos</a></h5>
+                        <div class="justify-s responsive-display">
+                            <h5><a id="word-list-2" href="#"> Titulos</a> </h5>
                         </div>
                     </div>
                     <!-- Año de producción -->
-                    <div onmouseover="BGdark3()" onmouseout="BGOriginal3()" id="list-item2" class="list-item">
-                        <div class="justify-c">
+                    <div onmouseover="FillColor3();" onmouseleave="RemoveColor3();" id="list-dark-3" class="list-item list-dark">
+                        <div class="justify-c ">
                             <svg class="img-source" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path id="icon2-dark"
+                                <path id="icon-organim-3"
                                     d="M14 11H9V16H14V11ZM13 0V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2H15V0H13ZM16 18H2V7H16V18Z"
                                     fill="#141927" />
                             </svg>
                         </div>
-                        <div class="justify-s">
-                            <h5><a id="dark-a2" href="#">Año de producción</a></h5>
+                        <div class="justify-s responsive-display">
+                            <h5><a id="word-list-3" href="#">Año de producción</a></h5>
                         </div>
                     </div>
-
+                    <!-- Comunidad -->
+                    <div onmouseover="FillColor4();" onmouseleave="RemoveColor4();" id="list-dark-4" class="list-item list-dark">
+                        <div class="justify-c ">
+                            <svg class="img-source" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="icon-organim-4"
+                                    d="M4 10.18V14.18L11 18L18 14.18V10.18L11 14L4 10.18ZM11 0L0 6L11 12L20 7.09V14H22V6L11 0Z"
+                                    fill="#141927" />
+                            </svg>
+                        </div>
+                        <div class="justify-s responsive-display">
+                            <h5><a id="word-list-4" href="#">Comunidad</a></h5>
+                        </div>
+                    </div>
                     <!-- Tipo de contenido -->
-                    <div onmouseover="BGdark4()" onmouseout="BGOriginal4()" id="list-item3" class="list-item bb">
-                        <div class="justify-c">
+                    <div onmouseover="FillColor5();" onmouseleave="RemoveColor5();" id="list-dark-5" class="list-item bb list-dark">
+                        <div class="justify-c ">
                             <svg class="img-source" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path id="icon3-dark"
+                                <path id="icon-organim-5"
                                     d="M10 0H2C0.9 0 0.0100002 0.9 0.0100002 2L0 18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM12 16H4V14H12V16ZM12 12H4V10H12V12ZM9 7V1.5L14.5 7H9Z"
                                     fill="#141927" />
                             </svg>
                         </div>
-                        <div class="justify-s">
-                            <h5><a id="dark-a3" href="#">Tipo de contenido</a></h5>
+                        <div class="justify-s responsive-display">
+                            <h5><a id="word-list-5" href="#">Tipo de contenido</a></h5>
                         </div>
                     </div>
                 </div>
@@ -121,7 +133,7 @@
                 <div class="content">
                     <div style="height: 32px;" class="search-4c">
                         <input style="height: 32px;" id="input-4c" type="text">
-                        <svg class="img-source" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg id="icon-responsive" class="img-source" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0H28C30.2091 0 32 1.79086 32 4V28C32 30.2091 30.2091 32 28 32H0V0Z"
                                 fill="#F2B90F" />
                             <path
