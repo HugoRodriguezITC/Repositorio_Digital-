@@ -4,6 +4,8 @@
 7.Arregalr los chechbox con SPN y no con pseudo-elementos
 8. Hover de los iconos
 
+----------Busqueda-----------
+1.iconos busqueda cambiar color
 
 
 

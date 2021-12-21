@@ -21,6 +21,9 @@ const SUCV_200 = '#A3DEBB';
 localStorage.setItem('mantener', 'true');
 
 
+var wscreen = screen.width;
+
+
 // Visibilidad de los filtros
 function ShowFilters() {
 
@@ -29,9 +32,17 @@ function ShowFilters() {
             document.getElementById('show-f').style.display = 'none';
             localStorage.setItem('visible', 'false');
         } else {
-            document.getElementById('show-f').style.display = 'block';
-            localStorage.setItem('visible', 'true');
+            if (wscreen == 414) {
+                document.getElementById('show-f').style.display = 'block';
+                document.getElementById('show-f').style.height = '529px';
+                localStorage.setItem('visible', 'true');
+            } else {
+                document.getElementById('show-f').style.display = 'block';
+                localStorage.setItem('visible', 'true');
+            }
+            // else in
         }
+        // else 1
     }
 }
 
@@ -39,15 +50,18 @@ function ShowFilters() {
 if (localStorage.getItem('mantener') == 'true') {
     if (localStorage.getItem('visible') != 'false') {
         document.getElementById('show-f').style.display = 'block';
+        if (wscreen == 414) {
+            document.getElementById('show-f').style.display = 'block';
+            document.getElementById('show-f').style.height = '529px';
+            localStorage.setItem('visible', 'true');
+        }
     }
+
+
 }
 
 
 switchButton.addEventListener('click', () => {
-
-
-
-
     // Ocultar moon
     switchButton.style.display = 'none';
     // Mostrar sol
@@ -57,6 +71,13 @@ switchButton.addEventListener('click', () => {
     // Activamos el darkmode
     document.body.classList.toggle('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
 
 
 
@@ -65,6 +86,7 @@ switchButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'true');
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('login-dark').classList.add('dark');
@@ -130,7 +152,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('icon1-dark').style.fill = DCV_200;
         document.getElementById('menos-dark').style.fill = BCV_500;
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -151,16 +175,10 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-thel').style.fill = TCV_700;
 
 
-
-
-
-
-
-
-
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
@@ -222,15 +240,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('menos-dark').style.fill = WHCV_500;
 
 
-
-
-
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
@@ -248,12 +260,7 @@ switchButton.addEventListener('click', () => {
         // Icons Contactenos
         document.getElementById('dark-messa').style.fill = SCV_500;
         document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
     }
-
-
 });
 
 
@@ -271,6 +278,14 @@ switchButton2.addEventListener('click', () => {
 
 
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
     // alert('no');
 
     if (document.body.classList.contains('dark')) {
@@ -278,6 +293,7 @@ switchButton2.addEventListener('click', () => {
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('login-dark').classList.add('dark');
@@ -340,11 +356,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('icon1-dark').style.fill = DCV_200;
         document.getElementById('menos-dark').style.fill = BCV_500;
 
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
@@ -363,14 +377,10 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('dark-thel').style.fill = TCV_700;
 
 
-
-
-
-
-
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('login-dark').classList.remove('dark');
@@ -433,7 +443,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('menos-dark').style.fill = WHCV_500;
 
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
         // Footer
@@ -481,12 +493,11 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.toggle('dark');
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('login-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
-
-
 
 
     // Section
@@ -547,8 +558,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('menos-dark').style.fill = BCV_500;
 
 
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -570,11 +582,6 @@ if (localStorage.getItem('theme') == 'true') {
 
 
 
-
-
-
-
-
 } else {
     // Ocultar moon
     switchButton.style.display = 'block';
@@ -584,6 +591,7 @@ if (localStorage.getItem('theme') == 'true') {
 
     // Quitamos al cargar valores del localstorage
     document.body.classList.remove('dark');
+    document.getElementById('header-sec-l').classList.remove('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('login-dark').classList.remove('dark');
@@ -647,10 +655,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('menos-dark').style.fill = WHCV_500;
 
 
-
-
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
     // Footer
@@ -668,9 +675,5 @@ if (localStorage.getItem('theme') == 'true') {
     // Icons Contactenos
     document.getElementById('dark-messa').style.fill = SCV_500;
     document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
-
 
 }

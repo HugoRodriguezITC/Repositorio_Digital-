@@ -1,4 +1,7 @@
 @media only screen and (max-width: 414px) {
+    main {
+        margin-top: 54px !important;
+    }
     .menu-dark {
         border: 3px solid #F9F9F9 !important;
         background-color: var(--PCV_200) !important;

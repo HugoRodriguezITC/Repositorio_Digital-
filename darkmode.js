@@ -679,10 +679,6 @@ switchButton2.addEventListener('click', () => {
         // Icons Contactenos
         document.getElementById('dark-messa').style.fill = SCV_500;
         document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
-
     }
 
 

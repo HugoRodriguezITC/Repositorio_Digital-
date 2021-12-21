@@ -8,7 +8,7 @@
     }
     .noma-content {
         height: auto;
-        margin-top: -44px;
+        margin-top: 0px;
     }
     .noma-content .headline-5c {
         grid-column: 1/5;

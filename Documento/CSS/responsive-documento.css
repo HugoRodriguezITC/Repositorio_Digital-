@@ -11,7 +11,7 @@
     }
     .content-document .item-document {
         height: auto;
-        margin-top: 0px;
+        margin-top: 32px;
         margin-bottom: 40px;
         grid-column: 1/9;
         display: flex;
