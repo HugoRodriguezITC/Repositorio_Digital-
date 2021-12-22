@@ -76,19 +76,21 @@
         margin-left: 277px;
         margin-top: 16px;
     }
-    .data1 {
+    .data {
         width: 282px;
         height: 285px;
         margin: 28px auto 0px auto;
+        row-gap: 12px;
+    }
+    .data .data1-item {
+        width: 282px !important;
+        height: 60px;
     }
     #list-dark-5 {
         border-radius: 0px 8px 0px 0px;
     }
     #list-dark-1 {
         border-radius: 8px 0px 0px 0px;
-    }
-    .data2 {
-        display: none;
     }
     #list-dark-1 {
         width: min-content;

@@ -100,3 +100,13 @@ function QuitarMenu() {
     document.getElementById('header-sec-l').style.display = 'none';
     document.getElementById('menu-icon').style.display = 'block';
 }
+
+// Scroll
+
+function OnScroll() {
+    document.getElementById('data').classList.add('scroll');
+}
+
+function OffScroll() {
+    document.getElementById('data').classList.remove('scroll');
+}
