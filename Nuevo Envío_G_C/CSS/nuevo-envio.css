@@ -219,3 +219,7 @@ DARK MODE
     background-color: var(--PCV_200);
     color: var(--BCV_500);
 }
+
+.dark-fill {
+    fill: var(--BCV_500);
+}

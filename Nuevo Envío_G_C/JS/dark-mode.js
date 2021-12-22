@@ -32,6 +32,16 @@ switchButton.addEventListener('click', () => {
     // Activamos el darkmode
     document.body.classList.toggle('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
 
 
@@ -41,6 +51,7 @@ switchButton.addEventListener('click', () => {
 
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -81,9 +92,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('button2').classList.add('border-wh2');
         document.getElementById('button3').classList.add('border-wh3');
 
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
         // Footer
@@ -103,15 +114,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-thel').style.fill = TCV_700;
 
 
-
-
-
-
-
-
-
     } else {
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -154,8 +159,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('button2').classList.remove('border-wh2');
         document.getElementById('button3').classList.remove('border-wh3');
 
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
         // Footer
@@ -194,12 +200,23 @@ switchButton2.addEventListener('click', () => {
     // Al clic quitamos el darkmode
     document.body.classList.remove('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -235,22 +252,15 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('font-bc1').style.color = BCV_500;
         document.getElementById('font-bc2').style.color = BCV_500;
 
-
-
         // Buttons
         document.getElementById('button1').classList.add('border-wh1');
         document.getElementById('button2').classList.add('border-wh2');
         document.getElementById('button3').classList.add('border-wh3');
 
 
-
-
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
@@ -272,6 +282,7 @@ switchButton2.addEventListener('click', () => {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -307,24 +318,14 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('font-bc1').style.color = WHCV_500;
         document.getElementById('font-bc2').style.color = WHCV_500;
 
-
-
         // Buttons
         document.getElementById('button1').classList.remove('border-wh1');
         document.getElementById('button2').classList.remove('border-wh2');
         document.getElementById('button3').classList.remove('border-wh3');
 
-
-
-
-
-
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
@@ -362,6 +363,7 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.toggle('dark');
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -401,9 +403,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('button2').classList.add('border-wh2');
     document.getElementById('button3').classList.add('border-wh3');
 
-
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
 
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
@@ -430,6 +432,7 @@ if (localStorage.getItem('theme') == 'true') {
 
 
     // Header
+    document.getElementById('header-sec-l').classList.remove('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -470,6 +473,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('button2').classList.remove('border-wh2');
     document.getElementById('button3').classList.remove('border-wh3');
 
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 
@@ -488,7 +494,5 @@ if (localStorage.getItem('theme') == 'true') {
     // Icons Contactenos
     document.getElementById('dark-messa').style.fill = SCV_500;
     document.getElementById('dark-thel').style.fill = TCV_500;
-
-
 
 }
