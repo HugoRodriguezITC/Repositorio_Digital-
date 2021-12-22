@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envio Completo</title>
-    <link rel="stylesheet" href="/css/general-style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/send_complete.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/send_complete.css">
+    <link rel="stylesheet" href="CSS/responsive-envio-completo.css">
+    <!-- General Style -->
+    <link rel="stylesheet" href="/CSS/general-style.css">
+    <link rel="stylesheet" href="/CSS/responsibe-general.css">
 
 </head>
 
@@ -21,7 +24,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -52,10 +55,8 @@
                 <svg id="abajo" class="img-source" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="dowm-dark" d="M19.1667 26.6665L32.5001 39.9998L45.8334 26.6665H19.1667Z" fill="#F2B90F" />
                 </svg>
-
-
-
             </div>
+
         </section>
         <!-- ------------------ -->
         <div id="menu" class="menu-float">
@@ -91,18 +92,26 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
+
+        </div>
     </header>
 
 
 
     <!-- Main -->
     <main>
-
-
-
-
-
-
         <section class="content_news_sc colum-12">
             <div id="head-dark" class=" headline-5c ">
                 <h2 id="font-wh" class=" headline-h2 ">Envío completado</h2>
@@ -266,8 +275,8 @@
 
 </body>
 <!-- Menu flotante  -->
-<script src="js/menu.js"></script>
+<script src="JS/menu.js"></script>
 <!-- Darka mode -->
-<script src="js/dark-mode.js"></script>
+<script src="JS/dark-mode.js"></script>
 
 </html>

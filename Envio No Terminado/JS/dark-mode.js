@@ -53,10 +53,6 @@ switchButton.addEventListener('click', () => {
 
 
     if (document.body.classList.contains('dark')) {
-
-
-
-
         // Header RDI-dark 
 
         document.getElementById('header-sec-l').classList.add('menu-dark');
@@ -138,14 +134,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-messa').style.fill = WCV_700;
         document.getElementById('dark-thel').style.fill = TCV_700;
 
-
-
-
-
-
-
-
-
     } else {
 
         // Header
@@ -226,9 +214,6 @@ switchButton.addEventListener('click', () => {
         // Icons Contactenos
         document.getElementById('dark-messa').style.fill = SCV_500;
         document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
     }
 
 
@@ -321,14 +306,6 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('showoption').classList.add('dark-icv');
         document.getElementById('dark-up').classList.add('dark-fill');
 
-
-
-
-
-
-
-
-
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
         // Icon Footer
@@ -349,8 +326,8 @@ switchButton2.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
-        // Header
 
+        // Header
         document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
@@ -406,10 +383,6 @@ switchButton2.addEventListener('click', () => {
         // Button Responsive
         document.getElementById('showoption').classList.remove('dark-icv');
         document.getElementById('dark-up').classList.remove('dark-fill');
-
-
-
-
 
 
         // Footer
@@ -599,11 +572,6 @@ if (localStorage.getItem('theme') == 'true') {
     // Button Responsive
     document.getElementById('showoption').classList.remove('dark-icv');
     document.getElementById('dark-up').classList.remove('dark-fill');
-
-
-
-
-
 
 
     // Footer

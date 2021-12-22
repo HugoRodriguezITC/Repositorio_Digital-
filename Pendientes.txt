@@ -3,6 +3,7 @@
 6. Que debe llevar en los iconos de contactenos
 7.Arregalr los chechbox con SPN y no con pseudo-elementos
 8. Hover de los iconos
+15. Agregar transicion a botones y menus
 
 ----------Busqueda-----------
 1.iconos busqueda cambiar color

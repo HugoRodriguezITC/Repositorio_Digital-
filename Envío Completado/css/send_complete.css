@@ -186,3 +186,7 @@ DARK MODE
     color: var(--BCV_500) !important;
     border: 1px solid var(--WHCV_500) !important;
 }
+
+.dark-fill {
+    fill: var(--BCV_500);
+}
