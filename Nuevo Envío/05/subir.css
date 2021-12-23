@@ -37,10 +37,9 @@ input[type=checkbox]:checked+label::before {
     width: 33px;
     height: 33px;
     /* WShades-500 */
-    background: var(--PCV_500);
+    background-color: var(--PCV_500);
     /* BShades-500 */
     border: 1px solid var(--BCV_500);
-    box-sizing: border-box;
     border-radius: 4px;
     display: inline-block;
     margin-right: 10px;
@@ -59,7 +58,6 @@ input[type=checkbox]:checked+label::before {
     align-items: center;
     letter-spacing: 0.5px;
     /* BShades-500 */
-    color: #141927;
 }
 
 
@@ -102,10 +100,6 @@ input[type=checkbox]:checked+label::before {
 
 .radio__input:checked+.radio__radio::after {
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
 }
 
 
@@ -440,10 +434,6 @@ textarea {
 .i-last {
     box-sizing: border-box;
     border-radius: 0px 0px 8px 0px;
-    -webkit-border-radius: 0px 0px 8px 0px;
-    -moz-border-radius: 0px 0px 8px 0px;
-    -ms-border-radius: 0px 0px 8px 0px;
-    -o-border-radius: 0px 0px 8px 0px;
 }
 
 .i-last i {
@@ -464,11 +454,6 @@ textarea {
 
 .i-firts {
     box-sizing: border-box;
-    border-radius: 0px 0px 0px 8px;
-    -webkit-border-radius: 0px 0px 0px 8px;
-    -moz-border-radius: 0px 0px 0px 8px;
-    -ms-border-radius: 0px 0px 0px 8px;
-    -o-border-radius: 0px 0px 0px 8px;
 }
 
 .info-item label {

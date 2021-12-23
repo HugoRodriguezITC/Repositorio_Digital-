@@ -4,8 +4,6 @@ function mostrarMenu() {
 
     if (localStorage.getItem('deploy') == 'false') {
         document.getElementById('menu').style.display = 'block';
-        document.getElementById('menu').style.transitionDelay = '40s';
-
         document.getElementById('abajo').style.display = 'none';
         document.getElementById('up').style.display = 'block';
         localStorage.setItem('deploy', 'true');

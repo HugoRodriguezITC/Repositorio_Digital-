@@ -45,7 +45,6 @@ switchButton.addEventListener('click', () => {
         // Icons
         document.getElementById('close-icon').style.display = 'none';
         document.getElementById('menu-icon').style.display = 'block';
-
     }
 
 
@@ -108,13 +107,10 @@ switchButton.addEventListener('click', () => {
         // Icons Menu
         document.getElementById('icon-menu-dark').classList.add('dark-fill');
         document.getElementById('close-menu-dark').classList.add('dark-fill');
+
         // Button Responsive
         document.getElementById('showoption').classList.add('dark-icv');
         document.getElementById('dark-up').classList.add('dark-fill');
-
-
-
-
 
 
         // Footer
@@ -484,10 +480,6 @@ if (localStorage.getItem('theme') == 'true') {
     // Button Responsive
     document.getElementById('showoption').classList.add('dark-icv');
     document.getElementById('dark-up').classList.add('dark-fill');
-
-
-
-
 
 
     // Footer
