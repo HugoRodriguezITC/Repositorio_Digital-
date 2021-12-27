@@ -352,58 +352,90 @@ h6 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
-.item-coleccion-suspc label {
+.LCheck {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
     /* Body 1 */
     font-family: var(--font_body);
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height */
     display: flex;
     align-items: center;
     letter-spacing: 0.5px;
-    /* BShades-500 */
-    color: var(--BCV_500);
 }
 
-input[type=checkbox] {
+.check__input {
     display: none;
 }
 
-input[type=checkbox]+label {
-    cursor: pointer;
+.check {
+    width: 2rem;
+    height: 2rem;
+    /* WShades-500 */
+    background-color: #F9F9F9;
+    /* Primary-500 */
+    border: 1px solid #1B396A;
+    box-sizing: border-box;
+    margin-right: 60px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 32px;
 }
 
-.label::before {
-    content: '';
-    width: 32px;
-    height: 32px;
-    /* WShades-500 */
-    background-color: var(--WHCV_500);
-    /* BShades-500 */
-    border: 1px solid var(--BCV_500);
-    box-sizing: border-box;
-    border-radius: 4px;
-    /* display: inline-block; */
-    margin-right: 60px;
+.check::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #1B396A;
+    border-radius: 2px;
+    transform: scale(0);
 }
 
-input[type=checkbox]:checked+label::before {
-    content: '';
-    width: 33px;
-    height: 33px;
+.check__input:checked+.check::after {
+    transform: scale(1);
+}
+
+
+/* ---------------------- */
+
+.check__input {
+    display: none;
+}
+
+.check-dark {
+    width: 2rem;
+    height: 2rem;
     /* WShades-500 */
-    background: var(--PCV_500);
-    /* BShades-500 */
-    border: 1px solid var(--BCV_500);
+    background-color: #434752;
+    /* Primary-500 */
+    border: 1px solid #F2B90F;
     box-sizing: border-box;
-    border-radius: 4px;
-    display: inline-block;
     margin-right: 60px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 32px;
+}
+
+.check-dark::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #F2B90F;
+    border-radius: 2px;
+    transform: scale(0);
+}
+
+.check__input:checked+.check-dark::after {
+    transform: scale(1);
 }
 
 
@@ -760,7 +792,7 @@ DARK MODE
 }
 
 .list-wh {
-    color: var(--WHCV_500);
+    color: var(--WHCV_500) !important;
 }
 
 .button-save {

@@ -51,6 +51,26 @@ switchButton.addEventListener('click', () => {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
+        // Cambiar Checkbox
+        document.getElementById('contente-check').classList.remove('check');
+        document.getElementById('contente-check').classList.add('check-dark');
+        document.getElementById('contente-check-2').classList.remove('check');
+        document.getElementById('contente-check-2').classList.add('check-dark');
+        document.getElementById('contente-check-3').classList.remove('check');
+        document.getElementById('contente-check-3').classList.add('check-dark');
+
+        // Dark mode Label
+        document.getElementById('LCheck-1').classList.add('list-wh');
+        document.getElementById('LCheck-2').classList.add('list-wh');
+        document.getElementById('LCheck-3').classList.add('list-wh');
+
+        // Dark mode Label
+        document.getElementById('myCheck-1').classList.add('list-wh');
+        document.getElementById('myCheck-2').classList.add('list-wh');
+        document.getElementById('myCheck-3').classList.add('list-wh');
+
+
+
 
         // Header RDI-dark 
         document.getElementById('header-sec-l').classList.add('menu-dark');
@@ -122,10 +142,7 @@ switchButton.addEventListener('click', () => {
         document.getElementById('select-drak-1').classList.add('input-dark');
         // Add 
         document.getElementById('add-1').style.fill = SUCV_200;
-        // List Colecciones
-        document.getElementById('coleccion-wh-1').style.color = WHCV_500;
-        document.getElementById('coleccion-wh-2').style.color = WHCV_500;
-        document.getElementById('coleccion-wh-3').style.color = WHCV_500;
+
         // Remove Button
         document.getElementById('remove-button').classList.add('border-wh4');
 
@@ -178,6 +195,13 @@ switchButton.addEventListener('click', () => {
         document.getElementById('dark-messa').style.fill = WCV_700;
         document.getElementById('dark-thel').style.fill = TCV_700;
     } else {
+
+        // Dark mode Label
+        document.getElementById('LCheck-1').classList.remove('list-wh');
+        document.getElementById('LCheck-2').classList.remove('list-wh');
+        document.getElementById('LCheck-3').classList.remove('list-wh');
+
+
         // Header
         document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
@@ -239,10 +263,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('select-drak-1').classList.remove('input-dark');
         // Add 
         document.getElementById('add-1').style.fill = SUCV_500;
-        // List Colecciones
-        document.getElementById('coleccion-wh-1').style.color = BCV_500;
-        document.getElementById('coleccion-wh-2').style.color = BCV_500;
-        document.getElementById('coleccion-wh-3').style.color = BCV_500;
         // Remove Button
         document.getElementById('remove-button').classList.remove('border-wh4');
 
@@ -341,6 +361,22 @@ switchButton2.addEventListener('click', () => {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
+
+        // Cambiar Checkbox
+        document.getElementById('contente-check').classList.remove('check');
+        document.getElementById('contente-check').classList.add('check-dark');
+        document.getElementById('contente-check-2').classList.remove('check');
+        document.getElementById('contente-check-2').classList.add('check-dark');
+        document.getElementById('contente-check-3').classList.remove('check');
+        document.getElementById('contente-check-3').classList.add('check-dark');
+
+        // Dark mode Label
+        document.getElementById('LCheck-1').classList.add('list-wh');
+        document.getElementById('LCheck-2').classList.add('list-wh');
+        document.getElementById('LCheck-3').classList.add('list-wh');
+
+
+
         // Header 
         document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
@@ -400,10 +436,7 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('select-drak-1').classList.add('input-dark');
         // Add 
         document.getElementById('add-1').style.fill = SUCV_200;
-        // List Colecciones
-        document.getElementById('coleccion-wh-1').style.color = WHCV_500;
-        document.getElementById('coleccion-wh-2').style.color = WHCV_500;
-        document.getElementById('coleccion-wh-3').style.color = WHCV_500;
+
         // Remove Button
         document.getElementById('remove-button').classList.add('border-wh4');
 
@@ -472,6 +505,21 @@ switchButton2.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+
+
+        // Cambiar checkbox
+        document.getElementById('contente-check').classList.remove('check-dark');
+        document.getElementById('contente-check').classList.add('check');
+        document.getElementById('contente-check-2').classList.remove('check-dark');
+        document.getElementById('contente-check-2').classList.add('check');
+        document.getElementById('contente-check-3').classList.remove('check-dark');
+        document.getElementById('contente-check-3').classList.add('check');
+
+        // Dark mode Label
+        document.getElementById('LCheck-1').classList.remove('list-wh');
+        document.getElementById('LCheck-2').classList.remove('list-wh');
+        document.getElementById('LCheck-3').classList.remove('list-wh');
+
         // Header
         document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
@@ -531,10 +579,6 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('select-drak-1').classList.remove('input-dark');
         // Add 
         document.getElementById('add-1').style.fill = SUCV_500;
-        // List Colecciones
-        document.getElementById('coleccion-wh-1').style.color = BCV_500;
-        document.getElementById('coleccion-wh-2').style.color = BCV_500;
-        document.getElementById('coleccion-wh-3').style.color = BCV_500;
         // Remove Button
         document.getElementById('remove-button').classList.remove('border-wh4');
 
@@ -618,6 +662,23 @@ if (localStorage.getItem('theme') == 'true') {
     // Agregamos al cargar valores del localstorage
     document.body.classList.toggle('dark');
 
+    // Cambiar Checkbox
+    document.getElementById('contente-check').classList.remove('check');
+    document.getElementById('contente-check').classList.add('check-dark');
+    document.getElementById('contente-check-2').classList.remove('check');
+    document.getElementById('contente-check-2').classList.add('check-dark');
+    document.getElementById('contente-check-3').classList.remove('check');
+    document.getElementById('contente-check-3').classList.add('check-dark');
+
+
+
+    // Dark mode Label
+    document.getElementById('LCheck-1').classList.add('list-wh');
+    document.getElementById('LCheck-2').classList.add('list-wh');
+    document.getElementById('LCheck-3').classList.add('list-wh');
+
+
+
     // Header
     document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
@@ -677,10 +738,6 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('select-drak-1').classList.add('input-dark');
     // Add 
     document.getElementById('add-1').style.fill = SUCV_200;
-    // List Colecciones
-    document.getElementById('coleccion-wh-1').style.color = WHCV_500;
-    document.getElementById('coleccion-wh-2').style.color = WHCV_500;
-    document.getElementById('coleccion-wh-3').style.color = WHCV_500;
     // Remove Button
     document.getElementById('remove-button').classList.add('border-wh4');
 
@@ -755,6 +812,20 @@ if (localStorage.getItem('theme') == 'true') {
     // Quitamos al cargar valores del localstorage
     document.body.classList.remove('dark');
 
+    // Cambiar checkbox
+    document.getElementById('contente-check').classList.remove('check-dark');
+    document.getElementById('contente-check').classList.add('check');
+    document.getElementById('contente-check-2').classList.remove('check-dark');
+    document.getElementById('contente-check-2').classList.add('check');
+    document.getElementById('contente-check-3').classList.remove('check-dark');
+    document.getElementById('contente-check-3').classList.add('check');
+
+    // Dark mode Label
+    document.getElementById('LCheck-1').classList.remove('list-wh');
+    document.getElementById('LCheck-2').classList.remove('list-wh');
+    document.getElementById('LCheck-3').classList.remove('list-wh');
+
+
 
     // Header
     document.getElementById('header-sec-l').classList.add('menu-dark');
@@ -815,12 +886,7 @@ if (localStorage.getItem('theme') == 'true') {
     // Select
     document.getElementById('select-drak-1').classList.remove('input-dark');
     // Add 
-    document.getElementById('add-1').style.fill = SUCV_500;
-    // List Colecciones
-    document.getElementById('coleccion-wh-1').style.color = BCV_500;
-    document.getElementById('coleccion-wh-2').style.color = BCV_500;
-    document.getElementById('coleccion-wh-3').style.color = BCV_500;
-    // Remove Button
+    document.getElementById('add-1').style.fill = SUCV_500; // Remove Button
     document.getElementById('remove-button').classList.remove('border-wh4');
 
 
