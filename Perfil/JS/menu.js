@@ -59,7 +59,7 @@ function Ocultar() {
 }
 
 
-
+// Responsive Menu
 function mostrarMenuResponsive() {
 
     if (localStorage.getItem('Responsivedeploy') == 'false') {
@@ -89,6 +89,8 @@ function QuitarMenu() {
     document.getElementById('header-sec-l').style.display = 'none';
     document.getElementById('menu-icon').style.display = 'block';
 }
+
+// Mostar Capa
 
 function ShowCapa() {
     document.getElementById('showoption').style.display = 'none';

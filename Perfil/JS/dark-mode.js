@@ -42,11 +42,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('menu-icon').style.display = 'block';
     }
 
-
-
-
-
-
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
@@ -63,13 +58,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('LCheck-1').classList.add('list-wh');
         document.getElementById('LCheck-2').classList.add('list-wh');
         document.getElementById('LCheck-3').classList.add('list-wh');
-
-        // Dark mode Label
-        document.getElementById('myCheck-1').classList.add('list-wh');
-        document.getElementById('myCheck-2').classList.add('list-wh');
-        document.getElementById('myCheck-3').classList.add('list-wh');
-
-
 
 
         // Header RDI-dark 
@@ -167,8 +155,6 @@ switchButton.addEventListener('click', () => {
 
         // Button Save
         document.getElementById('save-change').classList.add('button-save');
-
-
 
         // Fieldset ========================= 4
         document.getElementById('fieldset-dark-3').classList.add('border-bg-dark');
@@ -308,8 +294,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
-
-
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
         // Icon Footer
@@ -326,9 +310,6 @@ switchButton.addEventListener('click', () => {
         // Icons Contactenos
         document.getElementById('dark-messa').style.fill = SCV_500;
         document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
     }
 
 
@@ -475,7 +456,6 @@ switchButton2.addEventListener('click', () => {
         // Password
         document.getElementById('show-pass-1').classList.add('input-dark');
         document.getElementById('show-pass-2').classList.add('input-dark');
-
 
         // Icons Menu
         document.getElementById('icon-menu-dark').classList.add('dark-fill');
@@ -783,11 +763,6 @@ if (localStorage.getItem('theme') == 'true') {
     // Icons Menu
     document.getElementById('icon-menu-dark').classList.add('dark-fill');
     document.getElementById('close-menu-dark').classList.add('dark-fill');
-
-
-
-
-
 
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');

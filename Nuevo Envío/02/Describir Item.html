@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Describir Item Parte 1</title>
-    <link rel="stylesheet" href="/css/general-style.css">
-    <link rel="stylesheet" href="describir-item.css">
-    <link rel="stylesheet" href="/Nuevo Envío/CSS/menu.css">
+    <link rel="stylesheet" href="CSS-02/describir-item.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="CSS-02/02-responsive.css">
+    <!-- General Style  -->
+    <link rel="stylesheet" href="/CSS/general-style.css">
+    <link rel="stylesheet" href="/CSS/responsibe-general.css">
 </head>
 
 <body>
@@ -20,7 +23,7 @@
             <h4 id="RDI-dark">Repositorio Digital Institucional</h4>
         </section>
         <!---->
-        <section class="header-sec-l ">
+        <section id="header-sec-l" class="header-sec-l ">
             <!-- Luna -->
             <svg id="switch" class="img-source cursor" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -51,8 +54,6 @@
                 <svg id="abajo" class="img-source" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="dowm-dark" d="M19.1667 26.6665L32.5001 39.9998L45.8334 26.6665H19.1667Z" fill="#F2B90F" />
                 </svg>
-
-
 
             </div>
         </section>
@@ -89,6 +90,16 @@
                     <h5><a id="dark-wh-3" class="exit-s" href="#">Cerrar Sesión</a></h5>
                 </div>
             </div>
+        </div>
+        <!-- Icon Responsive -->
+        <div onclick="mostrarMenuResponsive()" class="menu-responsive-icon">
+            <svg id="menu-icon" width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-menu-dark" d="M0.310059 16H24.3101V13.3333H0.310059V16ZM0.310059 9.33333H24.3101V6.66667H0.310059V9.33333ZM0.310059 0V2.66667H24.3101V0H0.310059Z" fill="#F9F9F9"/>
+            </svg>
+
+            <svg id="close-icon" onclick="QuitarMenu()" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="close-menu-dark" d="M25.6435 9.38879L23.7635 7.50879L16.3101 14.9621L8.85681 7.50879L6.97681 9.38879L14.4301 16.8421L6.97681 24.2955L8.85681 26.1755L16.3101 18.7221L23.7635 26.1755L25.6435 24.2955L18.1901 16.8421L25.6435 9.38879Z" fill="#F9F9F9"/>
+                </svg>
         </div>
     </header>
 
@@ -243,18 +254,27 @@
                         <div class="list-a">
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check1" id="check1">
-                                <label id="list-label-1" class="label" for="check1">Jiménez, Jesús Hazael </label>
+                                <label id="LCheck-1" for="myCheck-1" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-1" class="check__input">
+                                    <div id="contente-check" class="check"></div>
+                                    Jiménez, Jesús Hazael  
+                                </label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check2" id="check2">
-                                <label id="list-label-2" class="label" for="check2">Flores, Juan </label>
+                                <label id="LCheck-2" for="myCheck-2" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-2" class="check__input">
+                                    <div id="contente-check-2" class="check"></div>
+                                    Florez, Juan 
+                                </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check3" id="check3">
-                                <label id="list-label-3" class="label" for="check3">García, Pablo </label>
+                                <label id="LCheck-3" for="myCheck-3" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-3" class="check__input">
+                                    <div id="contente-check-3" class="check"></div>
+                                    Garcia, Pablo 
+                                </label>
                             </div>
                         </div>
                         <!-- Button -->
@@ -295,20 +315,26 @@
                         <div class="list-rtitle">
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check4" id="check4">
-                                <label id="label-input-6" class="label" for="check4">Este es un título
-                                    alternativo</label>
+                                <label id="LCheck-4" for="myCheck-4" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-4" class="check__input">
+                                    <div id="contente-check-4" class="check"></div>
+                                    Este es un título alternativo
+                                </label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check5" id="check5">
-                                <label id="label-input-7" class="label" for="check5">Este es un título alternativo
+                                <label id="LCheck-5" for="myCheck-5" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-5" class="check__input">
+                                    <div id="contente-check-5" class="check"></div>
+                                    Este es un título alternativo
                                 </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check6" id="check6">
-                                <label id="label-input-8" class="label" for="check6">Este es un título alternativo
+                                <label id="LCheck-6" for="myCheck-6" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-6" class="check__input">
+                                    <div id="contente-check-6" class="check"></div>
+                                    Este es un título alternativo
                                 </label>
                             </div>
                         </div>
@@ -391,11 +417,11 @@
                         <!-- Inputs Buttons -->
                         <div class="inputs-butt">
                             <div class="item-input-serie">
-                                <label id="label-dark-1" for="">Nombre de la serie</label>
+                                <label id="serie-label" for="">Nombre de la serie</label>
                                 <input id="input1-dark-series" type="text">
                             </div>
                             <div class="item-input-serie">
-                                <label id="label-dark-2" for="">Num. de Informe</label>
+                                <label id="serie-label-2" for="">Num. de Informe</label>
                                 <input id="input2-dark-series" type="text" class="padding-left" placeholder="5464656858">
                             </div>
                             <!-- Add -->
@@ -414,18 +440,27 @@
                         <div class="list-num">
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check7" id="check7">
-                                <label id="label-1-series" class="label" for="check7">Nombre; número de la serie</label>
+                                <label id="LCheck-7" for="myCheck-7" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-7" class="check__input">
+                                    <div id="contente-check-7" class="check"></div>
+                                    Nombre; número de la serie
+                                </label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check8" id="check8">
-                                <label id="label-2-series" class="label" for="check8">Nombre; número de la serie </label>
+                                <label id="LCheck-8" for="myCheck-8" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-8" class="check__input">
+                                    <div id="contente-check-8" class="check"></div>
+                                    Nombre; número de la serie
+                                </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check9" id="check9">
-                                <label id="label-3-series" class="label" for="check9">Nombre; número de la serie </label>
+                                <label id="LCheck-9" for="myCheck-9" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-9" class="check__input">
+                                    <div id="contente-check-9" class="check"></div>
+                                    Nombre; número de la serie
+                                </label>
                             </div>
                         </div>
                         <!-- Button -->
@@ -472,18 +507,27 @@
                         <div class="list-num">
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check10" id="check10">
-                                <label id="label-1-identifi" class="label" for="check10">Tipo; valor_de_identificación</label>
+                                <label id="LCheck-10" for="myCheck-10" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-10" class="check__input">
+                                    <div id="contente-check-10" class="check"></div>
+                                    Tipo; valor_de_identificación
+                                </label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check11" id="check11">
-                                <label id="label-2-identifi" class="label" for="check11">Tipo; valor_de_identificación </label>
+                                <label id="LCheck-11" for="myCheck-11" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-11" class="check__input">
+                                    <div id="contente-check-11" class="check"></div>
+                                    Tipo; valor_de_identificación
+                                </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check12" id="check12">
-                                <label id="label-3-identifi" class="label" for="check12">Tipo; valor_de_identificación</label>
+                                <label id="LCheck-12" for="myCheck-12" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-12" class="check__input">
+                                    <div id="contente-check-12" class="check"></div>
+                                    Tipo; valor_de_identificación
+                                </label>
                             </div>
                         </div>
                         <!-- Button -->
@@ -522,18 +566,27 @@
                         <div class="list-types">
                             <!-- Colección 1 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check13" id="check13">
-                                <label id="label-1-type" class="label" for="check13">Tipo 1</label>
+                                <label id="LCheck-13" for="myCheck-13" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-13" class="check__input">
+                                    <div id="contente-check-13" class="check"></div>
+                                    Tipo 1
+                                </label>
                             </div>
                             <!-- Colección 2 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check14" id="check14">
-                                <label id="label-2-type" class="label" for="check14">Tipo 2 </label>
+                                <label id="LCheck-14" for="myCheck-14" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-14" class="check__input">
+                                    <div id="contente-check-14" class="check"></div>
+                                    Tipo 2
+                                </label>
                             </div>
                             <!-- Colección 3 -->
                             <div class="item-coleccion-suspc">
-                                <input class="style-check" type="checkbox" name="check15" id="check15">
-                                <label id="label-3-type" class="label" for="check15">Tipo 3</label>
+                                <label id="LCheck-15" for="myCheck-15" class="LCheck">
+                                    <input type="checkbox" name="MyCheckF" id="myCheck-15" class="check__input">
+                                    <div id="contente-check-15" class="check"></div>
+                                    Tipo 3
+                                </label>
                             </div>
                         </div>
                         <!-- Button -->
