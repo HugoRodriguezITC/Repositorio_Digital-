@@ -32,6 +32,16 @@ switchButton.addEventListener('click', () => {
     // Activamos el darkmode
     document.body.classList.toggle('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
 
 
@@ -39,8 +49,17 @@ switchButton.addEventListener('click', () => {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
+        // Cambiar Checkbox
+        document.getElementById('contente-check').classList.remove('check');
+        document.getElementById('contente-check').classList.add('check-dark');
+        document.getElementById('contente-check-2').classList.remove('check');
+        document.getElementById('contente-check-2').classList.add('check-dark');
+        document.getElementById('contente-check-3').classList.remove('check');
+        document.getElementById('contente-check-3').classList.add('check-dark');
+
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -116,9 +135,9 @@ switchButton.addEventListener('click', () => {
         // Add
         document.getElementById('add-keyword').style.fill = SUCV_200;
         // Labels
-        document.getElementById('label-colecc-1').style.color = WHCV_500;
-        document.getElementById('label-colecc-2').style.color = WHCV_500;
-        document.getElementById('label-colecc-3').style.color = WHCV_500;
+        document.getElementById('LCheck-1').style.color = WHCV_500;
+        document.getElementById('LCheck-2').style.color = WHCV_500;
+        document.getElementById('LCheck-3').style.color = WHCV_500;
 
         // Button Remove
         document.getElementById('remove-keywords').classList.add('remove-button');
@@ -144,6 +163,12 @@ switchButton.addEventListener('click', () => {
         document.getElementById('save-button').classList.add('save-button-dark');
         document.getElementById('next-button').classList.add('next-button-dark');
 
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
+
+
+
 
 
 
@@ -162,17 +187,9 @@ switchButton.addEventListener('click', () => {
         // Icons Contactenos
         document.getElementById('dark-messa').style.fill = WCV_700;
         document.getElementById('dark-thel').style.fill = TCV_700;
-
-
-
-
-
-
-
-
-
     } else {
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -250,9 +267,9 @@ switchButton.addEventListener('click', () => {
         // Add
         document.getElementById('add-keyword').style.fill = SUCV_500;
         // Labels
-        document.getElementById('label-colecc-1').style.color = BCV_500;
-        document.getElementById('label-colecc-2').style.color = BCV_500;
-        document.getElementById('label-colecc-3').style.color = BCV_500;
+        document.getElementById('LCheck-1').style.color = BCV_500;
+        document.getElementById('LCheck-2').style.color = BCV_500;
+        document.getElementById('LCheck-3').style.color = BCV_500;
 
         // Button Remove
         document.getElementById('remove-keywords').classList.remove('remove-button');
@@ -278,10 +295,9 @@ switchButton.addEventListener('click', () => {
         document.getElementById('save-button').classList.remove('save-button-dark');
         document.getElementById('next-button').classList.remove('next-button-dark');
 
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
@@ -299,12 +315,7 @@ switchButton.addEventListener('click', () => {
         // Icons Contactenos
         document.getElementById('dark-messa').style.fill = SCV_500;
         document.getElementById('dark-thel').style.fill = TCV_500;
-
-
-
     }
-
-
 });
 
 
@@ -319,12 +330,31 @@ switchButton2.addEventListener('click', () => {
     // Al clic quitamos el darkmode
     document.body.classList.remove('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
+        // Cambiar Checkbox
+        document.getElementById('contente-check').classList.remove('check');
+        document.getElementById('contente-check').classList.add('check-dark');
+        document.getElementById('contente-check-2').classList.remove('check');
+        document.getElementById('contente-check-2').classList.add('check-dark');
+        document.getElementById('contente-check-3').classList.remove('check');
+        document.getElementById('contente-check-3').classList.add('check-dark');
+
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -400,9 +430,9 @@ switchButton2.addEventListener('click', () => {
         // Add
         document.getElementById('add-keyword').style.fill = SUCV_200;
         // Labels
-        document.getElementById('label-colecc-1').style.color = WHCV_500;
-        document.getElementById('label-colecc-2').style.color = WHCV_500;
-        document.getElementById('label-colecc-3').style.color = WHCV_500;
+        document.getElementById('LCheck-1').style.color = WHCV_500;
+        document.getElementById('LCheck-2').style.color = WHCV_500;
+        document.getElementById('LCheck-3').style.color = WHCV_500;
 
         // Button Remove
         document.getElementById('remove-keywords').classList.add('remove-button');
@@ -428,12 +458,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('save-button').classList.add('save-button-dark');
         document.getElementById('next-button').classList.add('next-button-dark');
 
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
         // Footer
@@ -455,7 +482,18 @@ switchButton2.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+
+
+        // Cambiar checkbox
+        document.getElementById('contente-check').classList.remove('check-dark');
+        document.getElementById('contente-check').classList.add('check');
+        document.getElementById('contente-check-2').classList.remove('check-dark');
+        document.getElementById('contente-check-2').classList.add('check');
+        document.getElementById('contente-check-3').classList.remove('check-dark');
+        document.getElementById('contente-check-3').classList.add('check');
+
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -534,9 +572,9 @@ switchButton2.addEventListener('click', () => {
         // Add
         document.getElementById('add-keyword').style.fill = SUCV_500;
         // Labels
-        document.getElementById('label-colecc-1').style.color = BCV_500;
-        document.getElementById('label-colecc-2').style.color = BCV_500;
-        document.getElementById('label-colecc-3').style.color = BCV_500;
+        document.getElementById('LCheck-1').style.color = BCV_500;
+        document.getElementById('LCheck-2').style.color = BCV_500;
+        document.getElementById('LCheck-3').style.color = BCV_500;
 
         // Button Remove
         document.getElementById('remove-keywords').classList.remove('remove-button');
@@ -562,12 +600,9 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('save-button').classList.remove('save-button-dark');
         document.getElementById('next-button').classList.remove('next-button-dark');
 
-
-
-
-
-
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
         // Footer
@@ -605,7 +640,16 @@ if (localStorage.getItem('theme') == 'true') {
     // Agregamos al cargar valores del localstorage
     document.body.classList.toggle('dark');
 
+    // Cambiar Checkbox
+    document.getElementById('contente-check').classList.remove('check');
+    document.getElementById('contente-check').classList.add('check-dark');
+    document.getElementById('contente-check-2').classList.remove('check');
+    document.getElementById('contente-check-2').classList.add('check-dark');
+    document.getElementById('contente-check-3').classList.remove('check');
+    document.getElementById('contente-check-3').classList.add('check-dark');
+
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -680,9 +724,9 @@ if (localStorage.getItem('theme') == 'true') {
     // Add
     document.getElementById('add-keyword').style.fill = SUCV_200;
     // Labels
-    document.getElementById('label-colecc-1').style.color = WHCV_500;
-    document.getElementById('label-colecc-2').style.color = WHCV_500;
-    document.getElementById('label-colecc-3').style.color = WHCV_500;
+    document.getElementById('LCheck-1').style.color = WHCV_500;
+    document.getElementById('LCheck-2').style.color = WHCV_500;
+    document.getElementById('LCheck-3').style.color = WHCV_500;
 
     // Button Remove
     document.getElementById('remove-keywords').classList.add('remove-button');
@@ -709,20 +753,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('save-button').classList.add('save-button-dark');
     document.getElementById('next-button').classList.add('next-button-dark');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
 
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
@@ -747,8 +780,17 @@ if (localStorage.getItem('theme') == 'true') {
     // Quitamos al cargar valores del localstorage
     document.body.classList.remove('dark');
 
+    // Cambiar checkbox
+    document.getElementById('contente-check').classList.remove('check-dark');
+    document.getElementById('contente-check').classList.add('check');
+    document.getElementById('contente-check-2').classList.remove('check-dark');
+    document.getElementById('contente-check-2').classList.add('check');
+    document.getElementById('contente-check-3').classList.remove('check-dark');
+    document.getElementById('contente-check-3').classList.add('check');
+
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -821,9 +863,9 @@ if (localStorage.getItem('theme') == 'true') {
     // Add
     document.getElementById('add-keyword').style.fill = SUCV_500;
     // Labels
-    document.getElementById('label-colecc-1').style.color = BCV_500;
-    document.getElementById('label-colecc-2').style.color = BCV_500;
-    document.getElementById('label-colecc-3').style.color = BCV_500;
+    document.getElementById('LCheck-1').style.color = BCV_500;
+    document.getElementById('LCheck-2').style.color = BCV_500;
+    document.getElementById('LCheck-3').style.color = BCV_500;
 
     // Button Remove
     document.getElementById('remove-keywords').classList.remove('remove-button');
@@ -850,13 +892,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('save-button').classList.remove('save-button-dark');
     document.getElementById('next-button').classList.remove('next-button-dark');
 
-
-
-
-
-
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
     // Footer

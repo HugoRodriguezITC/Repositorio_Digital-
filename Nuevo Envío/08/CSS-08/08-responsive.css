@@ -1,0 +1,129 @@
+@media only screen and (max-width:414px) {
+    .nav-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .content-08 {
+        height: auto;
+        margin-top: 32px;
+    }
+    .fieldset {
+        margin-top: 28px;
+        grid-column: 1/9;
+        height: auto;
+    }
+    .fieldset .colum-10 {
+        height: auto;
+        margin-top: 28px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px 23.5px 0px 23.5px;
+    }
+    .fieldset .colum-10 .descrip {
+        padding: 16px;
+        height: auto;
+    }
+    .fieldset .colum-10 .descrip h6 {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15px;
+    }
+    .fieldset .colum-10 .licen-label {
+        margin-top: 28px;
+        text-align: start;
+    }
+    .fieldset .colum-10 .item-coleccion-suspc {
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+    .steps {
+        grid-column: 1/9;
+        height: auto;
+        margin-top: 28px;
+    }
+    .steps .step {
+        padding: 4px;
+    }
+    .steps .step p {
+        height: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 16px;
+    }
+    .steps .step .item-step,
+    .steps .step .item-select {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+    }
+    .step .item-step h4,
+    .step .item-select h4 {
+        /* H4 */
+        font-family: var(--font_headlines);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: 0.25px;
+        /* BShades-500 */
+        color: #141927;
+        text-align: center;
+    }
+    .barra1 {
+        width: 40px;
+        margin-top: 18px;
+        margin-left: 49px;
+        position: absolute;
+    }
+    .barra2 {
+        width: 30px;
+        margin-top: 18px;
+        margin-left: 115px;
+        position: absolute;
+    }
+    .barra3 {
+        width: 18px;
+        margin-top: 18px;
+        margin-left: 176px;
+        position: absolute;
+    }
+    .barra4 {
+        width: 40px;
+        margin-top: 18px;
+        margin-left: 222px;
+        position: absolute;
+    }
+    .barra5 {
+        width: 40px;
+        margin-top: 18px;
+        margin-left: 266px;
+        position: absolute;
+    }
+    .barra6 {
+        width: 40px;
+        margin-top: 18px;
+        margin-left: 318px;
+        position: absolute;
+    }
+    .buttons {
+        grid-column: 1/9;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 12px;
+        margin-bottom: 40px;
+    }
+    .buttons button {
+        width: 100% !important;
+        margin-top: 28px;
+    }
+}

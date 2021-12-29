@@ -35,6 +35,15 @@ switchButton.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
 
 
     if (document.body.classList.contains('dark')) {
@@ -43,6 +52,7 @@ switchButton.addEventListener('click', () => {
 
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -129,10 +139,6 @@ switchButton.addEventListener('click', () => {
         document.getElementById('label-font-7').classList.add('font-wh');
         document.getElementById('label-font-8').classList.add('font-wh');
 
-
-
-
-
         // buttons
         document.getElementById('back-button').classList.add('border-w');
         // 
@@ -140,6 +146,21 @@ switchButton.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.add('button-next');
 
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
+
+        // Radios
+        document.getElementById('radio-dark-1').classList.remove('radio__radio');
+        document.getElementById('radio-dark-1').classList.add('radio-dark');
+        document.getElementById('radio-dark-2').classList.remove('radio__radio');
+        document.getElementById('radio-dark-2').classList.add('radio-dark');
+        document.getElementById('radio-dark-3').classList.remove('radio__radio');
+        document.getElementById('radio-dark-3').classList.add('radio-dark');
+        document.getElementById('radio-dark-4').classList.remove('radio__radio');
+        document.getElementById('radio-dark-4').classList.add('radio-dark');
+        document.getElementById('radio-dark-5').classList.remove('radio__radio');
+        document.getElementById('radio-dark-5').classList.add('radio-dark');
 
 
         // Footer
@@ -161,6 +182,7 @@ switchButton.addEventListener('click', () => {
 
     } else {
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -250,7 +272,9 @@ switchButton.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.remove('button-next');
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.remove('dark-background');
@@ -288,12 +312,23 @@ switchButton2.addEventListener('click', () => {
     // Al clic quitamos el darkmode
     document.body.classList.remove('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -374,22 +409,16 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('label-font-7').classList.add('font-wh');
         document.getElementById('label-font-8').classList.add('font-wh');
 
-
-
-
-
-
-
-
-
-
-
         // buttons
         document.getElementById('back-button').classList.add('border-w');
         // 
         document.getElementById('save-button').classList.add('button-save');
         // 
         document.getElementById('next-button').classList.add('button-next');
+
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -412,7 +441,26 @@ switchButton2.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+
+
+
+
+        // Radios
+        document.getElementById('radio-dark-1').classList.add('radio__radio');
+        document.getElementById('radio-dark-1').classList.remove('radio-dark');
+        document.getElementById('radio-dark-2').classList.add('radio__radio');
+        document.getElementById('radio-dark-2').classList.remove('radio-dark');
+        document.getElementById('radio-dark-3').classList.add('radio__radio');
+        document.getElementById('radio-dark-3').classList.remove('radio-dark');
+        document.getElementById('radio-dark-4').classList.add('radio__radio');
+        document.getElementById('radio-dark-4').classList.remove('radio-dark');
+        document.getElementById('radio-dark-5').classList.add('radio__radio');
+        document.getElementById('radio-dark-5').classList.remove('radio-dark');
+
+
+
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -495,8 +543,6 @@ switchButton2.addEventListener('click', () => {
         document.getElementById('label-font-8').classList.remove('font-wh');
 
 
-
-
         // buttons
         document.getElementById('back-button').classList.remove('border-w');
         // 
@@ -504,6 +550,9 @@ switchButton2.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.remove('button-next');
 
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 
@@ -543,6 +592,7 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.toggle('dark');
 
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -623,13 +673,6 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('label-font-7').classList.add('font-wh');
     document.getElementById('label-font-8').classList.add('font-wh');
 
-
-
-
-
-
-
-
     // buttons
     document.getElementById('back-button').classList.add('border-w');
     // 
@@ -637,6 +680,22 @@ if (localStorage.getItem('theme') == 'true') {
     // 
     document.getElementById('next-button').classList.add('button-next');
 
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
+
+
+    // Radios
+    document.getElementById('radio-dark-1').classList.remove('radio__radio');
+    document.getElementById('radio-dark-1').classList.add('radio-dark');
+    document.getElementById('radio-dark-2').classList.remove('radio__radio');
+    document.getElementById('radio-dark-2').classList.add('radio-dark');
+    document.getElementById('radio-dark-3').classList.remove('radio__radio');
+    document.getElementById('radio-dark-3').classList.add('radio-dark');
+    document.getElementById('radio-dark-4').classList.remove('radio__radio');
+    document.getElementById('radio-dark-4').classList.add('radio-dark');
+    document.getElementById('radio-dark-5').classList.remove('radio__radio');
+    document.getElementById('radio-dark-5').classList.add('radio-dark');
 
 
     // Footer
@@ -663,7 +722,21 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.remove('dark');
 
 
+    // Radios
+    document.getElementById('radio-dark-1').classList.add('radio__radio');
+    document.getElementById('radio-dark-1').classList.remove('radio-dark');
+    document.getElementById('radio-dark-2').classList.add('radio__radio');
+    document.getElementById('radio-dark-2').classList.remove('radio-dark');
+    document.getElementById('radio-dark-3').classList.add('radio__radio');
+    document.getElementById('radio-dark-3').classList.remove('radio-dark');
+    document.getElementById('radio-dark-4').classList.add('radio__radio');
+    document.getElementById('radio-dark-4').classList.remove('radio-dark');
+    document.getElementById('radio-dark-5').classList.add('radio__radio');
+    document.getElementById('radio-dark-5').classList.remove('radio-dark');
+
+
     // Header
+    document.getElementById('header-sec-l').classList.remove('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -739,11 +812,6 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('label-font-7').classList.remove('font-wh');
     document.getElementById('label-font-8').classList.remove('font-wh');
 
-
-
-
-
-
     // buttons
     document.getElementById('back-button').classList.remove('border-w');
     // 
@@ -752,7 +820,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('next-button').classList.remove('button-next');
 
 
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 

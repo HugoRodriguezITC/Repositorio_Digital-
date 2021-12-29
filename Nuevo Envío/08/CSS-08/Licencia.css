@@ -10,6 +10,88 @@
     /* border: 1px solid red; */
 }
 
+.LCheck {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Body 1 */
+    font-family: var(--font_body);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.check__input {
+    display: none;
+}
+
+.check {
+    width: 2rem;
+    height: 2rem;
+    /* WShades-500 */
+    background-color: #F9F9F9;
+    /* Primary-500 */
+    border: 1px solid #1B396A;
+    box-sizing: border-box;
+    margin-right: 32px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.check::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #1B396A;
+    border-radius: 2px;
+    transform: scale(0);
+}
+
+.check__input:checked+.check::after {
+    transform: scale(1);
+}
+
+
+/* ---------------------- */
+
+.check__input {
+    display: none;
+}
+
+.check-dark {
+    width: 2rem;
+    height: 2rem;
+    /* WShades-500 */
+    background-color: #434752;
+    /* Primary-500 */
+    border: 1px solid #F2B90F;
+    box-sizing: border-box;
+    margin-right: 32px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.check-dark::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #F2B90F;
+    border-radius: 2px;
+    transform: scale(0);
+}
+
+.check__input:checked+.check-dark::after {
+    transform: scale(1);
+}
+
 
 /* fieldset */
 
@@ -539,4 +621,8 @@ DAR MODE
     background-color: var(--PCV_200) !important;
     color: var(--BCV_500) !important;
     border: 1px solid var(--WHCV_500) !important;
+}
+
+.dark-fill {
+    fill: var(--BCV_500);
 }

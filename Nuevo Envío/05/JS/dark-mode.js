@@ -35,14 +35,32 @@ switchButton.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
 
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
+        // check darks
+        document.getElementById('contente-check').classList.remove('check');
+        document.getElementById('contente-check').classList.add('check-dark');
+        document.getElementById('radio').classList.remove('radio__radio');
+        document.getElementById('radio').classList.add('radio-dark');
+
+
 
         // Header RDI-dark 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -148,7 +166,9 @@ switchButton.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.add('button-next');
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
 
 
@@ -172,6 +192,7 @@ switchButton.addEventListener('click', () => {
 
     } else {
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -276,6 +297,9 @@ switchButton.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.remove('button-next');
 
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 
@@ -316,12 +340,23 @@ switchButton2.addEventListener('click', () => {
     // Al clic quitamos el darkmode
     document.body.classList.remove('dark');
 
+    if (localStorage.getItem('Responsivedeploy') == 'true') {
+        document.getElementById('menu').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        document.getElementById('header-sec-l').style.display = 'none';
+        localStorage.setItem('Responsivedeploy', 'false');
+        // Icons
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+    }
+
 
     if (document.body.classList.contains('dark')) {
         // Agregamos todas las clases necesarias al click
         localStorage.setItem('theme', 'true');
 
         // Header 
+        document.getElementById('header-sec-l').classList.add('menu-dark');
         document.getElementById('dark-header').classList.add('dark');
         document.getElementById('RDI-dark').classList.add('dark');
         document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -425,7 +460,9 @@ switchButton2.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.add('button-next');
 
-
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.add('dark-fill');
+        document.getElementById('close-menu-dark').classList.add('dark-fill');
 
         // Footer
         document.getElementById('dark-footer').classList.add('dark-background');
@@ -446,7 +483,15 @@ switchButton2.addEventListener('click', () => {
     } else {
         // Removemos todas las clases necesarias al click
         localStorage.setItem('theme', 'false');
+
+        // check darks
+        document.getElementById('contente-check').classList.remove('check-dark');
+        document.getElementById('contente-check').classList.add('check');
+        document.getElementById('radio').classList.remove('radio-dark');
+        document.getElementById('radio').classList.add('radio__radio');
+
         // Header
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
         document.getElementById('dark-header').classList.remove('dark');
         document.getElementById('RDI-dark').classList.remove('dark');
         document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -551,6 +596,10 @@ switchButton2.addEventListener('click', () => {
         // 
         document.getElementById('next-button').classList.remove('button-next');
 
+        document.getElementById('header-sec-l').classList.remove('menu-dark');
+        // Icons Menu
+        document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+        document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
 
@@ -589,7 +638,17 @@ if (localStorage.getItem('theme') == 'true') {
     // Agregamos al cargar valores del localstorage
     document.body.classList.toggle('dark');
 
+
+
+    // check darks
+    document.getElementById('contente-check').classList.remove('check');
+    document.getElementById('contente-check').classList.add('check-dark');
+    document.getElementById('radio').classList.remove('radio__radio');
+    document.getElementById('radio').classList.add('radio-dark');
+
+
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.add('dark');
     document.getElementById('RDI-dark').classList.add('dark');
     document.getElementById('dark-Lhelp').classList.add('dark-font');
@@ -696,6 +755,11 @@ if (localStorage.getItem('theme') == 'true') {
 
 
 
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.add('dark-fill');
+    document.getElementById('close-menu-dark').classList.add('dark-fill');
+
+
     // Footer
     document.getElementById('dark-footer').classList.add('dark-background');
     // Icon Footer
@@ -720,7 +784,15 @@ if (localStorage.getItem('theme') == 'true') {
     document.body.classList.remove('dark');
 
 
+    // check darks
+    document.getElementById('contente-check').classList.remove('check-dark');
+    document.getElementById('contente-check').classList.add('check');
+    document.getElementById('radio').classList.remove('radio-dark');
+    document.getElementById('radio').classList.add('radio__radio');
+
+
     // Header
+    document.getElementById('header-sec-l').classList.add('menu-dark');
     document.getElementById('dark-header').classList.remove('dark');
     document.getElementById('RDI-dark').classList.remove('dark');
     document.getElementById('dark-Lhelp').classList.remove('dark-font');
@@ -823,8 +895,9 @@ if (localStorage.getItem('theme') == 'true') {
     document.getElementById('next-button').classList.remove('button-next');
 
 
-
-
+    // Icons Menu
+    document.getElementById('icon-menu-dark').classList.remove('dark-fill');
+    document.getElementById('close-menu-dark').classList.remove('dark-fill');
 
 
     // Footer
