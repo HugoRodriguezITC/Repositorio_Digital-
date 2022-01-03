@@ -7,7 +7,7 @@
     grid-column: 2/6;
     height: 400px;
     margin-top: 60px;
-    background-image: url('../img-source-error/error404.gif');
+    background-image: url('../icon-source/error-light.gif');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -134,7 +134,7 @@ DARK-MODE
 
 .change-img {
     transition: color 1s ease, background-color 1s ease;
-    background-image: url('../img-source-error/error404_dark.gif') !important;
+    background-image: url('../icon-source/error-dark.gif') !important;
 }
 
 .bg-ic200 {
