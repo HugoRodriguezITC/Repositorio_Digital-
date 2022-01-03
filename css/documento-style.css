@@ -106,7 +106,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    background-image: url('/Documento/img-source-documento/doc.png');
+    background-image: url('../icon-source/documento-doc.png');
     background-size: 100%;
     background-repeat: no-repeat;
     /* shadow-primary-500 */
