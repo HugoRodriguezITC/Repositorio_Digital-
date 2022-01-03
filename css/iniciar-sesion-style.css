@@ -21,7 +21,7 @@
     height: 100%;
     grid-column: 1/8;
     /*  */
-    background-image: url('/Iniciar%20Sesion/img-source-login/hero-b.jpg');
+    background-image: url('../icon-source/iniciar-sesion-hero-b.jpg');
     background-repeat: no-repeat;
     /* border: 1px dashed red; */
 }

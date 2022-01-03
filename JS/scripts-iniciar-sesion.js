@@ -62,9 +62,9 @@ function AnimationSend() {
     document.getElementById('animation-content').style.display = 'block';
     // Img
     if (localStorage.getItem('theme') == 'true') {
-        document.getElementById('load-img').src = 'img-source-login/EnvioCorreoBlack.gif';
+        document.getElementById('load-img').src = '../icon-source/iniciar-sesion-correo-dark.gif';
     } else {
-        document.getElementById('load-img').src = 'img-source-login/EnvioDeCorreo.gif';
+        document.getElementById('load-img').src = '../icon-source/iniciar-sesion-correo.gif';
     }
 
     //  despues de 3sg
@@ -186,7 +186,7 @@ function SendRecovery() {
 
 
     if (localStorage.getItem('theme') == 'true') {
-        document.getElementById('load-img').src = 'img-source-login/checkblack.gif';
+        document.getElementById('load-img').src = '../icon-source/iniciar-sesion-check-dark.gif';
         // Numeros
         document.getElementById('num-1').classList.add('num-dark-pass');
         document.getElementById('h4-1').classList.add('color-dark');
@@ -203,7 +203,7 @@ function SendRecovery() {
         document.getElementById('descrip-2').classList.add('color-ic5');
 
     } else {
-        document.getElementById('load-img').src = 'img-source-login/check.gif';
+        document.getElementById('load-img').src = '../icon-source/iniciar-sesion-check.gif';
         // Numeros
         document.getElementById('num-1').classList.add('new-nums');
         document.getElementById('h4-1').classList.add('h4-wh');
