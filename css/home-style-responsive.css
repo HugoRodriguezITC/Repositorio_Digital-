@@ -9,7 +9,7 @@
         margin-top: 0px !important;
         width: 100%;
         height: 420px !important;
-        background-image: url('source-img/Hero-res.png');
+        background-image: url('../icon-source/Hero-res.png');
         background-repeat: no-repeat;
         background-size: 100%;
         object-fit: cover;

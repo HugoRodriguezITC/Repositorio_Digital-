@@ -1,7 +1,7 @@
 .img-grid {
     width: 100%;
     height: 832px;
-    background-image: url("source-img/hero.png");
+    background-image: url("../icon-source/hero.png");
     z-index: 1;
 }
 
