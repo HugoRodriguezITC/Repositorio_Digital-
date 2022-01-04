@@ -9,6 +9,13 @@
 1.iconos busqueda cambiar color
 
 
+//////////////////////////
+1.checar el dark mode de letras 
+2.el responsive de nuevo envio
+3. su icono
+4.tamanño de respuestas
+5. checar los chechbox que se cambias 
+
 
 --------Vista perfil---------
 2. Realizar los inputs de cambio de contraseña.
